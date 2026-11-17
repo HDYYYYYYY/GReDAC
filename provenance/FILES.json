@@ -1118,7 +1118,7 @@
     "status": "publication_packaging_change"
   },
   "README.md": {
-    "packaged_sha256": "b49a8f59183a91d9d74b7282efc72278f8d73393842ee375e5da842b31e19ff1",
+    "packaged_sha256": "87608f474657d88cd8e19da518cccd968ef96d5c270ebb627b0ab1fbc813e7c9",
     "status": "new_packaging_file"
   },
   "requirements-plots.txt": {
