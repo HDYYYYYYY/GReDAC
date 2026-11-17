@@ -1,0 +1,279 @@
+{
+  "schema": "allocation-policy-v2-1",
+  "split": "development",
+  "order_seed": 3612823621308190360,
+  "ranges": [
+    [
+      1024,
+      1536
+    ],
+    [
+      512,
+      768
+    ],
+    [
+      256,
+      384
+    ],
+    [
+      64,
+      192
+    ]
+  ],
+  "instances": [
+    {
+      "instance_id": "development-fragmented-00",
+      "split": "development",
+      "background": "fragmented",
+      "index": 0,
+      "demands": [
+        1296,
+        687,
+        314,
+        104
+      ],
+      "demand_seed": 9083732796564547848,
+      "selection_seeds": [
+        13983086825143983436,
+        18075530933838721547,
+        10894155515346629106,
+        1185011725996209457
+      ],
+      "background_seed": 4181918140852574882,
+      "issued": 2048,
+      "depth": 4,
+      "final_requests": 9,
+      "slot_bits": 15,
+      "action": "query",
+      "task": "c",
+      "endpoint": "G"
+    },
+    {
+      "instance_id": "development-whole-00",
+      "split": "development",
+      "background": "whole",
+      "index": 0,
+      "demands": [
+        1470,
+        554,
+        337,
+        72
+      ],
+      "demand_seed": 2334825812005852797,
+      "selection_seeds": [
+        13327836072508008768,
+        8072551303719260720,
+        3640703554660086114,
+        10966868342829181114
+      ],
+      "background_seed": 40790014892242367,
+      "issued": 2048,
+      "depth": 4,
+      "final_requests": 9,
+      "slot_bits": 15,
+      "action": "query",
+      "task": "c",
+      "endpoint": "G"
+    }
+  ],
+  "cases": [
+    {
+      "instance_id": "development-fragmented-00",
+      "split": "development",
+      "background": "fragmented",
+      "index": 0,
+      "demands": [
+        1296,
+        687,
+        314,
+        104
+      ],
+      "demand_seed": 9083732796564547848,
+      "selection_seeds": [
+        13983086825143983436,
+        18075530933838721547,
+        10894155515346629106,
+        1185011725996209457
+      ],
+      "background_seed": 4181918140852574882,
+      "issued": 2048,
+      "depth": 4,
+      "final_requests": 9,
+      "slot_bits": 15,
+      "action": "query",
+      "task": "c",
+      "endpoint": "G",
+      "strategy": "random",
+      "strategy_order": [
+        "random",
+        "dispersed",
+        "subtree"
+      ]
+    },
+    {
+      "instance_id": "development-fragmented-00",
+      "split": "development",
+      "background": "fragmented",
+      "index": 0,
+      "demands": [
+        1296,
+        687,
+        314,
+        104
+      ],
+      "demand_seed": 9083732796564547848,
+      "selection_seeds": [
+        13983086825143983436,
+        18075530933838721547,
+        10894155515346629106,
+        1185011725996209457
+      ],
+      "background_seed": 4181918140852574882,
+      "issued": 2048,
+      "depth": 4,
+      "final_requests": 9,
+      "slot_bits": 15,
+      "action": "query",
+      "task": "c",
+      "endpoint": "G",
+      "strategy": "dispersed",
+      "strategy_order": [
+        "random",
+        "dispersed",
+        "subtree"
+      ]
+    },
+    {
+      "instance_id": "development-fragmented-00",
+      "split": "development",
+      "background": "fragmented",
+      "index": 0,
+      "demands": [
+        1296,
+        687,
+        314,
+        104
+      ],
+      "demand_seed": 9083732796564547848,
+      "selection_seeds": [
+        13983086825143983436,
+        18075530933838721547,
+        10894155515346629106,
+        1185011725996209457
+      ],
+      "background_seed": 4181918140852574882,
+      "issued": 2048,
+      "depth": 4,
+      "final_requests": 9,
+      "slot_bits": 15,
+      "action": "query",
+      "task": "c",
+      "endpoint": "G",
+      "strategy": "subtree",
+      "strategy_order": [
+        "random",
+        "dispersed",
+        "subtree"
+      ]
+    },
+    {
+      "instance_id": "development-whole-00",
+      "split": "development",
+      "background": "whole",
+      "index": 0,
+      "demands": [
+        1470,
+        554,
+        337,
+        72
+      ],
+      "demand_seed": 2334825812005852797,
+      "selection_seeds": [
+        13327836072508008768,
+        8072551303719260720,
+        3640703554660086114,
+        10966868342829181114
+      ],
+      "background_seed": 40790014892242367,
+      "issued": 2048,
+      "depth": 4,
+      "final_requests": 9,
+      "slot_bits": 15,
+      "action": "query",
+      "task": "c",
+      "endpoint": "G",
+      "strategy": "subtree",
+      "strategy_order": [
+        "subtree",
+        "random",
+        "dispersed"
+      ]
+    },
+    {
+      "instance_id": "development-whole-00",
+      "split": "development",
+      "background": "whole",
+      "index": 0,
+      "demands": [
+        1470,
+        554,
+        337,
+        72
+      ],
+      "demand_seed": 2334825812005852797,
+      "selection_seeds": [
+        13327836072508008768,
+        8072551303719260720,
+        3640703554660086114,
+        10966868342829181114
+      ],
+      "background_seed": 40790014892242367,
+      "issued": 2048,
+      "depth": 4,
+      "final_requests": 9,
+      "slot_bits": 15,
+      "action": "query",
+      "task": "c",
+      "endpoint": "G",
+      "strategy": "random",
+      "strategy_order": [
+        "subtree",
+        "random",
+        "dispersed"
+      ]
+    },
+    {
+      "instance_id": "development-whole-00",
+      "split": "development",
+      "background": "whole",
+      "index": 0,
+      "demands": [
+        1470,
+        554,
+        337,
+        72
+      ],
+      "demand_seed": 2334825812005852797,
+      "selection_seeds": [
+        13327836072508008768,
+        8072551303719260720,
+        3640703554660086114,
+        10966868342829181114
+      ],
+      "background_seed": 40790014892242367,
+      "issued": 2048,
+      "depth": 4,
+      "final_requests": 9,
+      "slot_bits": 15,
+      "action": "query",
+      "task": "c",
+      "endpoint": "G",
+      "strategy": "dispersed",
+      "strategy_order": [
+        "subtree",
+        "random",
+        "dispersed"
+      ]
+    }
+  ]
+}

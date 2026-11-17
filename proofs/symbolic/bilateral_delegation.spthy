@@ -1,0 +1,51 @@
+theory SACReDBilateralDelegation
+begin
+builtins: signing
+// Structural overapproximation: any existing parent may register a child.
+// Signature and policy gates are deleted here, not assumed cryptographically
+// proven by this model. control_authentication supplies signature provenance;
+// the common state system supplies policy, eligibility and immutable registry.
+// Deleting these gates ADDS traces, preserving structural safety conclusions.
+rule Agent:
+ [ Fr(~holder), Fr(~key) ] -->
+ [ !Principal(~holder,pk(~key)), Out(<~holder,pk(~key)>) ]
+rule ApproveBilateral:
+ [ !Principal(caller,cpk), !Principal(service,spk),
+   Fr(~ctx), In(endpoint), Fr(~dc), Fr(~ds) ]
+ --[ RootApproved(~dc,~ctx,endpoint,'caller',caller),
+     RootApproved(~ds,~ctx,endpoint,'service',service) ]->
+ [ RootInstall(~dc,~ctx,endpoint,'caller',caller,cpk),
+   RootInstall(~ds,~ctx,endpoint,'service',service,spk),
+   Out(<~ctx,endpoint,~dc,~ds>) ]
+rule InstallRoot:
+ [ RootInstall(d,ctx,endpoint,side,holder,pubkey) ]
+ --[ RightRegistered(d,d,ctx,endpoint,side,holder) ]->
+ [ !Right(d,d,ctx,endpoint,side,holder,pubkey) ]
+rule RegisterDelegation:
+ [ !Right(parent,root,ctx,endpoint,side,signer,parentpk),
+   !Principal(holder,holderpk), Fr(~child), In(policy) ]
+ --[ DelegationRegistered(~child,parent,root,ctx,endpoint,side,holder),
+     RightRegistered(~child,root,ctx,endpoint,side,holder) ]->
+ [ !Right(~child,root,ctx,endpoint,side,holder,holderpk), Out(~child) ]
+lemma recursive_bilateral_root_provenance [use_induction,reuse]:
+ "All d root ctx endpoint side holder #r.
+  RightRegistered(d,root,ctx,endpoint,side,holder)@r
+  ==> (Ex rootHolder #a.
+       RootApproved(root,ctx,endpoint,side,rootHolder)@a & a < r)"
+
+lemma same_side_context_parent:
+ "All child parent root ctx endpoint side holder #r.
+  DelegationRegistered(child,parent,root,ctx,endpoint,side,holder)@r
+  ==> (Ex parentHolder #p.
+       RightRegistered(parent,root,ctx,endpoint,side,parentHolder)@p & p < r)"
+
+lemma both_sides_recursive_delegation_exists:
+ exists-trace
+ "Ex c1 c2 cr s1 s2 sr ctx endpoint hc1 hc2 hs1 hs2 #a #b #c #d.
+  DelegationRegistered(c1,cr,cr,ctx,endpoint,'caller',hc1)@a
+  & DelegationRegistered(c2,c1,cr,ctx,endpoint,'caller',hc2)@b
+  & DelegationRegistered(s1,sr,sr,ctx,endpoint,'service',hs1)@c
+  & DelegationRegistered(s2,s1,sr,ctx,endpoint,'service',hs2)@d
+  & a < b & c < d & not(cr = sr)"
+
+end

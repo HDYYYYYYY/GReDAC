@@ -1,0 +1,244 @@
+theory SACReDControlAuthentication
+
+begin
+
+// Function signature and definition of the equational theory E
+
+functions: fst/1, pair/2, pk/1, sign/2, snd/1, true/0, verify/3
+equations:
+    fst(<x.1, x.2>) = x.1,
+    snd(<x.1, x.2>) = x.2,
+    verify(sign(x.1, x.2), x.1, pk(x.2)) = true
+
+rule (modulo E) ProtectedIssuer:
+   [ Fr( ~issuer ), Fr( ~key ), In( role ) ]
+  --[ ProtectedKey( ~issuer, role, ~key ) ]->
+   [
+   !Protected( ~issuer, role, ~key ),
+   !ProtectedPublic( ~issuer, role, pk(~key) ),
+   Out( <~issuer, role, pk(~key)> )
+   ]
+
+  /* has exactly the trivial AC variant */
+
+rule (modulo E) ProtectedSign:
+   [ !Protected( issuer, role, key ), In( message ) ]
+  --[ ProtectedSigned( issuer, role, message ) ]->
+   [ Out( <message, sign(message, key)> ) ]
+
+  /* has exactly the trivial AC variant */
+
+rule (modulo E) ProtectedCheck:
+   [ !ProtectedPublic( issuer, role, pubkey ), In( <message, sig> ) ]
+  --[
+  Eq( verify(sig, message, pubkey), true ),
+  ProtectedChecked( issuer, role, message )
+  ]->
+   [ ]
+
+  /*
+  rule (modulo AC) ProtectedCheck:
+     [ !ProtectedPublic( issuer, role, pubkey ), In( <message, sig> ) ]
+    --[ Eq( z, true ), ProtectedChecked( issuer, role, message ) ]->
+     [ ]
+    variants (modulo AC)
+    1. message
+             = message.7
+       pubkey
+             = pubkey.7
+       sig   = sig.7
+       z     = verify(sig.7, message.7, pubkey.7)
+    
+    2. message
+             = x.7
+       pubkey
+             = pk(x.8)
+       sig   = sign(x.7, x.8)
+       z     = true
+  */
+
+rule (modulo E) Agent:
+   [ Fr( ~agent ), Fr( ~key ) ]
+  --[ AgentCreated( ~agent, ~key ) ]->
+   [
+   !Agent( ~agent, ~key ), !PublicKey( ~agent, pk(~key) ),
+   Out( <~agent, pk(~key)> )
+   ]
+
+  /* has exactly the trivial AC variant */
+
+rule (modulo E) CompromiseAgent:
+   [ !Agent( agent, key ) ]
+  --[ AgentCompromised( agent, key ) ]->
+   [ !Compromised( agent ), Out( key ) ]
+
+  /* has exactly the trivial AC variant */
+
+rule (modulo E) AgentSign:
+   [ !Agent( signer, key ), In( message ) ]
+  --[ AgentSigned( signer, message ) ]->
+   [ Out( <message, sign(message, key)> ) ]
+
+  /* has exactly the trivial AC variant */
+
+rule (modulo E) AgentCheck:
+   [ !PublicKey( signer, pubkey ), In( <message, sig> ) ]
+  --[
+  Eq( verify(sig, message, pubkey), true ), AgentChecked( signer, message )
+  ]->
+   [ ]
+
+  /*
+  rule (modulo AC) AgentCheck:
+     [ !PublicKey( signer, pubkey ), In( <message, sig> ) ]
+    --[ Eq( z, true ), AgentChecked( signer, message ) ]->
+     [ ]
+    variants (modulo AC)
+    1. message
+             = message.6
+       pubkey
+             = pubkey.6
+       sig   = sig.6
+       z     = verify(sig.6, message.6, pubkey.6)
+    
+    2. message
+             = x.6
+       pubkey
+             = pk(x.7)
+       sig   = sign(x.6, x.7)
+       z     = true
+  */
+
+restriction Equality:
+  "∀ x y #i. (Eq( x, y ) @ #i) ⇒ (x = y)"
+  // safety formula
+
+  /*
+  expanded formula:
+  "∀ x y #i. (Eq( x, y ) @ #i) ⇒ (x = y)"
+  */
+
+lemma protected_key_secret [reuse]:
+  all-traces
+  "∀ issuer role key #g #k.
+    ((ProtectedKey( issuer, role, key ) @ #g) ∧ (K( key ) @ #k)) ⇒ (⊥)"
+/*
+guarded formula characterizing all counter-examples:
+"∃ issuer role key #g #k.
+  (ProtectedKey( issuer, role, key ) @ #g) ∧ (K( key ) @ #k)"
+*/
+simplify
+by solve( !KU( ~key ) @ #vk.1 )
+
+lemma identity_knowledge_requires_compromise [reuse]:
+  all-traces
+  "∀ agent key #c #k.
+    ((AgentCreated( agent, key ) @ #c) ∧ (K( key ) @ #k)) ⇒
+    (∃ #r. (AgentCompromised( agent, key ) @ #r) ∧ (#r < #k))"
+/*
+guarded formula characterizing all counter-examples:
+"∃ agent key #c #k.
+  (AgentCreated( agent, key ) @ #c) ∧ (K( key ) @ #k)
+ ∧
+  ∀ #r. (AgentCompromised( agent, key ) @ #r) ⇒ ¬(#r < #k)"
+*/
+simplify
+solve( !KU( ~key ) @ #vk )
+  case CompromiseAgent
+  by contradiction /* from formulas */
+qed
+
+lemma protected_signature_origin:
+  all-traces
+  "∀ issuer role message #c.
+    (ProtectedChecked( issuer, role, message ) @ #c) ⇒
+    (∃ #s. (ProtectedSigned( issuer, role, message ) @ #s) ∧ (#s < #c))"
+/*
+guarded formula characterizing all counter-examples:
+"∃ issuer role message #c.
+  (ProtectedChecked( issuer, role, message ) @ #c)
+ ∧
+  ∀ #s. (ProtectedSigned( issuer, role, message ) @ #s) ⇒ ¬(#s < #c)"
+*/
+simplify
+solve( !ProtectedPublic( issuer, role, pk(x) ) ▶₀ #c )
+  case ProtectedIssuer
+  solve( !KU( sign(message, ~key) ) @ #vk.2 )
+    case ProtectedSign
+    by contradiction /* from formulas */
+  next
+    case c_sign
+    by solve( !KU( ~key ) @ #vk.4 )
+  qed
+qed
+
+lemma agent_signature_origin_or_compromise:
+  all-traces
+  "∀ signer message #c.
+    (AgentChecked( signer, message ) @ #c) ⇒
+    ((∃ #s. (AgentSigned( signer, message ) @ #s) ∧ (#s < #c)) ∨
+     (∃ key #r. (AgentCompromised( signer, key ) @ #r) ∧ (#r < #c)))"
+/*
+guarded formula characterizing all counter-examples:
+"∃ signer message #c.
+  (AgentChecked( signer, message ) @ #c)
+ ∧
+  (∀ #s. (AgentSigned( signer, message ) @ #s) ⇒ ¬(#s < #c)) ∧
+  (∀ key #r. (AgentCompromised( signer, key ) @ #r) ⇒ ¬(#r < #c))"
+*/
+simplify
+solve( !PublicKey( signer, pk(x) ) ▶₀ #c )
+  case Agent
+  solve( !KU( sign(message, ~key) ) @ #vk.2 )
+    case AgentSign
+    by contradiction /* from formulas */
+  next
+    case c_sign
+    solve( !KU( ~key ) @ #vk.3 )
+      case CompromiseAgent
+      by contradiction /* from formulas */
+    qed
+  qed
+qed
+
+lemma exposed_signer_can_forge_without_honest_issue:
+  exists-trace
+  "∃ signer key message #r #c.
+    (((AgentCompromised( signer, key ) @ #r) ∧
+      (AgentChecked( signer, message ) @ #c)) ∧
+     (#r < #c)) ∧
+    (¬(∃ #s. AgentSigned( signer, message ) @ #s))"
+/*
+guarded formula characterizing all satisfying traces:
+"∃ signer key message #r #c.
+  (AgentCompromised( signer, key ) @ #r) ∧
+  (AgentChecked( signer, message ) @ #c)
+ ∧
+  (#r < #c) ∧ (∀ #s. (AgentSigned( signer, message ) @ #s) ⇒ ⊥)"
+*/
+simplify
+solve( !Agent( signer, key ) ▶₀ #r )
+  case Agent
+  solve( !PublicKey( ~agent, pk(x) ) ▶₀ #c )
+    case Agent
+    solve( !KU( sign(message, ~key) ) @ #vk.2 )
+      case c_sign
+      solve( !KU( ~key ) @ #vk.3 )
+        case CompromiseAgent
+        SOLVED // trace found
+      qed
+    qed
+  qed
+qed
+
+/* All wellformedness checks were successful. */
+
+/*
+Generated from:
+Tamarin version 1.12.0
+Maude version 3.5.1
+Git revision: 82780bbaf3328a45f624ddb41e51bf75425f851c (with uncommited changes), branch: master
+Compiled at: 2026-03-07 14:22:39.174278293 UTC
+*/
+
+end

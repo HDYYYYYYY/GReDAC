@@ -1,0 +1,25 @@
+theory SACReDFullMessageBinding
+begin
+functions: mac/2
+// Minimal binding probe only; not the protocol model.
+// CORRECT authenticates the complete transparent canonical tuple.
+// MUTANT authenticates payload only, enabling context/vector substitution.
+rule Issue:
+ let message = <~ctx,~rho,~caller,~service,~dc,~ds,~sid,~action,payload,~vector>
+ in
+ [ Fr(~key), Fr(~ctx), Fr(~rho), Fr(~caller), Fr(~service),
+   Fr(~dc), Fr(~ds), Fr(~sid), Fr(~action), Fr(~vector), In(payload) ]
+ --[ Issued(~key,message) ]->
+ [ !Key(~key), Out(<message,mac(~key,message)>) ]
+rule Accept:
+ let message = <ctx,rho,caller,service,dc,ds,sid,action,payload,vector>
+ in
+ [ !Key(key), In(<message,mac(key,message)>) ]
+ --[ Accepted(key,message) ]-> []
+lemma complete_message_origin:
+ "All key message #a. Accepted(key,message)@a
+  ==> (Ex #i. Issued(key,message)@i & i < a)"
+lemma accepted_request_exists:
+ exists-trace
+ "Ex key message #a. Accepted(key,message)@a"
+end

@@ -1,0 +1,5067 @@
+{
+  "schema": "allocation-policy-v2-1",
+  "split": "formal",
+  "order_seed": 15325332062957658129,
+  "ranges": [
+    [
+      1024,
+      1536
+    ],
+    [
+      512,
+      768
+    ],
+    [
+      256,
+      384
+    ],
+    [
+      64,
+      192
+    ]
+  ],
+  "instances": [
+    {
+      "instance_id": "formal-fragmented-15",
+      "split": "formal",
+      "background": "fragmented",
+      "index": 15,
+      "demands": [
+        1250,
+        530,
+        324,
+        181
+      ],
+      "demand_seed": 6117648590098337263,
+      "selection_seeds": [
+        11943319832709707891,
+        15845724777525943648,
+        2314112953539765313,
+        12761925323995743242
+      ],
+      "background_seed": 6454975709687206033,
+      "issued": 2048,
+      "depth": 4,
+      "final_requests": 9,
+      "slot_bits": 15,
+      "action": "query",
+      "task": "c",
+      "endpoint": "G"
+    },
+    {
+      "instance_id": "formal-whole-19",
+      "split": "formal",
+      "background": "whole",
+      "index": 19,
+      "demands": [
+        1084,
+        611,
+        362,
+        157
+      ],
+      "demand_seed": 6570309737707176685,
+      "selection_seeds": [
+        6116737128081099048,
+        17236903621870005643,
+        2291938772197546150,
+        10252865072536936446
+      ],
+      "background_seed": 9671889228950267601,
+      "issued": 2048,
+      "depth": 4,
+      "final_requests": 9,
+      "slot_bits": 15,
+      "action": "query",
+      "task": "c",
+      "endpoint": "G"
+    },
+    {
+      "instance_id": "formal-fragmented-13",
+      "split": "formal",
+      "background": "fragmented",
+      "index": 13,
+      "demands": [
+        1304,
+        662,
+        357,
+        128
+      ],
+      "demand_seed": 4068759440571725250,
+      "selection_seeds": [
+        12790752555634745812,
+        14016659271307977937,
+        5087699082892008601,
+        4105193106879025306
+      ],
+      "background_seed": 16267142907245645161,
+      "issued": 2048,
+      "depth": 4,
+      "final_requests": 9,
+      "slot_bits": 15,
+      "action": "query",
+      "task": "c",
+      "endpoint": "G"
+    },
+    {
+      "instance_id": "formal-whole-15",
+      "split": "formal",
+      "background": "whole",
+      "index": 15,
+      "demands": [
+        1086,
+        588,
+        355,
+        85
+      ],
+      "demand_seed": 3473195855167853589,
+      "selection_seeds": [
+        15057146829180777657,
+        12651102228663984324,
+        18212140084139232713,
+        15612815273920954108
+      ],
+      "background_seed": 9098892557031071737,
+      "issued": 2048,
+      "depth": 4,
+      "final_requests": 9,
+      "slot_bits": 15,
+      "action": "query",
+      "task": "c",
+      "endpoint": "G"
+    },
+    {
+      "instance_id": "formal-fragmented-04",
+      "split": "formal",
+      "background": "fragmented",
+      "index": 4,
+      "demands": [
+        1221,
+        567,
+        325,
+        136
+      ],
+      "demand_seed": 10468907006266966934,
+      "selection_seeds": [
+        372521362951776697,
+        10089290953321227957,
+        9737725687449319487,
+        1608882632617142055
+      ],
+      "background_seed": 4211891944942542258,
+      "issued": 2048,
+      "depth": 4,
+      "final_requests": 9,
+      "slot_bits": 15,
+      "action": "query",
+      "task": "c",
+      "endpoint": "G"
+    },
+    {
+      "instance_id": "formal-fragmented-01",
+      "split": "formal",
+      "background": "fragmented",
+      "index": 1,
+      "demands": [
+        1278,
+        521,
+        365,
+        91
+      ],
+      "demand_seed": 4427700512464202582,
+      "selection_seeds": [
+        15412791267381097019,
+        15965800742046592986,
+        14020334531920672584,
+        810193879717922839
+      ],
+      "background_seed": 15205867529904973065,
+      "issued": 2048,
+      "depth": 4,
+      "final_requests": 9,
+      "slot_bits": 15,
+      "action": "query",
+      "task": "c",
+      "endpoint": "G"
+    },
+    {
+      "instance_id": "formal-whole-07",
+      "split": "formal",
+      "background": "whole",
+      "index": 7,
+      "demands": [
+        1254,
+        623,
+        290,
+        155
+      ],
+      "demand_seed": 5629069530670660943,
+      "selection_seeds": [
+        9574194787300369114,
+        14880238616473780904,
+        4507559882377891988,
+        2866961165078566895
+      ],
+      "background_seed": 1619295649127419844,
+      "issued": 2048,
+      "depth": 4,
+      "final_requests": 9,
+      "slot_bits": 15,
+      "action": "query",
+      "task": "c",
+      "endpoint": "G"
+    },
+    {
+      "instance_id": "formal-whole-02",
+      "split": "formal",
+      "background": "whole",
+      "index": 2,
+      "demands": [
+        1488,
+        644,
+        297,
+        89
+      ],
+      "demand_seed": 9511363810762535004,
+      "selection_seeds": [
+        1141736954405799096,
+        14075102498946886071,
+        12933227980138176154,
+        17416963438617297155
+      ],
+      "background_seed": 351764334975454544,
+      "issued": 2048,
+      "depth": 4,
+      "final_requests": 9,
+      "slot_bits": 15,
+      "action": "query",
+      "task": "c",
+      "endpoint": "G"
+    },
+    {
+      "instance_id": "formal-whole-18",
+      "split": "formal",
+      "background": "whole",
+      "index": 18,
+      "demands": [
+        1056,
+        576,
+        323,
+        66
+      ],
+      "demand_seed": 12307927571452667080,
+      "selection_seeds": [
+        9974093858050557799,
+        2396610746173991070,
+        14208021687914685122,
+        13791841586349294413
+      ],
+      "background_seed": 14621007955672476308,
+      "issued": 2048,
+      "depth": 4,
+      "final_requests": 9,
+      "slot_bits": 15,
+      "action": "query",
+      "task": "c",
+      "endpoint": "G"
+    },
+    {
+      "instance_id": "formal-fragmented-17",
+      "split": "formal",
+      "background": "fragmented",
+      "index": 17,
+      "demands": [
+        1040,
+        591,
+        357,
+        90
+      ],
+      "demand_seed": 7719350642565857489,
+      "selection_seeds": [
+        14988069607025569719,
+        11600424641508409396,
+        4007513851504045490,
+        5676090812636063838
+      ],
+      "background_seed": 17992442149332571985,
+      "issued": 2048,
+      "depth": 4,
+      "final_requests": 9,
+      "slot_bits": 15,
+      "action": "query",
+      "task": "c",
+      "endpoint": "G"
+    },
+    {
+      "instance_id": "formal-fragmented-09",
+      "split": "formal",
+      "background": "fragmented",
+      "index": 9,
+      "demands": [
+        1467,
+        738,
+        291,
+        149
+      ],
+      "demand_seed": 16393825927688242125,
+      "selection_seeds": [
+        5692220383291482204,
+        12426809648220471255,
+        4231404857599120405,
+        14966804071502950114
+      ],
+      "background_seed": 13408523755892395508,
+      "issued": 2048,
+      "depth": 4,
+      "final_requests": 9,
+      "slot_bits": 15,
+      "action": "query",
+      "task": "c",
+      "endpoint": "G"
+    },
+    {
+      "instance_id": "formal-whole-17",
+      "split": "formal",
+      "background": "whole",
+      "index": 17,
+      "demands": [
+        1497,
+        527,
+        263,
+        93
+      ],
+      "demand_seed": 1178392996158204802,
+      "selection_seeds": [
+        13026282519978199437,
+        6792647057828248079,
+        965195289423994603,
+        13070836695655151116
+      ],
+      "background_seed": 14341029797813962830,
+      "issued": 2048,
+      "depth": 4,
+      "final_requests": 9,
+      "slot_bits": 15,
+      "action": "query",
+      "task": "c",
+      "endpoint": "G"
+    },
+    {
+      "instance_id": "formal-fragmented-12",
+      "split": "formal",
+      "background": "fragmented",
+      "index": 12,
+      "demands": [
+        1373,
+        640,
+        260,
+        105
+      ],
+      "demand_seed": 2838228065382736178,
+      "selection_seeds": [
+        6573238034173366986,
+        16745642997894821338,
+        5109904036301858418,
+        11088096105871670609
+      ],
+      "background_seed": 8383573164033864165,
+      "issued": 2048,
+      "depth": 4,
+      "final_requests": 9,
+      "slot_bits": 15,
+      "action": "query",
+      "task": "c",
+      "endpoint": "G"
+    },
+    {
+      "instance_id": "formal-fragmented-06",
+      "split": "formal",
+      "background": "fragmented",
+      "index": 6,
+      "demands": [
+        1035,
+        715,
+        315,
+        146
+      ],
+      "demand_seed": 6567564782023007972,
+      "selection_seeds": [
+        6823053237232337347,
+        16400363751570876729,
+        12057726296275617375,
+        15058569554931375413
+      ],
+      "background_seed": 14477467907048186890,
+      "issued": 2048,
+      "depth": 4,
+      "final_requests": 9,
+      "slot_bits": 15,
+      "action": "query",
+      "task": "c",
+      "endpoint": "G"
+    },
+    {
+      "instance_id": "formal-fragmented-10",
+      "split": "formal",
+      "background": "fragmented",
+      "index": 10,
+      "demands": [
+        1355,
+        739,
+        304,
+        123
+      ],
+      "demand_seed": 3707683337106497186,
+      "selection_seeds": [
+        8010642814395518399,
+        3770775906369871024,
+        7169882919244209634,
+        12667600480220626402
+      ],
+      "background_seed": 3520261879455641505,
+      "issued": 2048,
+      "depth": 4,
+      "final_requests": 9,
+      "slot_bits": 15,
+      "action": "query",
+      "task": "c",
+      "endpoint": "G"
+    },
+    {
+      "instance_id": "formal-whole-08",
+      "split": "formal",
+      "background": "whole",
+      "index": 8,
+      "demands": [
+        1125,
+        684,
+        358,
+        155
+      ],
+      "demand_seed": 10442354811262304904,
+      "selection_seeds": [
+        17301616057098700761,
+        12828236883582242794,
+        3182830505698405757,
+        1877401035225305137
+      ],
+      "background_seed": 8682794570281272799,
+      "issued": 2048,
+      "depth": 4,
+      "final_requests": 9,
+      "slot_bits": 15,
+      "action": "query",
+      "task": "c",
+      "endpoint": "G"
+    },
+    {
+      "instance_id": "formal-whole-01",
+      "split": "formal",
+      "background": "whole",
+      "index": 1,
+      "demands": [
+        1326,
+        703,
+        363,
+        152
+      ],
+      "demand_seed": 6631824882769030987,
+      "selection_seeds": [
+        572539339810572044,
+        8552245512238840103,
+        17278909677057429901,
+        3792542589053425896
+      ],
+      "background_seed": 10221794682568096666,
+      "issued": 2048,
+      "depth": 4,
+      "final_requests": 9,
+      "slot_bits": 15,
+      "action": "query",
+      "task": "c",
+      "endpoint": "G"
+    },
+    {
+      "instance_id": "formal-whole-13",
+      "split": "formal",
+      "background": "whole",
+      "index": 13,
+      "demands": [
+        1249,
+        594,
+        365,
+        148
+      ],
+      "demand_seed": 10199069820986668999,
+      "selection_seeds": [
+        5793276470877583819,
+        10399226262193138416,
+        6477135487484405034,
+        9161007329907914763
+      ],
+      "background_seed": 7674026894446923287,
+      "issued": 2048,
+      "depth": 4,
+      "final_requests": 9,
+      "slot_bits": 15,
+      "action": "query",
+      "task": "c",
+      "endpoint": "G"
+    },
+    {
+      "instance_id": "formal-whole-09",
+      "split": "formal",
+      "background": "whole",
+      "index": 9,
+      "demands": [
+        1027,
+        703,
+        345,
+        125
+      ],
+      "demand_seed": 544263558540962640,
+      "selection_seeds": [
+        14493240626634065707,
+        11003318203567625975,
+        10985102257846174263,
+        10719481451888415275
+      ],
+      "background_seed": 16657595705857311920,
+      "issued": 2048,
+      "depth": 4,
+      "final_requests": 9,
+      "slot_bits": 15,
+      "action": "query",
+      "task": "c",
+      "endpoint": "G"
+    },
+    {
+      "instance_id": "formal-fragmented-11",
+      "split": "formal",
+      "background": "fragmented",
+      "index": 11,
+      "demands": [
+        1175,
+        747,
+        346,
+        75
+      ],
+      "demand_seed": 7526797754331798297,
+      "selection_seeds": [
+        16520961815814863420,
+        12819637540854267634,
+        5493737941502204456,
+        8016715870132350248
+      ],
+      "background_seed": 13092799783238418399,
+      "issued": 2048,
+      "depth": 4,
+      "final_requests": 9,
+      "slot_bits": 15,
+      "action": "query",
+      "task": "c",
+      "endpoint": "G"
+    },
+    {
+      "instance_id": "formal-whole-04",
+      "split": "formal",
+      "background": "whole",
+      "index": 4,
+      "demands": [
+        1535,
+        750,
+        334,
+        126
+      ],
+      "demand_seed": 1196682767554193670,
+      "selection_seeds": [
+        10464320272040141407,
+        11175348068089806903,
+        3352169860764324795,
+        14615098961531720819
+      ],
+      "background_seed": 6040451631990019746,
+      "issued": 2048,
+      "depth": 4,
+      "final_requests": 9,
+      "slot_bits": 15,
+      "action": "query",
+      "task": "c",
+      "endpoint": "G"
+    },
+    {
+      "instance_id": "formal-fragmented-02",
+      "split": "formal",
+      "background": "fragmented",
+      "index": 2,
+      "demands": [
+        1111,
+        754,
+        307,
+        102
+      ],
+      "demand_seed": 14788010216465244958,
+      "selection_seeds": [
+        14766877897838084888,
+        13659162423256666049,
+        12819186233882720529,
+        12345589593024406640
+      ],
+      "background_seed": 16378631954736009513,
+      "issued": 2048,
+      "depth": 4,
+      "final_requests": 9,
+      "slot_bits": 15,
+      "action": "query",
+      "task": "c",
+      "endpoint": "G"
+    },
+    {
+      "instance_id": "formal-fragmented-07",
+      "split": "formal",
+      "background": "fragmented",
+      "index": 7,
+      "demands": [
+        1165,
+        639,
+        261,
+        151
+      ],
+      "demand_seed": 11382476517136887520,
+      "selection_seeds": [
+        9777397862681345966,
+        12800189397303308571,
+        12966442623761097082,
+        16406555447855652112
+      ],
+      "background_seed": 11919161826214610771,
+      "issued": 2048,
+      "depth": 4,
+      "final_requests": 9,
+      "slot_bits": 15,
+      "action": "query",
+      "task": "c",
+      "endpoint": "G"
+    },
+    {
+      "instance_id": "formal-whole-11",
+      "split": "formal",
+      "background": "whole",
+      "index": 11,
+      "demands": [
+        1344,
+        582,
+        352,
+        67
+      ],
+      "demand_seed": 4624208749755022707,
+      "selection_seeds": [
+        15394488387350692371,
+        3750030285745805073,
+        5242576931488518203,
+        15570332996821698568
+      ],
+      "background_seed": 8459747115584169428,
+      "issued": 2048,
+      "depth": 4,
+      "final_requests": 9,
+      "slot_bits": 15,
+      "action": "query",
+      "task": "c",
+      "endpoint": "G"
+    },
+    {
+      "instance_id": "formal-whole-03",
+      "split": "formal",
+      "background": "whole",
+      "index": 3,
+      "demands": [
+        1450,
+        557,
+        287,
+        162
+      ],
+      "demand_seed": 9129410295953981642,
+      "selection_seeds": [
+        8569576125773069726,
+        8121077253535915566,
+        12391798405051999923,
+        15993833446976874084
+      ],
+      "background_seed": 3492025845426439205,
+      "issued": 2048,
+      "depth": 4,
+      "final_requests": 9,
+      "slot_bits": 15,
+      "action": "query",
+      "task": "c",
+      "endpoint": "G"
+    },
+    {
+      "instance_id": "formal-whole-14",
+      "split": "formal",
+      "background": "whole",
+      "index": 14,
+      "demands": [
+        1374,
+        690,
+        259,
+        108
+      ],
+      "demand_seed": 7179615673055129636,
+      "selection_seeds": [
+        9776512572041118512,
+        5335509304357456581,
+        3559535450836306825,
+        9584688392440854387
+      ],
+      "background_seed": 1977360283710806877,
+      "issued": 2048,
+      "depth": 4,
+      "final_requests": 9,
+      "slot_bits": 15,
+      "action": "query",
+      "task": "c",
+      "endpoint": "G"
+    },
+    {
+      "instance_id": "formal-fragmented-08",
+      "split": "formal",
+      "background": "fragmented",
+      "index": 8,
+      "demands": [
+        1065,
+        661,
+        344,
+        91
+      ],
+      "demand_seed": 10078610772383622150,
+      "selection_seeds": [
+        7993786419646240227,
+        4146356204000104598,
+        14682876229774189598,
+        11273441207255683930
+      ],
+      "background_seed": 5682409773185955415,
+      "issued": 2048,
+      "depth": 4,
+      "final_requests": 9,
+      "slot_bits": 15,
+      "action": "query",
+      "task": "c",
+      "endpoint": "G"
+    },
+    {
+      "instance_id": "formal-whole-05",
+      "split": "formal",
+      "background": "whole",
+      "index": 5,
+      "demands": [
+        1401,
+        525,
+        272,
+        75
+      ],
+      "demand_seed": 15137899853014874458,
+      "selection_seeds": [
+        17984662096898056747,
+        12771276672645468095,
+        571566076048306465,
+        6997166878411862541
+      ],
+      "background_seed": 11709190765055825552,
+      "issued": 2048,
+      "depth": 4,
+      "final_requests": 9,
+      "slot_bits": 15,
+      "action": "query",
+      "task": "c",
+      "endpoint": "G"
+    },
+    {
+      "instance_id": "formal-whole-06",
+      "split": "formal",
+      "background": "whole",
+      "index": 6,
+      "demands": [
+        1253,
+        596,
+        259,
+        166
+      ],
+      "demand_seed": 7254315658718866286,
+      "selection_seeds": [
+        3148202961632227185,
+        16910911125797873407,
+        3934765368475891905,
+        8471235247712073906
+      ],
+      "background_seed": 932273551067913720,
+      "issued": 2048,
+      "depth": 4,
+      "final_requests": 9,
+      "slot_bits": 15,
+      "action": "query",
+      "task": "c",
+      "endpoint": "G"
+    },
+    {
+      "instance_id": "formal-fragmented-03",
+      "split": "formal",
+      "background": "fragmented",
+      "index": 3,
+      "demands": [
+        1437,
+        715,
+        276,
+        80
+      ],
+      "demand_seed": 12946981996281598246,
+      "selection_seeds": [
+        695818980798462066,
+        7668756078998121139,
+        12293454398458009327,
+        12469827691141505738
+      ],
+      "background_seed": 16571321788206332991,
+      "issued": 2048,
+      "depth": 4,
+      "final_requests": 9,
+      "slot_bits": 15,
+      "action": "query",
+      "task": "c",
+      "endpoint": "G"
+    },
+    {
+      "instance_id": "formal-whole-12",
+      "split": "formal",
+      "background": "whole",
+      "index": 12,
+      "demands": [
+        1508,
+        603,
+        279,
+        149
+      ],
+      "demand_seed": 11815125750653117172,
+      "selection_seeds": [
+        13309398237492160957,
+        11335740165159934333,
+        17581401781165114128,
+        14484192786457991994
+      ],
+      "background_seed": 2845434812176689597,
+      "issued": 2048,
+      "depth": 4,
+      "final_requests": 9,
+      "slot_bits": 15,
+      "action": "query",
+      "task": "c",
+      "endpoint": "G"
+    },
+    {
+      "instance_id": "formal-fragmented-16",
+      "split": "formal",
+      "background": "fragmented",
+      "index": 16,
+      "demands": [
+        1255,
+        751,
+        299,
+        141
+      ],
+      "demand_seed": 12829869276515400164,
+      "selection_seeds": [
+        9175849293257313481,
+        5310695143680550309,
+        2780305400700933509,
+        13032045541371390123
+      ],
+      "background_seed": 12862160868704823936,
+      "issued": 2048,
+      "depth": 4,
+      "final_requests": 9,
+      "slot_bits": 15,
+      "action": "query",
+      "task": "c",
+      "endpoint": "G"
+    },
+    {
+      "instance_id": "formal-fragmented-05",
+      "split": "formal",
+      "background": "fragmented",
+      "index": 5,
+      "demands": [
+        1308,
+        513,
+        284,
+        135
+      ],
+      "demand_seed": 5306920834767976621,
+      "selection_seeds": [
+        4789239121608477970,
+        5358856202780580780,
+        9172850626010163799,
+        12981899557112885198
+      ],
+      "background_seed": 8187968198076629265,
+      "issued": 2048,
+      "depth": 4,
+      "final_requests": 9,
+      "slot_bits": 15,
+      "action": "query",
+      "task": "c",
+      "endpoint": "G"
+    },
+    {
+      "instance_id": "formal-fragmented-14",
+      "split": "formal",
+      "background": "fragmented",
+      "index": 14,
+      "demands": [
+        1345,
+        546,
+        260,
+        165
+      ],
+      "demand_seed": 17510555633227718345,
+      "selection_seeds": [
+        15704960275928845949,
+        11379601853454748465,
+        5608451385388845701,
+        12349328032290292516
+      ],
+      "background_seed": 16658350703985848082,
+      "issued": 2048,
+      "depth": 4,
+      "final_requests": 9,
+      "slot_bits": 15,
+      "action": "query",
+      "task": "c",
+      "endpoint": "G"
+    },
+    {
+      "instance_id": "formal-whole-10",
+      "split": "formal",
+      "background": "whole",
+      "index": 10,
+      "demands": [
+        1327,
+        606,
+        325,
+        100
+      ],
+      "demand_seed": 8981322305742352390,
+      "selection_seeds": [
+        8753795274527306278,
+        18373633957798137466,
+        1082200267764874437,
+        12994634162953387787
+      ],
+      "background_seed": 3792828339344923688,
+      "issued": 2048,
+      "depth": 4,
+      "final_requests": 9,
+      "slot_bits": 15,
+      "action": "query",
+      "task": "c",
+      "endpoint": "G"
+    },
+    {
+      "instance_id": "formal-fragmented-18",
+      "split": "formal",
+      "background": "fragmented",
+      "index": 18,
+      "demands": [
+        1343,
+        567,
+        353,
+        100
+      ],
+      "demand_seed": 14982912836608980703,
+      "selection_seeds": [
+        5604857981034920981,
+        10563327801740936300,
+        17712731348354329914,
+        12902563058910692616
+      ],
+      "background_seed": 13172444316891623162,
+      "issued": 2048,
+      "depth": 4,
+      "final_requests": 9,
+      "slot_bits": 15,
+      "action": "query",
+      "task": "c",
+      "endpoint": "G"
+    },
+    {
+      "instance_id": "formal-fragmented-00",
+      "split": "formal",
+      "background": "fragmented",
+      "index": 0,
+      "demands": [
+        1145,
+        580,
+        303,
+        125
+      ],
+      "demand_seed": 1872812519300703547,
+      "selection_seeds": [
+        652569335084700406,
+        5544002141665951423,
+        16766057482110538861,
+        17959166447964885572
+      ],
+      "background_seed": 6220009261990778653,
+      "issued": 2048,
+      "depth": 4,
+      "final_requests": 9,
+      "slot_bits": 15,
+      "action": "query",
+      "task": "c",
+      "endpoint": "G"
+    },
+    {
+      "instance_id": "formal-whole-00",
+      "split": "formal",
+      "background": "whole",
+      "index": 0,
+      "demands": [
+        1479,
+        713,
+        278,
+        111
+      ],
+      "demand_seed": 633656553180097046,
+      "selection_seeds": [
+        10386534915820586971,
+        9168547777420386729,
+        1403075407059313950,
+        6265127935718302650
+      ],
+      "background_seed": 17636455661896035749,
+      "issued": 2048,
+      "depth": 4,
+      "final_requests": 9,
+      "slot_bits": 15,
+      "action": "query",
+      "task": "c",
+      "endpoint": "G"
+    },
+    {
+      "instance_id": "formal-fragmented-19",
+      "split": "formal",
+      "background": "fragmented",
+      "index": 19,
+      "demands": [
+        1226,
+        565,
+        263,
+        78
+      ],
+      "demand_seed": 5173568542783546193,
+      "selection_seeds": [
+        3132201892391395592,
+        11060006427493580165,
+        5356032334111702174,
+        470148311721753289
+      ],
+      "background_seed": 607167476484105820,
+      "issued": 2048,
+      "depth": 4,
+      "final_requests": 9,
+      "slot_bits": 15,
+      "action": "query",
+      "task": "c",
+      "endpoint": "G"
+    },
+    {
+      "instance_id": "formal-whole-16",
+      "split": "formal",
+      "background": "whole",
+      "index": 16,
+      "demands": [
+        1350,
+        679,
+        321,
+        75
+      ],
+      "demand_seed": 14291019069879741013,
+      "selection_seeds": [
+        17213527934507214866,
+        12314083094051464100,
+        13936511501739619958,
+        12130691817004330049
+      ],
+      "background_seed": 1042335012398206174,
+      "issued": 2048,
+      "depth": 4,
+      "final_requests": 9,
+      "slot_bits": 15,
+      "action": "query",
+      "task": "c",
+      "endpoint": "G"
+    }
+  ],
+  "cases": [
+    {
+      "instance_id": "formal-fragmented-15",
+      "split": "formal",
+      "background": "fragmented",
+      "index": 15,
+      "demands": [
+        1250,
+        530,
+        324,
+        181
+      ],
+      "demand_seed": 6117648590098337263,
+      "selection_seeds": [
+        11943319832709707891,
+        15845724777525943648,
+        2314112953539765313,
+        12761925323995743242
+      ],
+      "background_seed": 6454975709687206033,
+      "issued": 2048,
+      "depth": 4,
+      "final_requests": 9,
+      "slot_bits": 15,
+      "action": "query",
+      "task": "c",
+      "endpoint": "G",
+      "strategy": "random",
+      "strategy_order": [
+        "random",
+        "dispersed",
+        "subtree"
+      ]
+    },
+    {
+      "instance_id": "formal-fragmented-15",
+      "split": "formal",
+      "background": "fragmented",
+      "index": 15,
+      "demands": [
+        1250,
+        530,
+        324,
+        181
+      ],
+      "demand_seed": 6117648590098337263,
+      "selection_seeds": [
+        11943319832709707891,
+        15845724777525943648,
+        2314112953539765313,
+        12761925323995743242
+      ],
+      "background_seed": 6454975709687206033,
+      "issued": 2048,
+      "depth": 4,
+      "final_requests": 9,
+      "slot_bits": 15,
+      "action": "query",
+      "task": "c",
+      "endpoint": "G",
+      "strategy": "dispersed",
+      "strategy_order": [
+        "random",
+        "dispersed",
+        "subtree"
+      ]
+    },
+    {
+      "instance_id": "formal-fragmented-15",
+      "split": "formal",
+      "background": "fragmented",
+      "index": 15,
+      "demands": [
+        1250,
+        530,
+        324,
+        181
+      ],
+      "demand_seed": 6117648590098337263,
+      "selection_seeds": [
+        11943319832709707891,
+        15845724777525943648,
+        2314112953539765313,
+        12761925323995743242
+      ],
+      "background_seed": 6454975709687206033,
+      "issued": 2048,
+      "depth": 4,
+      "final_requests": 9,
+      "slot_bits": 15,
+      "action": "query",
+      "task": "c",
+      "endpoint": "G",
+      "strategy": "subtree",
+      "strategy_order": [
+        "random",
+        "dispersed",
+        "subtree"
+      ]
+    },
+    {
+      "instance_id": "formal-whole-19",
+      "split": "formal",
+      "background": "whole",
+      "index": 19,
+      "demands": [
+        1084,
+        611,
+        362,
+        157
+      ],
+      "demand_seed": 6570309737707176685,
+      "selection_seeds": [
+        6116737128081099048,
+        17236903621870005643,
+        2291938772197546150,
+        10252865072536936446
+      ],
+      "background_seed": 9671889228950267601,
+      "issued": 2048,
+      "depth": 4,
+      "final_requests": 9,
+      "slot_bits": 15,
+      "action": "query",
+      "task": "c",
+      "endpoint": "G",
+      "strategy": "subtree",
+      "strategy_order": [
+        "subtree",
+        "random",
+        "dispersed"
+      ]
+    },
+    {
+      "instance_id": "formal-whole-19",
+      "split": "formal",
+      "background": "whole",
+      "index": 19,
+      "demands": [
+        1084,
+        611,
+        362,
+        157
+      ],
+      "demand_seed": 6570309737707176685,
+      "selection_seeds": [
+        6116737128081099048,
+        17236903621870005643,
+        2291938772197546150,
+        10252865072536936446
+      ],
+      "background_seed": 9671889228950267601,
+      "issued": 2048,
+      "depth": 4,
+      "final_requests": 9,
+      "slot_bits": 15,
+      "action": "query",
+      "task": "c",
+      "endpoint": "G",
+      "strategy": "random",
+      "strategy_order": [
+        "subtree",
+        "random",
+        "dispersed"
+      ]
+    },
+    {
+      "instance_id": "formal-whole-19",
+      "split": "formal",
+      "background": "whole",
+      "index": 19,
+      "demands": [
+        1084,
+        611,
+        362,
+        157
+      ],
+      "demand_seed": 6570309737707176685,
+      "selection_seeds": [
+        6116737128081099048,
+        17236903621870005643,
+        2291938772197546150,
+        10252865072536936446
+      ],
+      "background_seed": 9671889228950267601,
+      "issued": 2048,
+      "depth": 4,
+      "final_requests": 9,
+      "slot_bits": 15,
+      "action": "query",
+      "task": "c",
+      "endpoint": "G",
+      "strategy": "dispersed",
+      "strategy_order": [
+        "subtree",
+        "random",
+        "dispersed"
+      ]
+    },
+    {
+      "instance_id": "formal-fragmented-13",
+      "split": "formal",
+      "background": "fragmented",
+      "index": 13,
+      "demands": [
+        1304,
+        662,
+        357,
+        128
+      ],
+      "demand_seed": 4068759440571725250,
+      "selection_seeds": [
+        12790752555634745812,
+        14016659271307977937,
+        5087699082892008601,
+        4105193106879025306
+      ],
+      "background_seed": 16267142907245645161,
+      "issued": 2048,
+      "depth": 4,
+      "final_requests": 9,
+      "slot_bits": 15,
+      "action": "query",
+      "task": "c",
+      "endpoint": "G",
+      "strategy": "dispersed",
+      "strategy_order": [
+        "dispersed",
+        "subtree",
+        "random"
+      ]
+    },
+    {
+      "instance_id": "formal-fragmented-13",
+      "split": "formal",
+      "background": "fragmented",
+      "index": 13,
+      "demands": [
+        1304,
+        662,
+        357,
+        128
+      ],
+      "demand_seed": 4068759440571725250,
+      "selection_seeds": [
+        12790752555634745812,
+        14016659271307977937,
+        5087699082892008601,
+        4105193106879025306
+      ],
+      "background_seed": 16267142907245645161,
+      "issued": 2048,
+      "depth": 4,
+      "final_requests": 9,
+      "slot_bits": 15,
+      "action": "query",
+      "task": "c",
+      "endpoint": "G",
+      "strategy": "subtree",
+      "strategy_order": [
+        "dispersed",
+        "subtree",
+        "random"
+      ]
+    },
+    {
+      "instance_id": "formal-fragmented-13",
+      "split": "formal",
+      "background": "fragmented",
+      "index": 13,
+      "demands": [
+        1304,
+        662,
+        357,
+        128
+      ],
+      "demand_seed": 4068759440571725250,
+      "selection_seeds": [
+        12790752555634745812,
+        14016659271307977937,
+        5087699082892008601,
+        4105193106879025306
+      ],
+      "background_seed": 16267142907245645161,
+      "issued": 2048,
+      "depth": 4,
+      "final_requests": 9,
+      "slot_bits": 15,
+      "action": "query",
+      "task": "c",
+      "endpoint": "G",
+      "strategy": "random",
+      "strategy_order": [
+        "dispersed",
+        "subtree",
+        "random"
+      ]
+    },
+    {
+      "instance_id": "formal-whole-15",
+      "split": "formal",
+      "background": "whole",
+      "index": 15,
+      "demands": [
+        1086,
+        588,
+        355,
+        85
+      ],
+      "demand_seed": 3473195855167853589,
+      "selection_seeds": [
+        15057146829180777657,
+        12651102228663984324,
+        18212140084139232713,
+        15612815273920954108
+      ],
+      "background_seed": 9098892557031071737,
+      "issued": 2048,
+      "depth": 4,
+      "final_requests": 9,
+      "slot_bits": 15,
+      "action": "query",
+      "task": "c",
+      "endpoint": "G",
+      "strategy": "subtree",
+      "strategy_order": [
+        "subtree",
+        "dispersed",
+        "random"
+      ]
+    },
+    {
+      "instance_id": "formal-whole-15",
+      "split": "formal",
+      "background": "whole",
+      "index": 15,
+      "demands": [
+        1086,
+        588,
+        355,
+        85
+      ],
+      "demand_seed": 3473195855167853589,
+      "selection_seeds": [
+        15057146829180777657,
+        12651102228663984324,
+        18212140084139232713,
+        15612815273920954108
+      ],
+      "background_seed": 9098892557031071737,
+      "issued": 2048,
+      "depth": 4,
+      "final_requests": 9,
+      "slot_bits": 15,
+      "action": "query",
+      "task": "c",
+      "endpoint": "G",
+      "strategy": "dispersed",
+      "strategy_order": [
+        "subtree",
+        "dispersed",
+        "random"
+      ]
+    },
+    {
+      "instance_id": "formal-whole-15",
+      "split": "formal",
+      "background": "whole",
+      "index": 15,
+      "demands": [
+        1086,
+        588,
+        355,
+        85
+      ],
+      "demand_seed": 3473195855167853589,
+      "selection_seeds": [
+        15057146829180777657,
+        12651102228663984324,
+        18212140084139232713,
+        15612815273920954108
+      ],
+      "background_seed": 9098892557031071737,
+      "issued": 2048,
+      "depth": 4,
+      "final_requests": 9,
+      "slot_bits": 15,
+      "action": "query",
+      "task": "c",
+      "endpoint": "G",
+      "strategy": "random",
+      "strategy_order": [
+        "subtree",
+        "dispersed",
+        "random"
+      ]
+    },
+    {
+      "instance_id": "formal-fragmented-04",
+      "split": "formal",
+      "background": "fragmented",
+      "index": 4,
+      "demands": [
+        1221,
+        567,
+        325,
+        136
+      ],
+      "demand_seed": 10468907006266966934,
+      "selection_seeds": [
+        372521362951776697,
+        10089290953321227957,
+        9737725687449319487,
+        1608882632617142055
+      ],
+      "background_seed": 4211891944942542258,
+      "issued": 2048,
+      "depth": 4,
+      "final_requests": 9,
+      "slot_bits": 15,
+      "action": "query",
+      "task": "c",
+      "endpoint": "G",
+      "strategy": "dispersed",
+      "strategy_order": [
+        "dispersed",
+        "random",
+        "subtree"
+      ]
+    },
+    {
+      "instance_id": "formal-fragmented-04",
+      "split": "formal",
+      "background": "fragmented",
+      "index": 4,
+      "demands": [
+        1221,
+        567,
+        325,
+        136
+      ],
+      "demand_seed": 10468907006266966934,
+      "selection_seeds": [
+        372521362951776697,
+        10089290953321227957,
+        9737725687449319487,
+        1608882632617142055
+      ],
+      "background_seed": 4211891944942542258,
+      "issued": 2048,
+      "depth": 4,
+      "final_requests": 9,
+      "slot_bits": 15,
+      "action": "query",
+      "task": "c",
+      "endpoint": "G",
+      "strategy": "random",
+      "strategy_order": [
+        "dispersed",
+        "random",
+        "subtree"
+      ]
+    },
+    {
+      "instance_id": "formal-fragmented-04",
+      "split": "formal",
+      "background": "fragmented",
+      "index": 4,
+      "demands": [
+        1221,
+        567,
+        325,
+        136
+      ],
+      "demand_seed": 10468907006266966934,
+      "selection_seeds": [
+        372521362951776697,
+        10089290953321227957,
+        9737725687449319487,
+        1608882632617142055
+      ],
+      "background_seed": 4211891944942542258,
+      "issued": 2048,
+      "depth": 4,
+      "final_requests": 9,
+      "slot_bits": 15,
+      "action": "query",
+      "task": "c",
+      "endpoint": "G",
+      "strategy": "subtree",
+      "strategy_order": [
+        "dispersed",
+        "random",
+        "subtree"
+      ]
+    },
+    {
+      "instance_id": "formal-fragmented-01",
+      "split": "formal",
+      "background": "fragmented",
+      "index": 1,
+      "demands": [
+        1278,
+        521,
+        365,
+        91
+      ],
+      "demand_seed": 4427700512464202582,
+      "selection_seeds": [
+        15412791267381097019,
+        15965800742046592986,
+        14020334531920672584,
+        810193879717922839
+      ],
+      "background_seed": 15205867529904973065,
+      "issued": 2048,
+      "depth": 4,
+      "final_requests": 9,
+      "slot_bits": 15,
+      "action": "query",
+      "task": "c",
+      "endpoint": "G",
+      "strategy": "subtree",
+      "strategy_order": [
+        "subtree",
+        "random",
+        "dispersed"
+      ]
+    },
+    {
+      "instance_id": "formal-fragmented-01",
+      "split": "formal",
+      "background": "fragmented",
+      "index": 1,
+      "demands": [
+        1278,
+        521,
+        365,
+        91
+      ],
+      "demand_seed": 4427700512464202582,
+      "selection_seeds": [
+        15412791267381097019,
+        15965800742046592986,
+        14020334531920672584,
+        810193879717922839
+      ],
+      "background_seed": 15205867529904973065,
+      "issued": 2048,
+      "depth": 4,
+      "final_requests": 9,
+      "slot_bits": 15,
+      "action": "query",
+      "task": "c",
+      "endpoint": "G",
+      "strategy": "random",
+      "strategy_order": [
+        "subtree",
+        "random",
+        "dispersed"
+      ]
+    },
+    {
+      "instance_id": "formal-fragmented-01",
+      "split": "formal",
+      "background": "fragmented",
+      "index": 1,
+      "demands": [
+        1278,
+        521,
+        365,
+        91
+      ],
+      "demand_seed": 4427700512464202582,
+      "selection_seeds": [
+        15412791267381097019,
+        15965800742046592986,
+        14020334531920672584,
+        810193879717922839
+      ],
+      "background_seed": 15205867529904973065,
+      "issued": 2048,
+      "depth": 4,
+      "final_requests": 9,
+      "slot_bits": 15,
+      "action": "query",
+      "task": "c",
+      "endpoint": "G",
+      "strategy": "dispersed",
+      "strategy_order": [
+        "subtree",
+        "random",
+        "dispersed"
+      ]
+    },
+    {
+      "instance_id": "formal-whole-07",
+      "split": "formal",
+      "background": "whole",
+      "index": 7,
+      "demands": [
+        1254,
+        623,
+        290,
+        155
+      ],
+      "demand_seed": 5629069530670660943,
+      "selection_seeds": [
+        9574194787300369114,
+        14880238616473780904,
+        4507559882377891988,
+        2866961165078566895
+      ],
+      "background_seed": 1619295649127419844,
+      "issued": 2048,
+      "depth": 4,
+      "final_requests": 9,
+      "slot_bits": 15,
+      "action": "query",
+      "task": "c",
+      "endpoint": "G",
+      "strategy": "random",
+      "strategy_order": [
+        "random",
+        "subtree",
+        "dispersed"
+      ]
+    },
+    {
+      "instance_id": "formal-whole-07",
+      "split": "formal",
+      "background": "whole",
+      "index": 7,
+      "demands": [
+        1254,
+        623,
+        290,
+        155
+      ],
+      "demand_seed": 5629069530670660943,
+      "selection_seeds": [
+        9574194787300369114,
+        14880238616473780904,
+        4507559882377891988,
+        2866961165078566895
+      ],
+      "background_seed": 1619295649127419844,
+      "issued": 2048,
+      "depth": 4,
+      "final_requests": 9,
+      "slot_bits": 15,
+      "action": "query",
+      "task": "c",
+      "endpoint": "G",
+      "strategy": "subtree",
+      "strategy_order": [
+        "random",
+        "subtree",
+        "dispersed"
+      ]
+    },
+    {
+      "instance_id": "formal-whole-07",
+      "split": "formal",
+      "background": "whole",
+      "index": 7,
+      "demands": [
+        1254,
+        623,
+        290,
+        155
+      ],
+      "demand_seed": 5629069530670660943,
+      "selection_seeds": [
+        9574194787300369114,
+        14880238616473780904,
+        4507559882377891988,
+        2866961165078566895
+      ],
+      "background_seed": 1619295649127419844,
+      "issued": 2048,
+      "depth": 4,
+      "final_requests": 9,
+      "slot_bits": 15,
+      "action": "query",
+      "task": "c",
+      "endpoint": "G",
+      "strategy": "dispersed",
+      "strategy_order": [
+        "random",
+        "subtree",
+        "dispersed"
+      ]
+    },
+    {
+      "instance_id": "formal-whole-02",
+      "split": "formal",
+      "background": "whole",
+      "index": 2,
+      "demands": [
+        1488,
+        644,
+        297,
+        89
+      ],
+      "demand_seed": 9511363810762535004,
+      "selection_seeds": [
+        1141736954405799096,
+        14075102498946886071,
+        12933227980138176154,
+        17416963438617297155
+      ],
+      "background_seed": 351764334975454544,
+      "issued": 2048,
+      "depth": 4,
+      "final_requests": 9,
+      "slot_bits": 15,
+      "action": "query",
+      "task": "c",
+      "endpoint": "G",
+      "strategy": "random",
+      "strategy_order": [
+        "random",
+        "dispersed",
+        "subtree"
+      ]
+    },
+    {
+      "instance_id": "formal-whole-02",
+      "split": "formal",
+      "background": "whole",
+      "index": 2,
+      "demands": [
+        1488,
+        644,
+        297,
+        89
+      ],
+      "demand_seed": 9511363810762535004,
+      "selection_seeds": [
+        1141736954405799096,
+        14075102498946886071,
+        12933227980138176154,
+        17416963438617297155
+      ],
+      "background_seed": 351764334975454544,
+      "issued": 2048,
+      "depth": 4,
+      "final_requests": 9,
+      "slot_bits": 15,
+      "action": "query",
+      "task": "c",
+      "endpoint": "G",
+      "strategy": "dispersed",
+      "strategy_order": [
+        "random",
+        "dispersed",
+        "subtree"
+      ]
+    },
+    {
+      "instance_id": "formal-whole-02",
+      "split": "formal",
+      "background": "whole",
+      "index": 2,
+      "demands": [
+        1488,
+        644,
+        297,
+        89
+      ],
+      "demand_seed": 9511363810762535004,
+      "selection_seeds": [
+        1141736954405799096,
+        14075102498946886071,
+        12933227980138176154,
+        17416963438617297155
+      ],
+      "background_seed": 351764334975454544,
+      "issued": 2048,
+      "depth": 4,
+      "final_requests": 9,
+      "slot_bits": 15,
+      "action": "query",
+      "task": "c",
+      "endpoint": "G",
+      "strategy": "subtree",
+      "strategy_order": [
+        "random",
+        "dispersed",
+        "subtree"
+      ]
+    },
+    {
+      "instance_id": "formal-whole-18",
+      "split": "formal",
+      "background": "whole",
+      "index": 18,
+      "demands": [
+        1056,
+        576,
+        323,
+        66
+      ],
+      "demand_seed": 12307927571452667080,
+      "selection_seeds": [
+        9974093858050557799,
+        2396610746173991070,
+        14208021687914685122,
+        13791841586349294413
+      ],
+      "background_seed": 14621007955672476308,
+      "issued": 2048,
+      "depth": 4,
+      "final_requests": 9,
+      "slot_bits": 15,
+      "action": "query",
+      "task": "c",
+      "endpoint": "G",
+      "strategy": "dispersed",
+      "strategy_order": [
+        "dispersed",
+        "subtree",
+        "random"
+      ]
+    },
+    {
+      "instance_id": "formal-whole-18",
+      "split": "formal",
+      "background": "whole",
+      "index": 18,
+      "demands": [
+        1056,
+        576,
+        323,
+        66
+      ],
+      "demand_seed": 12307927571452667080,
+      "selection_seeds": [
+        9974093858050557799,
+        2396610746173991070,
+        14208021687914685122,
+        13791841586349294413
+      ],
+      "background_seed": 14621007955672476308,
+      "issued": 2048,
+      "depth": 4,
+      "final_requests": 9,
+      "slot_bits": 15,
+      "action": "query",
+      "task": "c",
+      "endpoint": "G",
+      "strategy": "subtree",
+      "strategy_order": [
+        "dispersed",
+        "subtree",
+        "random"
+      ]
+    },
+    {
+      "instance_id": "formal-whole-18",
+      "split": "formal",
+      "background": "whole",
+      "index": 18,
+      "demands": [
+        1056,
+        576,
+        323,
+        66
+      ],
+      "demand_seed": 12307927571452667080,
+      "selection_seeds": [
+        9974093858050557799,
+        2396610746173991070,
+        14208021687914685122,
+        13791841586349294413
+      ],
+      "background_seed": 14621007955672476308,
+      "issued": 2048,
+      "depth": 4,
+      "final_requests": 9,
+      "slot_bits": 15,
+      "action": "query",
+      "task": "c",
+      "endpoint": "G",
+      "strategy": "random",
+      "strategy_order": [
+        "dispersed",
+        "subtree",
+        "random"
+      ]
+    },
+    {
+      "instance_id": "formal-fragmented-17",
+      "split": "formal",
+      "background": "fragmented",
+      "index": 17,
+      "demands": [
+        1040,
+        591,
+        357,
+        90
+      ],
+      "demand_seed": 7719350642565857489,
+      "selection_seeds": [
+        14988069607025569719,
+        11600424641508409396,
+        4007513851504045490,
+        5676090812636063838
+      ],
+      "background_seed": 17992442149332571985,
+      "issued": 2048,
+      "depth": 4,
+      "final_requests": 9,
+      "slot_bits": 15,
+      "action": "query",
+      "task": "c",
+      "endpoint": "G",
+      "strategy": "subtree",
+      "strategy_order": [
+        "subtree",
+        "dispersed",
+        "random"
+      ]
+    },
+    {
+      "instance_id": "formal-fragmented-17",
+      "split": "formal",
+      "background": "fragmented",
+      "index": 17,
+      "demands": [
+        1040,
+        591,
+        357,
+        90
+      ],
+      "demand_seed": 7719350642565857489,
+      "selection_seeds": [
+        14988069607025569719,
+        11600424641508409396,
+        4007513851504045490,
+        5676090812636063838
+      ],
+      "background_seed": 17992442149332571985,
+      "issued": 2048,
+      "depth": 4,
+      "final_requests": 9,
+      "slot_bits": 15,
+      "action": "query",
+      "task": "c",
+      "endpoint": "G",
+      "strategy": "dispersed",
+      "strategy_order": [
+        "subtree",
+        "dispersed",
+        "random"
+      ]
+    },
+    {
+      "instance_id": "formal-fragmented-17",
+      "split": "formal",
+      "background": "fragmented",
+      "index": 17,
+      "demands": [
+        1040,
+        591,
+        357,
+        90
+      ],
+      "demand_seed": 7719350642565857489,
+      "selection_seeds": [
+        14988069607025569719,
+        11600424641508409396,
+        4007513851504045490,
+        5676090812636063838
+      ],
+      "background_seed": 17992442149332571985,
+      "issued": 2048,
+      "depth": 4,
+      "final_requests": 9,
+      "slot_bits": 15,
+      "action": "query",
+      "task": "c",
+      "endpoint": "G",
+      "strategy": "random",
+      "strategy_order": [
+        "subtree",
+        "dispersed",
+        "random"
+      ]
+    },
+    {
+      "instance_id": "formal-fragmented-09",
+      "split": "formal",
+      "background": "fragmented",
+      "index": 9,
+      "demands": [
+        1467,
+        738,
+        291,
+        149
+      ],
+      "demand_seed": 16393825927688242125,
+      "selection_seeds": [
+        5692220383291482204,
+        12426809648220471255,
+        4231404857599120405,
+        14966804071502950114
+      ],
+      "background_seed": 13408523755892395508,
+      "issued": 2048,
+      "depth": 4,
+      "final_requests": 9,
+      "slot_bits": 15,
+      "action": "query",
+      "task": "c",
+      "endpoint": "G",
+      "strategy": "random",
+      "strategy_order": [
+        "random",
+        "subtree",
+        "dispersed"
+      ]
+    },
+    {
+      "instance_id": "formal-fragmented-09",
+      "split": "formal",
+      "background": "fragmented",
+      "index": 9,
+      "demands": [
+        1467,
+        738,
+        291,
+        149
+      ],
+      "demand_seed": 16393825927688242125,
+      "selection_seeds": [
+        5692220383291482204,
+        12426809648220471255,
+        4231404857599120405,
+        14966804071502950114
+      ],
+      "background_seed": 13408523755892395508,
+      "issued": 2048,
+      "depth": 4,
+      "final_requests": 9,
+      "slot_bits": 15,
+      "action": "query",
+      "task": "c",
+      "endpoint": "G",
+      "strategy": "subtree",
+      "strategy_order": [
+        "random",
+        "subtree",
+        "dispersed"
+      ]
+    },
+    {
+      "instance_id": "formal-fragmented-09",
+      "split": "formal",
+      "background": "fragmented",
+      "index": 9,
+      "demands": [
+        1467,
+        738,
+        291,
+        149
+      ],
+      "demand_seed": 16393825927688242125,
+      "selection_seeds": [
+        5692220383291482204,
+        12426809648220471255,
+        4231404857599120405,
+        14966804071502950114
+      ],
+      "background_seed": 13408523755892395508,
+      "issued": 2048,
+      "depth": 4,
+      "final_requests": 9,
+      "slot_bits": 15,
+      "action": "query",
+      "task": "c",
+      "endpoint": "G",
+      "strategy": "dispersed",
+      "strategy_order": [
+        "random",
+        "subtree",
+        "dispersed"
+      ]
+    },
+    {
+      "instance_id": "formal-whole-17",
+      "split": "formal",
+      "background": "whole",
+      "index": 17,
+      "demands": [
+        1497,
+        527,
+        263,
+        93
+      ],
+      "demand_seed": 1178392996158204802,
+      "selection_seeds": [
+        13026282519978199437,
+        6792647057828248079,
+        965195289423994603,
+        13070836695655151116
+      ],
+      "background_seed": 14341029797813962830,
+      "issued": 2048,
+      "depth": 4,
+      "final_requests": 9,
+      "slot_bits": 15,
+      "action": "query",
+      "task": "c",
+      "endpoint": "G",
+      "strategy": "dispersed",
+      "strategy_order": [
+        "dispersed",
+        "random",
+        "subtree"
+      ]
+    },
+    {
+      "instance_id": "formal-whole-17",
+      "split": "formal",
+      "background": "whole",
+      "index": 17,
+      "demands": [
+        1497,
+        527,
+        263,
+        93
+      ],
+      "demand_seed": 1178392996158204802,
+      "selection_seeds": [
+        13026282519978199437,
+        6792647057828248079,
+        965195289423994603,
+        13070836695655151116
+      ],
+      "background_seed": 14341029797813962830,
+      "issued": 2048,
+      "depth": 4,
+      "final_requests": 9,
+      "slot_bits": 15,
+      "action": "query",
+      "task": "c",
+      "endpoint": "G",
+      "strategy": "random",
+      "strategy_order": [
+        "dispersed",
+        "random",
+        "subtree"
+      ]
+    },
+    {
+      "instance_id": "formal-whole-17",
+      "split": "formal",
+      "background": "whole",
+      "index": 17,
+      "demands": [
+        1497,
+        527,
+        263,
+        93
+      ],
+      "demand_seed": 1178392996158204802,
+      "selection_seeds": [
+        13026282519978199437,
+        6792647057828248079,
+        965195289423994603,
+        13070836695655151116
+      ],
+      "background_seed": 14341029797813962830,
+      "issued": 2048,
+      "depth": 4,
+      "final_requests": 9,
+      "slot_bits": 15,
+      "action": "query",
+      "task": "c",
+      "endpoint": "G",
+      "strategy": "subtree",
+      "strategy_order": [
+        "dispersed",
+        "random",
+        "subtree"
+      ]
+    },
+    {
+      "instance_id": "formal-fragmented-12",
+      "split": "formal",
+      "background": "fragmented",
+      "index": 12,
+      "demands": [
+        1373,
+        640,
+        260,
+        105
+      ],
+      "demand_seed": 2838228065382736178,
+      "selection_seeds": [
+        6573238034173366986,
+        16745642997894821338,
+        5109904036301858418,
+        11088096105871670609
+      ],
+      "background_seed": 8383573164033864165,
+      "issued": 2048,
+      "depth": 4,
+      "final_requests": 9,
+      "slot_bits": 15,
+      "action": "query",
+      "task": "c",
+      "endpoint": "G",
+      "strategy": "random",
+      "strategy_order": [
+        "random",
+        "dispersed",
+        "subtree"
+      ]
+    },
+    {
+      "instance_id": "formal-fragmented-12",
+      "split": "formal",
+      "background": "fragmented",
+      "index": 12,
+      "demands": [
+        1373,
+        640,
+        260,
+        105
+      ],
+      "demand_seed": 2838228065382736178,
+      "selection_seeds": [
+        6573238034173366986,
+        16745642997894821338,
+        5109904036301858418,
+        11088096105871670609
+      ],
+      "background_seed": 8383573164033864165,
+      "issued": 2048,
+      "depth": 4,
+      "final_requests": 9,
+      "slot_bits": 15,
+      "action": "query",
+      "task": "c",
+      "endpoint": "G",
+      "strategy": "dispersed",
+      "strategy_order": [
+        "random",
+        "dispersed",
+        "subtree"
+      ]
+    },
+    {
+      "instance_id": "formal-fragmented-12",
+      "split": "formal",
+      "background": "fragmented",
+      "index": 12,
+      "demands": [
+        1373,
+        640,
+        260,
+        105
+      ],
+      "demand_seed": 2838228065382736178,
+      "selection_seeds": [
+        6573238034173366986,
+        16745642997894821338,
+        5109904036301858418,
+        11088096105871670609
+      ],
+      "background_seed": 8383573164033864165,
+      "issued": 2048,
+      "depth": 4,
+      "final_requests": 9,
+      "slot_bits": 15,
+      "action": "query",
+      "task": "c",
+      "endpoint": "G",
+      "strategy": "subtree",
+      "strategy_order": [
+        "random",
+        "dispersed",
+        "subtree"
+      ]
+    },
+    {
+      "instance_id": "formal-fragmented-06",
+      "split": "formal",
+      "background": "fragmented",
+      "index": 6,
+      "demands": [
+        1035,
+        715,
+        315,
+        146
+      ],
+      "demand_seed": 6567564782023007972,
+      "selection_seeds": [
+        6823053237232337347,
+        16400363751570876729,
+        12057726296275617375,
+        15058569554931375413
+      ],
+      "background_seed": 14477467907048186890,
+      "issued": 2048,
+      "depth": 4,
+      "final_requests": 9,
+      "slot_bits": 15,
+      "action": "query",
+      "task": "c",
+      "endpoint": "G",
+      "strategy": "dispersed",
+      "strategy_order": [
+        "dispersed",
+        "subtree",
+        "random"
+      ]
+    },
+    {
+      "instance_id": "formal-fragmented-06",
+      "split": "formal",
+      "background": "fragmented",
+      "index": 6,
+      "demands": [
+        1035,
+        715,
+        315,
+        146
+      ],
+      "demand_seed": 6567564782023007972,
+      "selection_seeds": [
+        6823053237232337347,
+        16400363751570876729,
+        12057726296275617375,
+        15058569554931375413
+      ],
+      "background_seed": 14477467907048186890,
+      "issued": 2048,
+      "depth": 4,
+      "final_requests": 9,
+      "slot_bits": 15,
+      "action": "query",
+      "task": "c",
+      "endpoint": "G",
+      "strategy": "subtree",
+      "strategy_order": [
+        "dispersed",
+        "subtree",
+        "random"
+      ]
+    },
+    {
+      "instance_id": "formal-fragmented-06",
+      "split": "formal",
+      "background": "fragmented",
+      "index": 6,
+      "demands": [
+        1035,
+        715,
+        315,
+        146
+      ],
+      "demand_seed": 6567564782023007972,
+      "selection_seeds": [
+        6823053237232337347,
+        16400363751570876729,
+        12057726296275617375,
+        15058569554931375413
+      ],
+      "background_seed": 14477467907048186890,
+      "issued": 2048,
+      "depth": 4,
+      "final_requests": 9,
+      "slot_bits": 15,
+      "action": "query",
+      "task": "c",
+      "endpoint": "G",
+      "strategy": "random",
+      "strategy_order": [
+        "dispersed",
+        "subtree",
+        "random"
+      ]
+    },
+    {
+      "instance_id": "formal-fragmented-10",
+      "split": "formal",
+      "background": "fragmented",
+      "index": 10,
+      "demands": [
+        1355,
+        739,
+        304,
+        123
+      ],
+      "demand_seed": 3707683337106497186,
+      "selection_seeds": [
+        8010642814395518399,
+        3770775906369871024,
+        7169882919244209634,
+        12667600480220626402
+      ],
+      "background_seed": 3520261879455641505,
+      "issued": 2048,
+      "depth": 4,
+      "final_requests": 9,
+      "slot_bits": 15,
+      "action": "query",
+      "task": "c",
+      "endpoint": "G",
+      "strategy": "dispersed",
+      "strategy_order": [
+        "dispersed",
+        "random",
+        "subtree"
+      ]
+    },
+    {
+      "instance_id": "formal-fragmented-10",
+      "split": "formal",
+      "background": "fragmented",
+      "index": 10,
+      "demands": [
+        1355,
+        739,
+        304,
+        123
+      ],
+      "demand_seed": 3707683337106497186,
+      "selection_seeds": [
+        8010642814395518399,
+        3770775906369871024,
+        7169882919244209634,
+        12667600480220626402
+      ],
+      "background_seed": 3520261879455641505,
+      "issued": 2048,
+      "depth": 4,
+      "final_requests": 9,
+      "slot_bits": 15,
+      "action": "query",
+      "task": "c",
+      "endpoint": "G",
+      "strategy": "random",
+      "strategy_order": [
+        "dispersed",
+        "random",
+        "subtree"
+      ]
+    },
+    {
+      "instance_id": "formal-fragmented-10",
+      "split": "formal",
+      "background": "fragmented",
+      "index": 10,
+      "demands": [
+        1355,
+        739,
+        304,
+        123
+      ],
+      "demand_seed": 3707683337106497186,
+      "selection_seeds": [
+        8010642814395518399,
+        3770775906369871024,
+        7169882919244209634,
+        12667600480220626402
+      ],
+      "background_seed": 3520261879455641505,
+      "issued": 2048,
+      "depth": 4,
+      "final_requests": 9,
+      "slot_bits": 15,
+      "action": "query",
+      "task": "c",
+      "endpoint": "G",
+      "strategy": "subtree",
+      "strategy_order": [
+        "dispersed",
+        "random",
+        "subtree"
+      ]
+    },
+    {
+      "instance_id": "formal-whole-08",
+      "split": "formal",
+      "background": "whole",
+      "index": 8,
+      "demands": [
+        1125,
+        684,
+        358,
+        155
+      ],
+      "demand_seed": 10442354811262304904,
+      "selection_seeds": [
+        17301616057098700761,
+        12828236883582242794,
+        3182830505698405757,
+        1877401035225305137
+      ],
+      "background_seed": 8682794570281272799,
+      "issued": 2048,
+      "depth": 4,
+      "final_requests": 9,
+      "slot_bits": 15,
+      "action": "query",
+      "task": "c",
+      "endpoint": "G",
+      "strategy": "subtree",
+      "strategy_order": [
+        "subtree",
+        "random",
+        "dispersed"
+      ]
+    },
+    {
+      "instance_id": "formal-whole-08",
+      "split": "formal",
+      "background": "whole",
+      "index": 8,
+      "demands": [
+        1125,
+        684,
+        358,
+        155
+      ],
+      "demand_seed": 10442354811262304904,
+      "selection_seeds": [
+        17301616057098700761,
+        12828236883582242794,
+        3182830505698405757,
+        1877401035225305137
+      ],
+      "background_seed": 8682794570281272799,
+      "issued": 2048,
+      "depth": 4,
+      "final_requests": 9,
+      "slot_bits": 15,
+      "action": "query",
+      "task": "c",
+      "endpoint": "G",
+      "strategy": "random",
+      "strategy_order": [
+        "subtree",
+        "random",
+        "dispersed"
+      ]
+    },
+    {
+      "instance_id": "formal-whole-08",
+      "split": "formal",
+      "background": "whole",
+      "index": 8,
+      "demands": [
+        1125,
+        684,
+        358,
+        155
+      ],
+      "demand_seed": 10442354811262304904,
+      "selection_seeds": [
+        17301616057098700761,
+        12828236883582242794,
+        3182830505698405757,
+        1877401035225305137
+      ],
+      "background_seed": 8682794570281272799,
+      "issued": 2048,
+      "depth": 4,
+      "final_requests": 9,
+      "slot_bits": 15,
+      "action": "query",
+      "task": "c",
+      "endpoint": "G",
+      "strategy": "dispersed",
+      "strategy_order": [
+        "subtree",
+        "random",
+        "dispersed"
+      ]
+    },
+    {
+      "instance_id": "formal-whole-01",
+      "split": "formal",
+      "background": "whole",
+      "index": 1,
+      "demands": [
+        1326,
+        703,
+        363,
+        152
+      ],
+      "demand_seed": 6631824882769030987,
+      "selection_seeds": [
+        572539339810572044,
+        8552245512238840103,
+        17278909677057429901,
+        3792542589053425896
+      ],
+      "background_seed": 10221794682568096666,
+      "issued": 2048,
+      "depth": 4,
+      "final_requests": 9,
+      "slot_bits": 15,
+      "action": "query",
+      "task": "c",
+      "endpoint": "G",
+      "strategy": "subtree",
+      "strategy_order": [
+        "subtree",
+        "dispersed",
+        "random"
+      ]
+    },
+    {
+      "instance_id": "formal-whole-01",
+      "split": "formal",
+      "background": "whole",
+      "index": 1,
+      "demands": [
+        1326,
+        703,
+        363,
+        152
+      ],
+      "demand_seed": 6631824882769030987,
+      "selection_seeds": [
+        572539339810572044,
+        8552245512238840103,
+        17278909677057429901,
+        3792542589053425896
+      ],
+      "background_seed": 10221794682568096666,
+      "issued": 2048,
+      "depth": 4,
+      "final_requests": 9,
+      "slot_bits": 15,
+      "action": "query",
+      "task": "c",
+      "endpoint": "G",
+      "strategy": "dispersed",
+      "strategy_order": [
+        "subtree",
+        "dispersed",
+        "random"
+      ]
+    },
+    {
+      "instance_id": "formal-whole-01",
+      "split": "formal",
+      "background": "whole",
+      "index": 1,
+      "demands": [
+        1326,
+        703,
+        363,
+        152
+      ],
+      "demand_seed": 6631824882769030987,
+      "selection_seeds": [
+        572539339810572044,
+        8552245512238840103,
+        17278909677057429901,
+        3792542589053425896
+      ],
+      "background_seed": 10221794682568096666,
+      "issued": 2048,
+      "depth": 4,
+      "final_requests": 9,
+      "slot_bits": 15,
+      "action": "query",
+      "task": "c",
+      "endpoint": "G",
+      "strategy": "random",
+      "strategy_order": [
+        "subtree",
+        "dispersed",
+        "random"
+      ]
+    },
+    {
+      "instance_id": "formal-whole-13",
+      "split": "formal",
+      "background": "whole",
+      "index": 13,
+      "demands": [
+        1249,
+        594,
+        365,
+        148
+      ],
+      "demand_seed": 10199069820986668999,
+      "selection_seeds": [
+        5793276470877583819,
+        10399226262193138416,
+        6477135487484405034,
+        9161007329907914763
+      ],
+      "background_seed": 7674026894446923287,
+      "issued": 2048,
+      "depth": 4,
+      "final_requests": 9,
+      "slot_bits": 15,
+      "action": "query",
+      "task": "c",
+      "endpoint": "G",
+      "strategy": "random",
+      "strategy_order": [
+        "random",
+        "subtree",
+        "dispersed"
+      ]
+    },
+    {
+      "instance_id": "formal-whole-13",
+      "split": "formal",
+      "background": "whole",
+      "index": 13,
+      "demands": [
+        1249,
+        594,
+        365,
+        148
+      ],
+      "demand_seed": 10199069820986668999,
+      "selection_seeds": [
+        5793276470877583819,
+        10399226262193138416,
+        6477135487484405034,
+        9161007329907914763
+      ],
+      "background_seed": 7674026894446923287,
+      "issued": 2048,
+      "depth": 4,
+      "final_requests": 9,
+      "slot_bits": 15,
+      "action": "query",
+      "task": "c",
+      "endpoint": "G",
+      "strategy": "subtree",
+      "strategy_order": [
+        "random",
+        "subtree",
+        "dispersed"
+      ]
+    },
+    {
+      "instance_id": "formal-whole-13",
+      "split": "formal",
+      "background": "whole",
+      "index": 13,
+      "demands": [
+        1249,
+        594,
+        365,
+        148
+      ],
+      "demand_seed": 10199069820986668999,
+      "selection_seeds": [
+        5793276470877583819,
+        10399226262193138416,
+        6477135487484405034,
+        9161007329907914763
+      ],
+      "background_seed": 7674026894446923287,
+      "issued": 2048,
+      "depth": 4,
+      "final_requests": 9,
+      "slot_bits": 15,
+      "action": "query",
+      "task": "c",
+      "endpoint": "G",
+      "strategy": "dispersed",
+      "strategy_order": [
+        "random",
+        "subtree",
+        "dispersed"
+      ]
+    },
+    {
+      "instance_id": "formal-whole-09",
+      "split": "formal",
+      "background": "whole",
+      "index": 9,
+      "demands": [
+        1027,
+        703,
+        345,
+        125
+      ],
+      "demand_seed": 544263558540962640,
+      "selection_seeds": [
+        14493240626634065707,
+        11003318203567625975,
+        10985102257846174263,
+        10719481451888415275
+      ],
+      "background_seed": 16657595705857311920,
+      "issued": 2048,
+      "depth": 4,
+      "final_requests": 9,
+      "slot_bits": 15,
+      "action": "query",
+      "task": "c",
+      "endpoint": "G",
+      "strategy": "random",
+      "strategy_order": [
+        "random",
+        "dispersed",
+        "subtree"
+      ]
+    },
+    {
+      "instance_id": "formal-whole-09",
+      "split": "formal",
+      "background": "whole",
+      "index": 9,
+      "demands": [
+        1027,
+        703,
+        345,
+        125
+      ],
+      "demand_seed": 544263558540962640,
+      "selection_seeds": [
+        14493240626634065707,
+        11003318203567625975,
+        10985102257846174263,
+        10719481451888415275
+      ],
+      "background_seed": 16657595705857311920,
+      "issued": 2048,
+      "depth": 4,
+      "final_requests": 9,
+      "slot_bits": 15,
+      "action": "query",
+      "task": "c",
+      "endpoint": "G",
+      "strategy": "dispersed",
+      "strategy_order": [
+        "random",
+        "dispersed",
+        "subtree"
+      ]
+    },
+    {
+      "instance_id": "formal-whole-09",
+      "split": "formal",
+      "background": "whole",
+      "index": 9,
+      "demands": [
+        1027,
+        703,
+        345,
+        125
+      ],
+      "demand_seed": 544263558540962640,
+      "selection_seeds": [
+        14493240626634065707,
+        11003318203567625975,
+        10985102257846174263,
+        10719481451888415275
+      ],
+      "background_seed": 16657595705857311920,
+      "issued": 2048,
+      "depth": 4,
+      "final_requests": 9,
+      "slot_bits": 15,
+      "action": "query",
+      "task": "c",
+      "endpoint": "G",
+      "strategy": "subtree",
+      "strategy_order": [
+        "random",
+        "dispersed",
+        "subtree"
+      ]
+    },
+    {
+      "instance_id": "formal-fragmented-11",
+      "split": "formal",
+      "background": "fragmented",
+      "index": 11,
+      "demands": [
+        1175,
+        747,
+        346,
+        75
+      ],
+      "demand_seed": 7526797754331798297,
+      "selection_seeds": [
+        16520961815814863420,
+        12819637540854267634,
+        5493737941502204456,
+        8016715870132350248
+      ],
+      "background_seed": 13092799783238418399,
+      "issued": 2048,
+      "depth": 4,
+      "final_requests": 9,
+      "slot_bits": 15,
+      "action": "query",
+      "task": "c",
+      "endpoint": "G",
+      "strategy": "subtree",
+      "strategy_order": [
+        "subtree",
+        "random",
+        "dispersed"
+      ]
+    },
+    {
+      "instance_id": "formal-fragmented-11",
+      "split": "formal",
+      "background": "fragmented",
+      "index": 11,
+      "demands": [
+        1175,
+        747,
+        346,
+        75
+      ],
+      "demand_seed": 7526797754331798297,
+      "selection_seeds": [
+        16520961815814863420,
+        12819637540854267634,
+        5493737941502204456,
+        8016715870132350248
+      ],
+      "background_seed": 13092799783238418399,
+      "issued": 2048,
+      "depth": 4,
+      "final_requests": 9,
+      "slot_bits": 15,
+      "action": "query",
+      "task": "c",
+      "endpoint": "G",
+      "strategy": "random",
+      "strategy_order": [
+        "subtree",
+        "random",
+        "dispersed"
+      ]
+    },
+    {
+      "instance_id": "formal-fragmented-11",
+      "split": "formal",
+      "background": "fragmented",
+      "index": 11,
+      "demands": [
+        1175,
+        747,
+        346,
+        75
+      ],
+      "demand_seed": 7526797754331798297,
+      "selection_seeds": [
+        16520961815814863420,
+        12819637540854267634,
+        5493737941502204456,
+        8016715870132350248
+      ],
+      "background_seed": 13092799783238418399,
+      "issued": 2048,
+      "depth": 4,
+      "final_requests": 9,
+      "slot_bits": 15,
+      "action": "query",
+      "task": "c",
+      "endpoint": "G",
+      "strategy": "dispersed",
+      "strategy_order": [
+        "subtree",
+        "random",
+        "dispersed"
+      ]
+    },
+    {
+      "instance_id": "formal-whole-04",
+      "split": "formal",
+      "background": "whole",
+      "index": 4,
+      "demands": [
+        1535,
+        750,
+        334,
+        126
+      ],
+      "demand_seed": 1196682767554193670,
+      "selection_seeds": [
+        10464320272040141407,
+        11175348068089806903,
+        3352169860764324795,
+        14615098961531720819
+      ],
+      "background_seed": 6040451631990019746,
+      "issued": 2048,
+      "depth": 4,
+      "final_requests": 9,
+      "slot_bits": 15,
+      "action": "query",
+      "task": "c",
+      "endpoint": "G",
+      "strategy": "dispersed",
+      "strategy_order": [
+        "dispersed",
+        "subtree",
+        "random"
+      ]
+    },
+    {
+      "instance_id": "formal-whole-04",
+      "split": "formal",
+      "background": "whole",
+      "index": 4,
+      "demands": [
+        1535,
+        750,
+        334,
+        126
+      ],
+      "demand_seed": 1196682767554193670,
+      "selection_seeds": [
+        10464320272040141407,
+        11175348068089806903,
+        3352169860764324795,
+        14615098961531720819
+      ],
+      "background_seed": 6040451631990019746,
+      "issued": 2048,
+      "depth": 4,
+      "final_requests": 9,
+      "slot_bits": 15,
+      "action": "query",
+      "task": "c",
+      "endpoint": "G",
+      "strategy": "subtree",
+      "strategy_order": [
+        "dispersed",
+        "subtree",
+        "random"
+      ]
+    },
+    {
+      "instance_id": "formal-whole-04",
+      "split": "formal",
+      "background": "whole",
+      "index": 4,
+      "demands": [
+        1535,
+        750,
+        334,
+        126
+      ],
+      "demand_seed": 1196682767554193670,
+      "selection_seeds": [
+        10464320272040141407,
+        11175348068089806903,
+        3352169860764324795,
+        14615098961531720819
+      ],
+      "background_seed": 6040451631990019746,
+      "issued": 2048,
+      "depth": 4,
+      "final_requests": 9,
+      "slot_bits": 15,
+      "action": "query",
+      "task": "c",
+      "endpoint": "G",
+      "strategy": "random",
+      "strategy_order": [
+        "dispersed",
+        "subtree",
+        "random"
+      ]
+    },
+    {
+      "instance_id": "formal-fragmented-02",
+      "split": "formal",
+      "background": "fragmented",
+      "index": 2,
+      "demands": [
+        1111,
+        754,
+        307,
+        102
+      ],
+      "demand_seed": 14788010216465244958,
+      "selection_seeds": [
+        14766877897838084888,
+        13659162423256666049,
+        12819186233882720529,
+        12345589593024406640
+      ],
+      "background_seed": 16378631954736009513,
+      "issued": 2048,
+      "depth": 4,
+      "final_requests": 9,
+      "slot_bits": 15,
+      "action": "query",
+      "task": "c",
+      "endpoint": "G",
+      "strategy": "subtree",
+      "strategy_order": [
+        "subtree",
+        "dispersed",
+        "random"
+      ]
+    },
+    {
+      "instance_id": "formal-fragmented-02",
+      "split": "formal",
+      "background": "fragmented",
+      "index": 2,
+      "demands": [
+        1111,
+        754,
+        307,
+        102
+      ],
+      "demand_seed": 14788010216465244958,
+      "selection_seeds": [
+        14766877897838084888,
+        13659162423256666049,
+        12819186233882720529,
+        12345589593024406640
+      ],
+      "background_seed": 16378631954736009513,
+      "issued": 2048,
+      "depth": 4,
+      "final_requests": 9,
+      "slot_bits": 15,
+      "action": "query",
+      "task": "c",
+      "endpoint": "G",
+      "strategy": "dispersed",
+      "strategy_order": [
+        "subtree",
+        "dispersed",
+        "random"
+      ]
+    },
+    {
+      "instance_id": "formal-fragmented-02",
+      "split": "formal",
+      "background": "fragmented",
+      "index": 2,
+      "demands": [
+        1111,
+        754,
+        307,
+        102
+      ],
+      "demand_seed": 14788010216465244958,
+      "selection_seeds": [
+        14766877897838084888,
+        13659162423256666049,
+        12819186233882720529,
+        12345589593024406640
+      ],
+      "background_seed": 16378631954736009513,
+      "issued": 2048,
+      "depth": 4,
+      "final_requests": 9,
+      "slot_bits": 15,
+      "action": "query",
+      "task": "c",
+      "endpoint": "G",
+      "strategy": "random",
+      "strategy_order": [
+        "subtree",
+        "dispersed",
+        "random"
+      ]
+    },
+    {
+      "instance_id": "formal-fragmented-07",
+      "split": "formal",
+      "background": "fragmented",
+      "index": 7,
+      "demands": [
+        1165,
+        639,
+        261,
+        151
+      ],
+      "demand_seed": 11382476517136887520,
+      "selection_seeds": [
+        9777397862681345966,
+        12800189397303308571,
+        12966442623761097082,
+        16406555447855652112
+      ],
+      "background_seed": 11919161826214610771,
+      "issued": 2048,
+      "depth": 4,
+      "final_requests": 9,
+      "slot_bits": 15,
+      "action": "query",
+      "task": "c",
+      "endpoint": "G",
+      "strategy": "random",
+      "strategy_order": [
+        "random",
+        "subtree",
+        "dispersed"
+      ]
+    },
+    {
+      "instance_id": "formal-fragmented-07",
+      "split": "formal",
+      "background": "fragmented",
+      "index": 7,
+      "demands": [
+        1165,
+        639,
+        261,
+        151
+      ],
+      "demand_seed": 11382476517136887520,
+      "selection_seeds": [
+        9777397862681345966,
+        12800189397303308571,
+        12966442623761097082,
+        16406555447855652112
+      ],
+      "background_seed": 11919161826214610771,
+      "issued": 2048,
+      "depth": 4,
+      "final_requests": 9,
+      "slot_bits": 15,
+      "action": "query",
+      "task": "c",
+      "endpoint": "G",
+      "strategy": "subtree",
+      "strategy_order": [
+        "random",
+        "subtree",
+        "dispersed"
+      ]
+    },
+    {
+      "instance_id": "formal-fragmented-07",
+      "split": "formal",
+      "background": "fragmented",
+      "index": 7,
+      "demands": [
+        1165,
+        639,
+        261,
+        151
+      ],
+      "demand_seed": 11382476517136887520,
+      "selection_seeds": [
+        9777397862681345966,
+        12800189397303308571,
+        12966442623761097082,
+        16406555447855652112
+      ],
+      "background_seed": 11919161826214610771,
+      "issued": 2048,
+      "depth": 4,
+      "final_requests": 9,
+      "slot_bits": 15,
+      "action": "query",
+      "task": "c",
+      "endpoint": "G",
+      "strategy": "dispersed",
+      "strategy_order": [
+        "random",
+        "subtree",
+        "dispersed"
+      ]
+    },
+    {
+      "instance_id": "formal-whole-11",
+      "split": "formal",
+      "background": "whole",
+      "index": 11,
+      "demands": [
+        1344,
+        582,
+        352,
+        67
+      ],
+      "demand_seed": 4624208749755022707,
+      "selection_seeds": [
+        15394488387350692371,
+        3750030285745805073,
+        5242576931488518203,
+        15570332996821698568
+      ],
+      "background_seed": 8459747115584169428,
+      "issued": 2048,
+      "depth": 4,
+      "final_requests": 9,
+      "slot_bits": 15,
+      "action": "query",
+      "task": "c",
+      "endpoint": "G",
+      "strategy": "dispersed",
+      "strategy_order": [
+        "dispersed",
+        "random",
+        "subtree"
+      ]
+    },
+    {
+      "instance_id": "formal-whole-11",
+      "split": "formal",
+      "background": "whole",
+      "index": 11,
+      "demands": [
+        1344,
+        582,
+        352,
+        67
+      ],
+      "demand_seed": 4624208749755022707,
+      "selection_seeds": [
+        15394488387350692371,
+        3750030285745805073,
+        5242576931488518203,
+        15570332996821698568
+      ],
+      "background_seed": 8459747115584169428,
+      "issued": 2048,
+      "depth": 4,
+      "final_requests": 9,
+      "slot_bits": 15,
+      "action": "query",
+      "task": "c",
+      "endpoint": "G",
+      "strategy": "random",
+      "strategy_order": [
+        "dispersed",
+        "random",
+        "subtree"
+      ]
+    },
+    {
+      "instance_id": "formal-whole-11",
+      "split": "formal",
+      "background": "whole",
+      "index": 11,
+      "demands": [
+        1344,
+        582,
+        352,
+        67
+      ],
+      "demand_seed": 4624208749755022707,
+      "selection_seeds": [
+        15394488387350692371,
+        3750030285745805073,
+        5242576931488518203,
+        15570332996821698568
+      ],
+      "background_seed": 8459747115584169428,
+      "issued": 2048,
+      "depth": 4,
+      "final_requests": 9,
+      "slot_bits": 15,
+      "action": "query",
+      "task": "c",
+      "endpoint": "G",
+      "strategy": "subtree",
+      "strategy_order": [
+        "dispersed",
+        "random",
+        "subtree"
+      ]
+    },
+    {
+      "instance_id": "formal-whole-03",
+      "split": "formal",
+      "background": "whole",
+      "index": 3,
+      "demands": [
+        1450,
+        557,
+        287,
+        162
+      ],
+      "demand_seed": 9129410295953981642,
+      "selection_seeds": [
+        8569576125773069726,
+        8121077253535915566,
+        12391798405051999923,
+        15993833446976874084
+      ],
+      "background_seed": 3492025845426439205,
+      "issued": 2048,
+      "depth": 4,
+      "final_requests": 9,
+      "slot_bits": 15,
+      "action": "query",
+      "task": "c",
+      "endpoint": "G",
+      "strategy": "subtree",
+      "strategy_order": [
+        "subtree",
+        "random",
+        "dispersed"
+      ]
+    },
+    {
+      "instance_id": "formal-whole-03",
+      "split": "formal",
+      "background": "whole",
+      "index": 3,
+      "demands": [
+        1450,
+        557,
+        287,
+        162
+      ],
+      "demand_seed": 9129410295953981642,
+      "selection_seeds": [
+        8569576125773069726,
+        8121077253535915566,
+        12391798405051999923,
+        15993833446976874084
+      ],
+      "background_seed": 3492025845426439205,
+      "issued": 2048,
+      "depth": 4,
+      "final_requests": 9,
+      "slot_bits": 15,
+      "action": "query",
+      "task": "c",
+      "endpoint": "G",
+      "strategy": "random",
+      "strategy_order": [
+        "subtree",
+        "random",
+        "dispersed"
+      ]
+    },
+    {
+      "instance_id": "formal-whole-03",
+      "split": "formal",
+      "background": "whole",
+      "index": 3,
+      "demands": [
+        1450,
+        557,
+        287,
+        162
+      ],
+      "demand_seed": 9129410295953981642,
+      "selection_seeds": [
+        8569576125773069726,
+        8121077253535915566,
+        12391798405051999923,
+        15993833446976874084
+      ],
+      "background_seed": 3492025845426439205,
+      "issued": 2048,
+      "depth": 4,
+      "final_requests": 9,
+      "slot_bits": 15,
+      "action": "query",
+      "task": "c",
+      "endpoint": "G",
+      "strategy": "dispersed",
+      "strategy_order": [
+        "subtree",
+        "random",
+        "dispersed"
+      ]
+    },
+    {
+      "instance_id": "formal-whole-14",
+      "split": "formal",
+      "background": "whole",
+      "index": 14,
+      "demands": [
+        1374,
+        690,
+        259,
+        108
+      ],
+      "demand_seed": 7179615673055129636,
+      "selection_seeds": [
+        9776512572041118512,
+        5335509304357456581,
+        3559535450836306825,
+        9584688392440854387
+      ],
+      "background_seed": 1977360283710806877,
+      "issued": 2048,
+      "depth": 4,
+      "final_requests": 9,
+      "slot_bits": 15,
+      "action": "query",
+      "task": "c",
+      "endpoint": "G",
+      "strategy": "subtree",
+      "strategy_order": [
+        "subtree",
+        "dispersed",
+        "random"
+      ]
+    },
+    {
+      "instance_id": "formal-whole-14",
+      "split": "formal",
+      "background": "whole",
+      "index": 14,
+      "demands": [
+        1374,
+        690,
+        259,
+        108
+      ],
+      "demand_seed": 7179615673055129636,
+      "selection_seeds": [
+        9776512572041118512,
+        5335509304357456581,
+        3559535450836306825,
+        9584688392440854387
+      ],
+      "background_seed": 1977360283710806877,
+      "issued": 2048,
+      "depth": 4,
+      "final_requests": 9,
+      "slot_bits": 15,
+      "action": "query",
+      "task": "c",
+      "endpoint": "G",
+      "strategy": "dispersed",
+      "strategy_order": [
+        "subtree",
+        "dispersed",
+        "random"
+      ]
+    },
+    {
+      "instance_id": "formal-whole-14",
+      "split": "formal",
+      "background": "whole",
+      "index": 14,
+      "demands": [
+        1374,
+        690,
+        259,
+        108
+      ],
+      "demand_seed": 7179615673055129636,
+      "selection_seeds": [
+        9776512572041118512,
+        5335509304357456581,
+        3559535450836306825,
+        9584688392440854387
+      ],
+      "background_seed": 1977360283710806877,
+      "issued": 2048,
+      "depth": 4,
+      "final_requests": 9,
+      "slot_bits": 15,
+      "action": "query",
+      "task": "c",
+      "endpoint": "G",
+      "strategy": "random",
+      "strategy_order": [
+        "subtree",
+        "dispersed",
+        "random"
+      ]
+    },
+    {
+      "instance_id": "formal-fragmented-08",
+      "split": "formal",
+      "background": "fragmented",
+      "index": 8,
+      "demands": [
+        1065,
+        661,
+        344,
+        91
+      ],
+      "demand_seed": 10078610772383622150,
+      "selection_seeds": [
+        7993786419646240227,
+        4146356204000104598,
+        14682876229774189598,
+        11273441207255683930
+      ],
+      "background_seed": 5682409773185955415,
+      "issued": 2048,
+      "depth": 4,
+      "final_requests": 9,
+      "slot_bits": 15,
+      "action": "query",
+      "task": "c",
+      "endpoint": "G",
+      "strategy": "random",
+      "strategy_order": [
+        "random",
+        "dispersed",
+        "subtree"
+      ]
+    },
+    {
+      "instance_id": "formal-fragmented-08",
+      "split": "formal",
+      "background": "fragmented",
+      "index": 8,
+      "demands": [
+        1065,
+        661,
+        344,
+        91
+      ],
+      "demand_seed": 10078610772383622150,
+      "selection_seeds": [
+        7993786419646240227,
+        4146356204000104598,
+        14682876229774189598,
+        11273441207255683930
+      ],
+      "background_seed": 5682409773185955415,
+      "issued": 2048,
+      "depth": 4,
+      "final_requests": 9,
+      "slot_bits": 15,
+      "action": "query",
+      "task": "c",
+      "endpoint": "G",
+      "strategy": "dispersed",
+      "strategy_order": [
+        "random",
+        "dispersed",
+        "subtree"
+      ]
+    },
+    {
+      "instance_id": "formal-fragmented-08",
+      "split": "formal",
+      "background": "fragmented",
+      "index": 8,
+      "demands": [
+        1065,
+        661,
+        344,
+        91
+      ],
+      "demand_seed": 10078610772383622150,
+      "selection_seeds": [
+        7993786419646240227,
+        4146356204000104598,
+        14682876229774189598,
+        11273441207255683930
+      ],
+      "background_seed": 5682409773185955415,
+      "issued": 2048,
+      "depth": 4,
+      "final_requests": 9,
+      "slot_bits": 15,
+      "action": "query",
+      "task": "c",
+      "endpoint": "G",
+      "strategy": "subtree",
+      "strategy_order": [
+        "random",
+        "dispersed",
+        "subtree"
+      ]
+    },
+    {
+      "instance_id": "formal-whole-05",
+      "split": "formal",
+      "background": "whole",
+      "index": 5,
+      "demands": [
+        1401,
+        525,
+        272,
+        75
+      ],
+      "demand_seed": 15137899853014874458,
+      "selection_seeds": [
+        17984662096898056747,
+        12771276672645468095,
+        571566076048306465,
+        6997166878411862541
+      ],
+      "background_seed": 11709190765055825552,
+      "issued": 2048,
+      "depth": 4,
+      "final_requests": 9,
+      "slot_bits": 15,
+      "action": "query",
+      "task": "c",
+      "endpoint": "G",
+      "strategy": "random",
+      "strategy_order": [
+        "random",
+        "subtree",
+        "dispersed"
+      ]
+    },
+    {
+      "instance_id": "formal-whole-05",
+      "split": "formal",
+      "background": "whole",
+      "index": 5,
+      "demands": [
+        1401,
+        525,
+        272,
+        75
+      ],
+      "demand_seed": 15137899853014874458,
+      "selection_seeds": [
+        17984662096898056747,
+        12771276672645468095,
+        571566076048306465,
+        6997166878411862541
+      ],
+      "background_seed": 11709190765055825552,
+      "issued": 2048,
+      "depth": 4,
+      "final_requests": 9,
+      "slot_bits": 15,
+      "action": "query",
+      "task": "c",
+      "endpoint": "G",
+      "strategy": "subtree",
+      "strategy_order": [
+        "random",
+        "subtree",
+        "dispersed"
+      ]
+    },
+    {
+      "instance_id": "formal-whole-05",
+      "split": "formal",
+      "background": "whole",
+      "index": 5,
+      "demands": [
+        1401,
+        525,
+        272,
+        75
+      ],
+      "demand_seed": 15137899853014874458,
+      "selection_seeds": [
+        17984662096898056747,
+        12771276672645468095,
+        571566076048306465,
+        6997166878411862541
+      ],
+      "background_seed": 11709190765055825552,
+      "issued": 2048,
+      "depth": 4,
+      "final_requests": 9,
+      "slot_bits": 15,
+      "action": "query",
+      "task": "c",
+      "endpoint": "G",
+      "strategy": "dispersed",
+      "strategy_order": [
+        "random",
+        "subtree",
+        "dispersed"
+      ]
+    },
+    {
+      "instance_id": "formal-whole-06",
+      "split": "formal",
+      "background": "whole",
+      "index": 6,
+      "demands": [
+        1253,
+        596,
+        259,
+        166
+      ],
+      "demand_seed": 7254315658718866286,
+      "selection_seeds": [
+        3148202961632227185,
+        16910911125797873407,
+        3934765368475891905,
+        8471235247712073906
+      ],
+      "background_seed": 932273551067913720,
+      "issued": 2048,
+      "depth": 4,
+      "final_requests": 9,
+      "slot_bits": 15,
+      "action": "query",
+      "task": "c",
+      "endpoint": "G",
+      "strategy": "random",
+      "strategy_order": [
+        "random",
+        "dispersed",
+        "subtree"
+      ]
+    },
+    {
+      "instance_id": "formal-whole-06",
+      "split": "formal",
+      "background": "whole",
+      "index": 6,
+      "demands": [
+        1253,
+        596,
+        259,
+        166
+      ],
+      "demand_seed": 7254315658718866286,
+      "selection_seeds": [
+        3148202961632227185,
+        16910911125797873407,
+        3934765368475891905,
+        8471235247712073906
+      ],
+      "background_seed": 932273551067913720,
+      "issued": 2048,
+      "depth": 4,
+      "final_requests": 9,
+      "slot_bits": 15,
+      "action": "query",
+      "task": "c",
+      "endpoint": "G",
+      "strategy": "dispersed",
+      "strategy_order": [
+        "random",
+        "dispersed",
+        "subtree"
+      ]
+    },
+    {
+      "instance_id": "formal-whole-06",
+      "split": "formal",
+      "background": "whole",
+      "index": 6,
+      "demands": [
+        1253,
+        596,
+        259,
+        166
+      ],
+      "demand_seed": 7254315658718866286,
+      "selection_seeds": [
+        3148202961632227185,
+        16910911125797873407,
+        3934765368475891905,
+        8471235247712073906
+      ],
+      "background_seed": 932273551067913720,
+      "issued": 2048,
+      "depth": 4,
+      "final_requests": 9,
+      "slot_bits": 15,
+      "action": "query",
+      "task": "c",
+      "endpoint": "G",
+      "strategy": "subtree",
+      "strategy_order": [
+        "random",
+        "dispersed",
+        "subtree"
+      ]
+    },
+    {
+      "instance_id": "formal-fragmented-03",
+      "split": "formal",
+      "background": "fragmented",
+      "index": 3,
+      "demands": [
+        1437,
+        715,
+        276,
+        80
+      ],
+      "demand_seed": 12946981996281598246,
+      "selection_seeds": [
+        695818980798462066,
+        7668756078998121139,
+        12293454398458009327,
+        12469827691141505738
+      ],
+      "background_seed": 16571321788206332991,
+      "issued": 2048,
+      "depth": 4,
+      "final_requests": 9,
+      "slot_bits": 15,
+      "action": "query",
+      "task": "c",
+      "endpoint": "G",
+      "strategy": "dispersed",
+      "strategy_order": [
+        "dispersed",
+        "subtree",
+        "random"
+      ]
+    },
+    {
+      "instance_id": "formal-fragmented-03",
+      "split": "formal",
+      "background": "fragmented",
+      "index": 3,
+      "demands": [
+        1437,
+        715,
+        276,
+        80
+      ],
+      "demand_seed": 12946981996281598246,
+      "selection_seeds": [
+        695818980798462066,
+        7668756078998121139,
+        12293454398458009327,
+        12469827691141505738
+      ],
+      "background_seed": 16571321788206332991,
+      "issued": 2048,
+      "depth": 4,
+      "final_requests": 9,
+      "slot_bits": 15,
+      "action": "query",
+      "task": "c",
+      "endpoint": "G",
+      "strategy": "subtree",
+      "strategy_order": [
+        "dispersed",
+        "subtree",
+        "random"
+      ]
+    },
+    {
+      "instance_id": "formal-fragmented-03",
+      "split": "formal",
+      "background": "fragmented",
+      "index": 3,
+      "demands": [
+        1437,
+        715,
+        276,
+        80
+      ],
+      "demand_seed": 12946981996281598246,
+      "selection_seeds": [
+        695818980798462066,
+        7668756078998121139,
+        12293454398458009327,
+        12469827691141505738
+      ],
+      "background_seed": 16571321788206332991,
+      "issued": 2048,
+      "depth": 4,
+      "final_requests": 9,
+      "slot_bits": 15,
+      "action": "query",
+      "task": "c",
+      "endpoint": "G",
+      "strategy": "random",
+      "strategy_order": [
+        "dispersed",
+        "subtree",
+        "random"
+      ]
+    },
+    {
+      "instance_id": "formal-whole-12",
+      "split": "formal",
+      "background": "whole",
+      "index": 12,
+      "demands": [
+        1508,
+        603,
+        279,
+        149
+      ],
+      "demand_seed": 11815125750653117172,
+      "selection_seeds": [
+        13309398237492160957,
+        11335740165159934333,
+        17581401781165114128,
+        14484192786457991994
+      ],
+      "background_seed": 2845434812176689597,
+      "issued": 2048,
+      "depth": 4,
+      "final_requests": 9,
+      "slot_bits": 15,
+      "action": "query",
+      "task": "c",
+      "endpoint": "G",
+      "strategy": "dispersed",
+      "strategy_order": [
+        "dispersed",
+        "subtree",
+        "random"
+      ]
+    },
+    {
+      "instance_id": "formal-whole-12",
+      "split": "formal",
+      "background": "whole",
+      "index": 12,
+      "demands": [
+        1508,
+        603,
+        279,
+        149
+      ],
+      "demand_seed": 11815125750653117172,
+      "selection_seeds": [
+        13309398237492160957,
+        11335740165159934333,
+        17581401781165114128,
+        14484192786457991994
+      ],
+      "background_seed": 2845434812176689597,
+      "issued": 2048,
+      "depth": 4,
+      "final_requests": 9,
+      "slot_bits": 15,
+      "action": "query",
+      "task": "c",
+      "endpoint": "G",
+      "strategy": "subtree",
+      "strategy_order": [
+        "dispersed",
+        "subtree",
+        "random"
+      ]
+    },
+    {
+      "instance_id": "formal-whole-12",
+      "split": "formal",
+      "background": "whole",
+      "index": 12,
+      "demands": [
+        1508,
+        603,
+        279,
+        149
+      ],
+      "demand_seed": 11815125750653117172,
+      "selection_seeds": [
+        13309398237492160957,
+        11335740165159934333,
+        17581401781165114128,
+        14484192786457991994
+      ],
+      "background_seed": 2845434812176689597,
+      "issued": 2048,
+      "depth": 4,
+      "final_requests": 9,
+      "slot_bits": 15,
+      "action": "query",
+      "task": "c",
+      "endpoint": "G",
+      "strategy": "random",
+      "strategy_order": [
+        "dispersed",
+        "subtree",
+        "random"
+      ]
+    },
+    {
+      "instance_id": "formal-fragmented-16",
+      "split": "formal",
+      "background": "fragmented",
+      "index": 16,
+      "demands": [
+        1255,
+        751,
+        299,
+        141
+      ],
+      "demand_seed": 12829869276515400164,
+      "selection_seeds": [
+        9175849293257313481,
+        5310695143680550309,
+        2780305400700933509,
+        13032045541371390123
+      ],
+      "background_seed": 12862160868704823936,
+      "issued": 2048,
+      "depth": 4,
+      "final_requests": 9,
+      "slot_bits": 15,
+      "action": "query",
+      "task": "c",
+      "endpoint": "G",
+      "strategy": "dispersed",
+      "strategy_order": [
+        "dispersed",
+        "random",
+        "subtree"
+      ]
+    },
+    {
+      "instance_id": "formal-fragmented-16",
+      "split": "formal",
+      "background": "fragmented",
+      "index": 16,
+      "demands": [
+        1255,
+        751,
+        299,
+        141
+      ],
+      "demand_seed": 12829869276515400164,
+      "selection_seeds": [
+        9175849293257313481,
+        5310695143680550309,
+        2780305400700933509,
+        13032045541371390123
+      ],
+      "background_seed": 12862160868704823936,
+      "issued": 2048,
+      "depth": 4,
+      "final_requests": 9,
+      "slot_bits": 15,
+      "action": "query",
+      "task": "c",
+      "endpoint": "G",
+      "strategy": "random",
+      "strategy_order": [
+        "dispersed",
+        "random",
+        "subtree"
+      ]
+    },
+    {
+      "instance_id": "formal-fragmented-16",
+      "split": "formal",
+      "background": "fragmented",
+      "index": 16,
+      "demands": [
+        1255,
+        751,
+        299,
+        141
+      ],
+      "demand_seed": 12829869276515400164,
+      "selection_seeds": [
+        9175849293257313481,
+        5310695143680550309,
+        2780305400700933509,
+        13032045541371390123
+      ],
+      "background_seed": 12862160868704823936,
+      "issued": 2048,
+      "depth": 4,
+      "final_requests": 9,
+      "slot_bits": 15,
+      "action": "query",
+      "task": "c",
+      "endpoint": "G",
+      "strategy": "subtree",
+      "strategy_order": [
+        "dispersed",
+        "random",
+        "subtree"
+      ]
+    },
+    {
+      "instance_id": "formal-fragmented-05",
+      "split": "formal",
+      "background": "fragmented",
+      "index": 5,
+      "demands": [
+        1308,
+        513,
+        284,
+        135
+      ],
+      "demand_seed": 5306920834767976621,
+      "selection_seeds": [
+        4789239121608477970,
+        5358856202780580780,
+        9172850626010163799,
+        12981899557112885198
+      ],
+      "background_seed": 8187968198076629265,
+      "issued": 2048,
+      "depth": 4,
+      "final_requests": 9,
+      "slot_bits": 15,
+      "action": "query",
+      "task": "c",
+      "endpoint": "G",
+      "strategy": "subtree",
+      "strategy_order": [
+        "subtree",
+        "random",
+        "dispersed"
+      ]
+    },
+    {
+      "instance_id": "formal-fragmented-05",
+      "split": "formal",
+      "background": "fragmented",
+      "index": 5,
+      "demands": [
+        1308,
+        513,
+        284,
+        135
+      ],
+      "demand_seed": 5306920834767976621,
+      "selection_seeds": [
+        4789239121608477970,
+        5358856202780580780,
+        9172850626010163799,
+        12981899557112885198
+      ],
+      "background_seed": 8187968198076629265,
+      "issued": 2048,
+      "depth": 4,
+      "final_requests": 9,
+      "slot_bits": 15,
+      "action": "query",
+      "task": "c",
+      "endpoint": "G",
+      "strategy": "random",
+      "strategy_order": [
+        "subtree",
+        "random",
+        "dispersed"
+      ]
+    },
+    {
+      "instance_id": "formal-fragmented-05",
+      "split": "formal",
+      "background": "fragmented",
+      "index": 5,
+      "demands": [
+        1308,
+        513,
+        284,
+        135
+      ],
+      "demand_seed": 5306920834767976621,
+      "selection_seeds": [
+        4789239121608477970,
+        5358856202780580780,
+        9172850626010163799,
+        12981899557112885198
+      ],
+      "background_seed": 8187968198076629265,
+      "issued": 2048,
+      "depth": 4,
+      "final_requests": 9,
+      "slot_bits": 15,
+      "action": "query",
+      "task": "c",
+      "endpoint": "G",
+      "strategy": "dispersed",
+      "strategy_order": [
+        "subtree",
+        "random",
+        "dispersed"
+      ]
+    },
+    {
+      "instance_id": "formal-fragmented-14",
+      "split": "formal",
+      "background": "fragmented",
+      "index": 14,
+      "demands": [
+        1345,
+        546,
+        260,
+        165
+      ],
+      "demand_seed": 17510555633227718345,
+      "selection_seeds": [
+        15704960275928845949,
+        11379601853454748465,
+        5608451385388845701,
+        12349328032290292516
+      ],
+      "background_seed": 16658350703985848082,
+      "issued": 2048,
+      "depth": 4,
+      "final_requests": 9,
+      "slot_bits": 15,
+      "action": "query",
+      "task": "c",
+      "endpoint": "G",
+      "strategy": "subtree",
+      "strategy_order": [
+        "subtree",
+        "dispersed",
+        "random"
+      ]
+    },
+    {
+      "instance_id": "formal-fragmented-14",
+      "split": "formal",
+      "background": "fragmented",
+      "index": 14,
+      "demands": [
+        1345,
+        546,
+        260,
+        165
+      ],
+      "demand_seed": 17510555633227718345,
+      "selection_seeds": [
+        15704960275928845949,
+        11379601853454748465,
+        5608451385388845701,
+        12349328032290292516
+      ],
+      "background_seed": 16658350703985848082,
+      "issued": 2048,
+      "depth": 4,
+      "final_requests": 9,
+      "slot_bits": 15,
+      "action": "query",
+      "task": "c",
+      "endpoint": "G",
+      "strategy": "dispersed",
+      "strategy_order": [
+        "subtree",
+        "dispersed",
+        "random"
+      ]
+    },
+    {
+      "instance_id": "formal-fragmented-14",
+      "split": "formal",
+      "background": "fragmented",
+      "index": 14,
+      "demands": [
+        1345,
+        546,
+        260,
+        165
+      ],
+      "demand_seed": 17510555633227718345,
+      "selection_seeds": [
+        15704960275928845949,
+        11379601853454748465,
+        5608451385388845701,
+        12349328032290292516
+      ],
+      "background_seed": 16658350703985848082,
+      "issued": 2048,
+      "depth": 4,
+      "final_requests": 9,
+      "slot_bits": 15,
+      "action": "query",
+      "task": "c",
+      "endpoint": "G",
+      "strategy": "random",
+      "strategy_order": [
+        "subtree",
+        "dispersed",
+        "random"
+      ]
+    },
+    {
+      "instance_id": "formal-whole-10",
+      "split": "formal",
+      "background": "whole",
+      "index": 10,
+      "demands": [
+        1327,
+        606,
+        325,
+        100
+      ],
+      "demand_seed": 8981322305742352390,
+      "selection_seeds": [
+        8753795274527306278,
+        18373633957798137466,
+        1082200267764874437,
+        12994634162953387787
+      ],
+      "background_seed": 3792828339344923688,
+      "issued": 2048,
+      "depth": 4,
+      "final_requests": 9,
+      "slot_bits": 15,
+      "action": "query",
+      "task": "c",
+      "endpoint": "G",
+      "strategy": "dispersed",
+      "strategy_order": [
+        "dispersed",
+        "random",
+        "subtree"
+      ]
+    },
+    {
+      "instance_id": "formal-whole-10",
+      "split": "formal",
+      "background": "whole",
+      "index": 10,
+      "demands": [
+        1327,
+        606,
+        325,
+        100
+      ],
+      "demand_seed": 8981322305742352390,
+      "selection_seeds": [
+        8753795274527306278,
+        18373633957798137466,
+        1082200267764874437,
+        12994634162953387787
+      ],
+      "background_seed": 3792828339344923688,
+      "issued": 2048,
+      "depth": 4,
+      "final_requests": 9,
+      "slot_bits": 15,
+      "action": "query",
+      "task": "c",
+      "endpoint": "G",
+      "strategy": "random",
+      "strategy_order": [
+        "dispersed",
+        "random",
+        "subtree"
+      ]
+    },
+    {
+      "instance_id": "formal-whole-10",
+      "split": "formal",
+      "background": "whole",
+      "index": 10,
+      "demands": [
+        1327,
+        606,
+        325,
+        100
+      ],
+      "demand_seed": 8981322305742352390,
+      "selection_seeds": [
+        8753795274527306278,
+        18373633957798137466,
+        1082200267764874437,
+        12994634162953387787
+      ],
+      "background_seed": 3792828339344923688,
+      "issued": 2048,
+      "depth": 4,
+      "final_requests": 9,
+      "slot_bits": 15,
+      "action": "query",
+      "task": "c",
+      "endpoint": "G",
+      "strategy": "subtree",
+      "strategy_order": [
+        "dispersed",
+        "random",
+        "subtree"
+      ]
+    },
+    {
+      "instance_id": "formal-fragmented-18",
+      "split": "formal",
+      "background": "fragmented",
+      "index": 18,
+      "demands": [
+        1343,
+        567,
+        353,
+        100
+      ],
+      "demand_seed": 14982912836608980703,
+      "selection_seeds": [
+        5604857981034920981,
+        10563327801740936300,
+        17712731348354329914,
+        12902563058910692616
+      ],
+      "background_seed": 13172444316891623162,
+      "issued": 2048,
+      "depth": 4,
+      "final_requests": 9,
+      "slot_bits": 15,
+      "action": "query",
+      "task": "c",
+      "endpoint": "G",
+      "strategy": "random",
+      "strategy_order": [
+        "random",
+        "subtree",
+        "dispersed"
+      ]
+    },
+    {
+      "instance_id": "formal-fragmented-18",
+      "split": "formal",
+      "background": "fragmented",
+      "index": 18,
+      "demands": [
+        1343,
+        567,
+        353,
+        100
+      ],
+      "demand_seed": 14982912836608980703,
+      "selection_seeds": [
+        5604857981034920981,
+        10563327801740936300,
+        17712731348354329914,
+        12902563058910692616
+      ],
+      "background_seed": 13172444316891623162,
+      "issued": 2048,
+      "depth": 4,
+      "final_requests": 9,
+      "slot_bits": 15,
+      "action": "query",
+      "task": "c",
+      "endpoint": "G",
+      "strategy": "subtree",
+      "strategy_order": [
+        "random",
+        "subtree",
+        "dispersed"
+      ]
+    },
+    {
+      "instance_id": "formal-fragmented-18",
+      "split": "formal",
+      "background": "fragmented",
+      "index": 18,
+      "demands": [
+        1343,
+        567,
+        353,
+        100
+      ],
+      "demand_seed": 14982912836608980703,
+      "selection_seeds": [
+        5604857981034920981,
+        10563327801740936300,
+        17712731348354329914,
+        12902563058910692616
+      ],
+      "background_seed": 13172444316891623162,
+      "issued": 2048,
+      "depth": 4,
+      "final_requests": 9,
+      "slot_bits": 15,
+      "action": "query",
+      "task": "c",
+      "endpoint": "G",
+      "strategy": "dispersed",
+      "strategy_order": [
+        "random",
+        "subtree",
+        "dispersed"
+      ]
+    },
+    {
+      "instance_id": "formal-fragmented-00",
+      "split": "formal",
+      "background": "fragmented",
+      "index": 0,
+      "demands": [
+        1145,
+        580,
+        303,
+        125
+      ],
+      "demand_seed": 1872812519300703547,
+      "selection_seeds": [
+        652569335084700406,
+        5544002141665951423,
+        16766057482110538861,
+        17959166447964885572
+      ],
+      "background_seed": 6220009261990778653,
+      "issued": 2048,
+      "depth": 4,
+      "final_requests": 9,
+      "slot_bits": 15,
+      "action": "query",
+      "task": "c",
+      "endpoint": "G",
+      "strategy": "random",
+      "strategy_order": [
+        "random",
+        "dispersed",
+        "subtree"
+      ]
+    },
+    {
+      "instance_id": "formal-fragmented-00",
+      "split": "formal",
+      "background": "fragmented",
+      "index": 0,
+      "demands": [
+        1145,
+        580,
+        303,
+        125
+      ],
+      "demand_seed": 1872812519300703547,
+      "selection_seeds": [
+        652569335084700406,
+        5544002141665951423,
+        16766057482110538861,
+        17959166447964885572
+      ],
+      "background_seed": 6220009261990778653,
+      "issued": 2048,
+      "depth": 4,
+      "final_requests": 9,
+      "slot_bits": 15,
+      "action": "query",
+      "task": "c",
+      "endpoint": "G",
+      "strategy": "dispersed",
+      "strategy_order": [
+        "random",
+        "dispersed",
+        "subtree"
+      ]
+    },
+    {
+      "instance_id": "formal-fragmented-00",
+      "split": "formal",
+      "background": "fragmented",
+      "index": 0,
+      "demands": [
+        1145,
+        580,
+        303,
+        125
+      ],
+      "demand_seed": 1872812519300703547,
+      "selection_seeds": [
+        652569335084700406,
+        5544002141665951423,
+        16766057482110538861,
+        17959166447964885572
+      ],
+      "background_seed": 6220009261990778653,
+      "issued": 2048,
+      "depth": 4,
+      "final_requests": 9,
+      "slot_bits": 15,
+      "action": "query",
+      "task": "c",
+      "endpoint": "G",
+      "strategy": "subtree",
+      "strategy_order": [
+        "random",
+        "dispersed",
+        "subtree"
+      ]
+    },
+    {
+      "instance_id": "formal-whole-00",
+      "split": "formal",
+      "background": "whole",
+      "index": 0,
+      "demands": [
+        1479,
+        713,
+        278,
+        111
+      ],
+      "demand_seed": 633656553180097046,
+      "selection_seeds": [
+        10386534915820586971,
+        9168547777420386729,
+        1403075407059313950,
+        6265127935718302650
+      ],
+      "background_seed": 17636455661896035749,
+      "issued": 2048,
+      "depth": 4,
+      "final_requests": 9,
+      "slot_bits": 15,
+      "action": "query",
+      "task": "c",
+      "endpoint": "G",
+      "strategy": "subtree",
+      "strategy_order": [
+        "subtree",
+        "random",
+        "dispersed"
+      ]
+    },
+    {
+      "instance_id": "formal-whole-00",
+      "split": "formal",
+      "background": "whole",
+      "index": 0,
+      "demands": [
+        1479,
+        713,
+        278,
+        111
+      ],
+      "demand_seed": 633656553180097046,
+      "selection_seeds": [
+        10386534915820586971,
+        9168547777420386729,
+        1403075407059313950,
+        6265127935718302650
+      ],
+      "background_seed": 17636455661896035749,
+      "issued": 2048,
+      "depth": 4,
+      "final_requests": 9,
+      "slot_bits": 15,
+      "action": "query",
+      "task": "c",
+      "endpoint": "G",
+      "strategy": "random",
+      "strategy_order": [
+        "subtree",
+        "random",
+        "dispersed"
+      ]
+    },
+    {
+      "instance_id": "formal-whole-00",
+      "split": "formal",
+      "background": "whole",
+      "index": 0,
+      "demands": [
+        1479,
+        713,
+        278,
+        111
+      ],
+      "demand_seed": 633656553180097046,
+      "selection_seeds": [
+        10386534915820586971,
+        9168547777420386729,
+        1403075407059313950,
+        6265127935718302650
+      ],
+      "background_seed": 17636455661896035749,
+      "issued": 2048,
+      "depth": 4,
+      "final_requests": 9,
+      "slot_bits": 15,
+      "action": "query",
+      "task": "c",
+      "endpoint": "G",
+      "strategy": "dispersed",
+      "strategy_order": [
+        "subtree",
+        "random",
+        "dispersed"
+      ]
+    },
+    {
+      "instance_id": "formal-fragmented-19",
+      "split": "formal",
+      "background": "fragmented",
+      "index": 19,
+      "demands": [
+        1226,
+        565,
+        263,
+        78
+      ],
+      "demand_seed": 5173568542783546193,
+      "selection_seeds": [
+        3132201892391395592,
+        11060006427493580165,
+        5356032334111702174,
+        470148311721753289
+      ],
+      "background_seed": 607167476484105820,
+      "issued": 2048,
+      "depth": 4,
+      "final_requests": 9,
+      "slot_bits": 15,
+      "action": "query",
+      "task": "c",
+      "endpoint": "G",
+      "strategy": "dispersed",
+      "strategy_order": [
+        "dispersed",
+        "subtree",
+        "random"
+      ]
+    },
+    {
+      "instance_id": "formal-fragmented-19",
+      "split": "formal",
+      "background": "fragmented",
+      "index": 19,
+      "demands": [
+        1226,
+        565,
+        263,
+        78
+      ],
+      "demand_seed": 5173568542783546193,
+      "selection_seeds": [
+        3132201892391395592,
+        11060006427493580165,
+        5356032334111702174,
+        470148311721753289
+      ],
+      "background_seed": 607167476484105820,
+      "issued": 2048,
+      "depth": 4,
+      "final_requests": 9,
+      "slot_bits": 15,
+      "action": "query",
+      "task": "c",
+      "endpoint": "G",
+      "strategy": "subtree",
+      "strategy_order": [
+        "dispersed",
+        "subtree",
+        "random"
+      ]
+    },
+    {
+      "instance_id": "formal-fragmented-19",
+      "split": "formal",
+      "background": "fragmented",
+      "index": 19,
+      "demands": [
+        1226,
+        565,
+        263,
+        78
+      ],
+      "demand_seed": 5173568542783546193,
+      "selection_seeds": [
+        3132201892391395592,
+        11060006427493580165,
+        5356032334111702174,
+        470148311721753289
+      ],
+      "background_seed": 607167476484105820,
+      "issued": 2048,
+      "depth": 4,
+      "final_requests": 9,
+      "slot_bits": 15,
+      "action": "query",
+      "task": "c",
+      "endpoint": "G",
+      "strategy": "random",
+      "strategy_order": [
+        "dispersed",
+        "subtree",
+        "random"
+      ]
+    },
+    {
+      "instance_id": "formal-whole-16",
+      "split": "formal",
+      "background": "whole",
+      "index": 16,
+      "demands": [
+        1350,
+        679,
+        321,
+        75
+      ],
+      "demand_seed": 14291019069879741013,
+      "selection_seeds": [
+        17213527934507214866,
+        12314083094051464100,
+        13936511501739619958,
+        12130691817004330049
+      ],
+      "background_seed": 1042335012398206174,
+      "issued": 2048,
+      "depth": 4,
+      "final_requests": 9,
+      "slot_bits": 15,
+      "action": "query",
+      "task": "c",
+      "endpoint": "G",
+      "strategy": "subtree",
+      "strategy_order": [
+        "subtree",
+        "dispersed",
+        "random"
+      ]
+    },
+    {
+      "instance_id": "formal-whole-16",
+      "split": "formal",
+      "background": "whole",
+      "index": 16,
+      "demands": [
+        1350,
+        679,
+        321,
+        75
+      ],
+      "demand_seed": 14291019069879741013,
+      "selection_seeds": [
+        17213527934507214866,
+        12314083094051464100,
+        13936511501739619958,
+        12130691817004330049
+      ],
+      "background_seed": 1042335012398206174,
+      "issued": 2048,
+      "depth": 4,
+      "final_requests": 9,
+      "slot_bits": 15,
+      "action": "query",
+      "task": "c",
+      "endpoint": "G",
+      "strategy": "dispersed",
+      "strategy_order": [
+        "subtree",
+        "dispersed",
+        "random"
+      ]
+    },
+    {
+      "instance_id": "formal-whole-16",
+      "split": "formal",
+      "background": "whole",
+      "index": 16,
+      "demands": [
+        1350,
+        679,
+        321,
+        75
+      ],
+      "demand_seed": 14291019069879741013,
+      "selection_seeds": [
+        17213527934507214866,
+        12314083094051464100,
+        13936511501739619958,
+        12130691817004330049
+      ],
+      "background_seed": 1042335012398206174,
+      "issued": 2048,
+      "depth": 4,
+      "final_requests": 9,
+      "slot_bits": 15,
+      "action": "query",
+      "task": "c",
+      "endpoint": "G",
+      "strategy": "random",
+      "strategy_order": [
+        "subtree",
+        "dispersed",
+        "random"
+      ]
+    }
+  ]
+}

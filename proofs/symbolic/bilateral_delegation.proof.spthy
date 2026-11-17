@@ -1,0 +1,280 @@
+theory SACReDBilateralDelegation
+
+begin
+
+// Function signature and definition of the equational theory E
+
+functions: fst/1, pair/2, pk/1, sign/2, snd/1, true/0, verify/3
+equations:
+    fst(<x.1, x.2>) = x.1,
+    snd(<x.1, x.2>) = x.2,
+    verify(sign(x.1, x.2), x.1, pk(x.2)) = true
+
+rule (modulo E) Agent:
+   [ Fr( ~holder ), Fr( ~key ) ]
+  -->
+   [ !Principal( ~holder, pk(~key) ), Out( <~holder, pk(~key)> ) ]
+
+  /* has exactly the trivial AC variant */
+
+rule (modulo E) ApproveBilateral:
+   [
+   !Principal( caller, cpk ), !Principal( service, spk ), Fr( ~ctx ),
+   In( endpoint ), Fr( ~dc ), Fr( ~ds )
+   ]
+  --[
+  RootApproved( ~dc, ~ctx, endpoint, 'caller', caller ),
+  RootApproved( ~ds, ~ctx, endpoint, 'service', service )
+  ]->
+   [
+   RootInstall( ~dc, ~ctx, endpoint, 'caller', caller, cpk ),
+   RootInstall( ~ds, ~ctx, endpoint, 'service', service, spk ),
+   Out( <~ctx, endpoint, ~dc, ~ds> )
+   ]
+
+  /* has exactly the trivial AC variant */
+
+rule (modulo E) InstallRoot:
+   [ RootInstall( d, ctx, endpoint, side, holder, pubkey ) ]
+  --[ RightRegistered( d, d, ctx, endpoint, side, holder ) ]->
+   [ !Right( d, d, ctx, endpoint, side, holder, pubkey ) ]
+
+  /* has exactly the trivial AC variant */
+
+rule (modulo E) RegisterDelegation:
+   [
+   !Right( parent, root, ctx, endpoint, side, signer, parentpk ),
+   !Principal( holder, holderpk ), Fr( ~child ), In( policy )
+   ]
+  --[
+  DelegationRegistered( ~child, parent, root, ctx, endpoint, side, holder
+  ),
+  RightRegistered( ~child, root, ctx, endpoint, side, holder )
+  ]->
+   [
+   !Right( ~child, root, ctx, endpoint, side, holder, holderpk ),
+   Out( ~child )
+   ]
+
+  // loop breaker: [0]
+  /* has exactly the trivial AC variant */
+
+lemma recursive_bilateral_root_provenance [use_induction, reuse]:
+  all-traces
+  "∀ d root ctx endpoint side holder #r.
+    (RightRegistered( d, root, ctx, endpoint, side, holder ) @ #r) ⇒
+    (∃ rootHolder #a.
+      (RootApproved( root, ctx, endpoint, side, rootHolder ) @ #a) ∧
+      (#a < #r))"
+/*
+guarded formula characterizing all counter-examples:
+"∃ d root ctx endpoint side holder #r.
+  (RightRegistered( d, root, ctx, endpoint, side, holder ) @ #r)
+ ∧
+  ∀ rootHolder #a.
+   (RootApproved( root, ctx, endpoint, side, rootHolder ) @ #a)
+  ⇒
+   ¬(#a < #r)"
+*/
+induction
+  case empty_trace
+  by contradiction /* from formulas */
+next
+  case non_empty_trace
+  solve( (last(#r))  ∥
+         (∃ rootHolder #a.
+           (RootApproved( root, ctx, endpoint, side, rootHolder ) @ #a)
+          ∧
+           (¬(last(#a))) ∧ (#a < #r)) )
+    case case_1
+    solve( RightRegistered( d, root, ctx, endpoint, side, holder ) @ #r )
+      case InstallRoot
+      solve( RootInstall( d, ctx, endpoint, side, holder, pubkey ) ▶₀ #r )
+        case ApproveBilateral_case_1
+        by contradiction /* from formulas */
+      next
+        case ApproveBilateral_case_2
+        by contradiction /* from formulas */
+      qed
+    next
+      case RegisterDelegation
+      solve( !Principal( holder, holderpk ) ▶₁ #r )
+        case Agent
+        solve( !Right( parent, root, ctx, endpoint, side, signer, parentpk
+               ) ▶₀ #r )
+          case InstallRoot_case_1
+          by contradiction /* from formulas */
+        next
+          case InstallRoot_case_2
+          by contradiction /* from formulas */
+        next
+          case RegisterDelegation
+          by contradiction /* from formulas */
+        qed
+      qed
+    qed
+  next
+    case case_2
+    by contradiction /* from formulas */
+  qed
+qed
+
+lemma same_side_context_parent:
+  all-traces
+  "∀ child parent root ctx endpoint side holder #r.
+    (DelegationRegistered( child, parent, root, ctx, endpoint, side, holder
+     ) @ #r) ⇒
+    (∃ parentHolder #p.
+      (RightRegistered( parent, root, ctx, endpoint, side, parentHolder
+       ) @ #p) ∧
+      (#p < #r))"
+/*
+guarded formula characterizing all counter-examples:
+"∃ child parent root ctx endpoint side holder #r.
+  (DelegationRegistered( child, parent, root, ctx, endpoint, side, holder
+   ) @ #r)
+ ∧
+  ∀ parentHolder #p.
+   (RightRegistered( parent, root, ctx, endpoint, side, parentHolder ) @ #p)
+  ⇒
+   ¬(#p < #r)"
+*/
+simplify
+solve( !Principal( holder, holderpk ) ▶₁ #r )
+  case Agent
+  solve( RootApproved( root, ctx, endpoint, side, rootHolder ) @ #a )
+    case ApproveBilateral_case_1
+    solve( !Principal( rootHolder, cpk ) ▶₀ #a )
+      case Agent
+      solve( !Principal( service, spk ) ▶₁ #a )
+        case Agent
+        solve( !Right( parent, ~dc, ~ctx, endpoint, 'caller', signer, parentpk
+               ) ▶₀ #r )
+          case InstallRoot
+          by contradiction /* from formulas */
+        next
+          case RegisterDelegation
+          by contradiction /* from formulas */
+        qed
+      qed
+    qed
+  next
+    case ApproveBilateral_case_2
+    solve( !Principal( caller, cpk ) ▶₀ #a )
+      case Agent
+      solve( !Principal( rootHolder, spk ) ▶₁ #a )
+        case Agent
+        solve( !Right( parent, ~ds, ~ctx, endpoint, 'service', signer, parentpk
+               ) ▶₀ #r )
+          case InstallRoot
+          by contradiction /* from formulas */
+        next
+          case RegisterDelegation
+          by contradiction /* from formulas */
+        qed
+      qed
+    qed
+  qed
+qed
+
+lemma both_sides_recursive_delegation_exists:
+  exists-trace
+  "∃ c1 c2 cr s1 s2 sr ctx endpoint hc1 hc2 hs1 hs2 #a #b #c #d.
+    ((((((DelegationRegistered( c1, cr, cr, ctx, endpoint, 'caller', hc1
+          ) @ #a) ∧
+         (DelegationRegistered( c2, c1, cr, ctx, endpoint, 'caller', hc2
+          ) @ #b)) ∧
+        (DelegationRegistered( s1, sr, sr, ctx, endpoint, 'service', hs1
+         ) @ #c)) ∧
+       (DelegationRegistered( s2, s1, sr, ctx, endpoint, 'service', hs2
+        ) @ #d)) ∧
+      (#a < #b)) ∧
+     (#c < #d)) ∧
+    (¬(cr = sr))"
+/*
+guarded formula characterizing all satisfying traces:
+"∃ c1 c2 cr s1 s2 sr ctx endpoint hc1 hc2 hs1 hs2 #a #b #c #d.
+  (DelegationRegistered( c1, cr, cr, ctx, endpoint, 'caller', hc1 ) @ #a) ∧
+  (DelegationRegistered( c2, c1, cr, ctx, endpoint, 'caller', hc2 ) @ #b) ∧
+  (DelegationRegistered( s1, sr, sr, ctx, endpoint, 'service', hs1
+   ) @ #c) ∧
+  (DelegationRegistered( s2, s1, sr, ctx, endpoint, 'service', hs2 ) @ #d)
+ ∧
+  (#a < #b) ∧ (#c < #d) ∧ (¬(cr = sr))"
+*/
+simplify
+solve( !Principal( hc1, holderpk ) ▶₁ #a )
+  case Agent
+  solve( !Principal( hc2, holderpk ) ▶₁ #b )
+    case Agent
+    solve( !Principal( hs1, holderpk ) ▶₁ #c )
+      case Agent
+      solve( !Principal( hs2, holderpk ) ▶₁ #d )
+        case Agent
+        solve( RootApproved( cr, ctx, endpoint, 'caller', rootHolder ) @ #a.1 )
+          case ApproveBilateral
+          solve( !Principal( rootHolder, cpk ) ▶₀ #a.1 )
+            case Agent
+            solve( !Principal( service, spk ) ▶₁ #a.1 )
+              case Agent
+              solve( RootApproved( ~dc, ~ctx, endpoint, 'caller', rootHolder ) @ #a.2 )
+                case ApproveBilateral
+                solve( RootApproved( sr, ~ctx, endpoint, 'service', rootHolder.1
+                       ) @ #a.2 )
+                  case ApproveBilateral
+                  solve( RootApproved( ~ds, ~ctx, endpoint, 'service', rootHolder.1
+                         ) @ #a.2 )
+                    case ApproveBilateral
+                    solve( !Right( ~dc, ~dc, ~ctx, endpoint, 'caller', signer, parentpk
+                           ) ▶₀ #a )
+                      case InstallRoot
+                      solve( RootApproved( ~dc, ~ctx, endpoint, 'caller', rootHolder ) @ #a.2 )
+                        case ApproveBilateral
+                        solve( !Right( ~child, ~dc, ~ctx, endpoint, 'caller', signer, parentpk
+                               ) ▶₀ #b )
+                          case RegisterDelegation
+                          solve( RootApproved( ~dc, ~ctx, endpoint, 'caller', rootHolder ) @ #a.2 )
+                            case ApproveBilateral
+                            solve( !Right( ~ds, ~ds, ~ctx, endpoint, 'service', signer, parentpk
+                                   ) ▶₀ #c )
+                              case InstallRoot
+                              solve( RootApproved( ~ds, ~ctx, endpoint, 'service', rootHolder
+                                     ) @ #a.2 )
+                                case ApproveBilateral
+                                solve( !Right( ~child.2, ~ds, ~ctx, endpoint, 'service', signer, parentpk
+                                       ) ▶₀ #d )
+                                  case RegisterDelegation
+                                  solve( RootApproved( ~ds, ~ctx, endpoint, 'service', rootHolder
+                                         ) @ #a.2 )
+                                    case ApproveBilateral
+                                    SOLVED // trace found
+                                  qed
+                                qed
+                              qed
+                            qed
+                          qed
+                        qed
+                      qed
+                    qed
+                  qed
+                qed
+              qed
+            qed
+          qed
+        qed
+      qed
+    qed
+  qed
+qed
+
+/* All wellformedness checks were successful. */
+
+/*
+Generated from:
+Tamarin version 1.12.0
+Maude version 3.5.1
+Git revision: 82780bbaf3328a45f624ddb41e51bf75425f851c (with uncommited changes), branch: master
+Compiled at: 2026-03-07 14:22:39.174278293 UTC
+*/
+
+end

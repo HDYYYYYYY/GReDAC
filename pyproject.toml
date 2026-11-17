@@ -1,0 +1,14 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "gredac-prototype"
+version = "0.5.3"
+description = "GReDAC research prototype for recursive delegation and budget control"
+license = {file = "LICENSE"}
+requires-python = ">=3.11"
+dependencies = ["cryptography>=41"]
+
+[tool.setuptools.packages.find]
+include = ["gredac*"]

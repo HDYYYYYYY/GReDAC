@@ -1,0 +1,2536 @@
+{
+  "status": "PASS",
+  "formal_instances": 75,
+  "development_candidates": 9,
+  "distinct_business_inputs": 84,
+  "runtime_input_sha256": "117a1070b214fbde9b4170294d0906d438e2b2dc7ed1aaeac3958e5800a12094",
+  "scenes": {
+    "travel": [
+      {
+        "seed": 208000,
+        "split": "development",
+        "business_sha256": "f8a97484a72c4c963323aedc16793614f182d35da5da788deba88055bce117b0",
+        "feasible": true,
+        "options_per_service": 3
+      },
+      {
+        "seed": 208001,
+        "split": "development",
+        "business_sha256": "5c5ad824eda50a0d6e5418a74f76e14e14e44b7a33debbbaf7662eb29cb53e66",
+        "feasible": true,
+        "options_per_service": 4
+      },
+      {
+        "seed": 208002,
+        "split": "development",
+        "business_sha256": "5817bc14d60487c6b53ca0e49bc7933c3dc8cd25f70ad318458217fe591d5a78",
+        "feasible": true,
+        "options_per_service": 5
+      },
+      {
+        "seed": 209000,
+        "split": "formal",
+        "business_sha256": "7866dfb3d6cab7147bee45f404ae4d8e9d65b78f69b6c0e3c11736469a4327f8",
+        "feasible": true,
+        "options_per_service": 3
+      },
+      {
+        "seed": 209001,
+        "split": "formal",
+        "business_sha256": "fa33191958ddccccb5c3e570741ff7b09b487519b77bccdbf7846db495f01241",
+        "feasible": true,
+        "options_per_service": 4
+      },
+      {
+        "seed": 209002,
+        "split": "formal",
+        "business_sha256": "83cf28c84f6c16a5b9ba9c24a15c3c73db2638aea5a634bd9378e62bd6a03e8d",
+        "feasible": true,
+        "options_per_service": 5
+      },
+      {
+        "seed": 209003,
+        "split": "formal",
+        "business_sha256": "22851f7b5f8e155e04175d8e9c710e464ed20dd21e11362b5c954c92f03173d1",
+        "feasible": true,
+        "options_per_service": 6
+      },
+      {
+        "seed": 209004,
+        "split": "formal",
+        "business_sha256": "041579967e0eb68c87ca66a60eddfa90ec2819faf6ec27d6e85a34b1995d4636",
+        "feasible": true,
+        "options_per_service": 3
+      },
+      {
+        "seed": 209005,
+        "split": "formal",
+        "business_sha256": "a97b16abda9e7e616ba648df6bb65e816c8508cea4c0e1405ac0d2cf6d83422d",
+        "feasible": true,
+        "options_per_service": 4
+      },
+      {
+        "seed": 209006,
+        "split": "formal",
+        "business_sha256": "fe2f53d1ba80ce1ddd5d4c2245ced4999627f214895668a8d916ad916fa9a0e8",
+        "feasible": true,
+        "options_per_service": 5
+      },
+      {
+        "seed": 209007,
+        "split": "formal",
+        "business_sha256": "a49f1eee0fb3ea5ea3b880fe3b9ab52dc47f7fc3f5f5495a11c788a1f049a7c3",
+        "feasible": true,
+        "options_per_service": 6
+      },
+      {
+        "seed": 209008,
+        "split": "formal",
+        "business_sha256": "5cb493dbc386a1175d1ebfe52abc4d644dd236eee396eaec1d6fd4d1f00a33bd",
+        "feasible": true,
+        "options_per_service": 3
+      },
+      {
+        "seed": 209009,
+        "split": "formal",
+        "business_sha256": "e512f77db1a827ebb3b5df5d4be5e9a2f86ceff327ea59d68bf45b0cb37b4f4e",
+        "feasible": true,
+        "options_per_service": 4
+      },
+      {
+        "seed": 209010,
+        "split": "formal",
+        "business_sha256": "7944da308757a30d133caa4878feb6a7390dbe0e4057ca45cd919ee81dbb79b3",
+        "feasible": true,
+        "options_per_service": 5
+      },
+      {
+        "seed": 209011,
+        "split": "formal",
+        "business_sha256": "e683338a7a851956d60f651229d251a9f4b2860eb05580c458c2a3d7a302e2bd",
+        "feasible": true,
+        "options_per_service": 6
+      },
+      {
+        "seed": 209012,
+        "split": "formal",
+        "business_sha256": "183e770a7091c1573aa29c037a2553e5c5bb475ed31aa2ab12b07d0ca5e924be",
+        "feasible": true,
+        "options_per_service": 3
+      },
+      {
+        "seed": 209013,
+        "split": "formal",
+        "business_sha256": "33914b87128e272515c3e30b2974da3c57686a31fc11b64b749b05b8cf1a0b9c",
+        "feasible": true,
+        "options_per_service": 4
+      },
+      {
+        "seed": 209014,
+        "split": "formal",
+        "business_sha256": "61848f3735f6f550e7185706d289ab11a61f0fd15d4341d33ca32cc61f18b00f",
+        "feasible": true,
+        "options_per_service": 5
+      },
+      {
+        "seed": 209015,
+        "split": "formal",
+        "business_sha256": "ae7720cb034b9330354119dcaa14050f90ea8ccd4b0ca275d71a34cff76de145",
+        "feasible": true,
+        "options_per_service": 6
+      },
+      {
+        "seed": 209016,
+        "split": "formal",
+        "business_sha256": "41d52aba7aa36bd9929e5d4eb96ed156e6c0a6539776fbd0bc8cad969021680b",
+        "feasible": true,
+        "options_per_service": 3
+      },
+      {
+        "seed": 209017,
+        "split": "formal",
+        "business_sha256": "a1f81bb6d2a262c39e3c8ec32f9928e754cdbdc1d020633eabf4a92360f0017a",
+        "feasible": true,
+        "options_per_service": 4
+      },
+      {
+        "seed": 209018,
+        "split": "formal",
+        "business_sha256": "40611cb280cb4758f1bee2da2f7fe5f1eb7fe88b9dfdbad48a3d15b6cfa6f637",
+        "feasible": true,
+        "options_per_service": 5
+      },
+      {
+        "seed": 209019,
+        "split": "formal",
+        "business_sha256": "9fff729db38e48501e7214263752c0b816949a610a7eb17a02b3201380183086",
+        "feasible": true,
+        "options_per_service": 6
+      },
+      {
+        "seed": 209020,
+        "split": "formal",
+        "business_sha256": "ca5420c163273cf6042929c5e60fb155774cd064038b250c30e7a4a634dcaf7a",
+        "feasible": true,
+        "options_per_service": 3
+      },
+      {
+        "seed": 209021,
+        "split": "formal",
+        "business_sha256": "7c534885dea1272b73bbc4dc28138d8fc41e6ae59ee74f51019fc1f72aba73f6",
+        "feasible": true,
+        "options_per_service": 4
+      },
+      {
+        "seed": 209022,
+        "split": "formal",
+        "business_sha256": "5e7adcacaeeb6590ee42d03944ef467b590dd7e7eda473f9d99ebde463d3f54c",
+        "feasible": true,
+        "options_per_service": 5
+      },
+      {
+        "seed": 209023,
+        "split": "formal",
+        "business_sha256": "2f95211ebfc6413e9c1b06017b64a1dfdcc79cc581d8d2b10d013d82718f430d",
+        "feasible": true,
+        "options_per_service": 6
+      },
+      {
+        "seed": 209024,
+        "split": "formal",
+        "business_sha256": "07308d2efa2954c08e4fdbc6a3bb1351080ccae3db14ad28ad08d55810027552",
+        "feasible": true,
+        "options_per_service": 3
+      }
+    ],
+    "academic": [
+      {
+        "seed": 218000,
+        "split": "development",
+        "business_sha256": "28b04e1549352dad14c35033933e3c594029d8567c041b804131a8cdeee0538b",
+        "feasible": true,
+        "profile": 0,
+        "effect": "B_faster_light_only",
+        "cost_direction": "B_more_expensive",
+        "anomaly": "B-heavy-2"
+      },
+      {
+        "seed": 218001,
+        "split": "development",
+        "business_sha256": "3f1fbfb56493ccf1449744d83bf83eb44e00ad4f0fe48dbe7a40fe2cc662094b",
+        "feasible": true,
+        "profile": 1,
+        "effect": "B_faster_all",
+        "cost_direction": "B_more_expensive",
+        "anomaly": "A-heavy-2"
+      },
+      {
+        "seed": 218002,
+        "split": "development",
+        "business_sha256": "db897e12f7f5aa9e33fcba2113f5cb0256e7bdf03fbf7fab9ea0cd5dbb03d798",
+        "feasible": true,
+        "profile": 2,
+        "effect": "A_faster_all",
+        "cost_direction": "A_more_expensive",
+        "anomaly": "B-heavy-2"
+      },
+      {
+        "seed": 219000,
+        "split": "formal",
+        "business_sha256": "1f8e0e0a83d9db4aff03fdb9adb2d15c9fd4fb2ebfe9a91e07f888fb510754a7",
+        "feasible": true,
+        "profile": 0,
+        "effect": "B_faster_light_only",
+        "cost_direction": "B_more_expensive",
+        "anomaly": "B-heavy-2"
+      },
+      {
+        "seed": 219001,
+        "split": "formal",
+        "business_sha256": "2ef159b01ad7700763485acf68088248870df970bade46cc80c242c461b19f6f",
+        "feasible": true,
+        "profile": 1,
+        "effect": "B_faster_all",
+        "cost_direction": "B_more_expensive",
+        "anomaly": "A-heavy-2"
+      },
+      {
+        "seed": 219002,
+        "split": "formal",
+        "business_sha256": "a2b8fad10d74fee47a1b550879a55f65d6a8b8723b6b4318d70ddea1aae448ab",
+        "feasible": true,
+        "profile": 2,
+        "effect": "A_faster_all",
+        "cost_direction": "A_more_expensive",
+        "anomaly": "B-heavy-2"
+      },
+      {
+        "seed": 219003,
+        "split": "formal",
+        "business_sha256": "8e0cd0f82d8132cf41ac2d8870b359f505138af56bed8615a8b6ab96b2b4dbf5",
+        "feasible": true,
+        "profile": 3,
+        "effect": "B_faster_light_only",
+        "cost_direction": "equal_cost",
+        "anomaly": "B-heavy-2"
+      },
+      {
+        "seed": 219004,
+        "split": "formal",
+        "business_sha256": "936e123db93d14d7cdbfa850dee66570b64859cb81e5488d003659ceb3b8a550",
+        "feasible": true,
+        "profile": 4,
+        "effect": "B_faster_all",
+        "cost_direction": "A_more_expensive",
+        "anomaly": "A-heavy-2"
+      },
+      {
+        "seed": 219005,
+        "split": "formal",
+        "business_sha256": "77256efc2df28076000b3d5cbf4b7c609033eb5704b517357d208aac1ec142de",
+        "feasible": true,
+        "profile": 0,
+        "effect": "B_faster_light_only",
+        "cost_direction": "B_more_expensive",
+        "anomaly": "B-heavy-2"
+      },
+      {
+        "seed": 219006,
+        "split": "formal",
+        "business_sha256": "266c5b995e98a35a74c151ca740812ee8eb87f90d0d6a4c2b2038ee9182a6101",
+        "feasible": true,
+        "profile": 1,
+        "effect": "B_faster_all",
+        "cost_direction": "B_more_expensive",
+        "anomaly": "A-heavy-2"
+      },
+      {
+        "seed": 219007,
+        "split": "formal",
+        "business_sha256": "3ebbeffd61e64a4ab33e78db63f174afa28051f6726c2dc7bcec1344dad4a32f",
+        "feasible": true,
+        "profile": 2,
+        "effect": "A_faster_all",
+        "cost_direction": "A_more_expensive",
+        "anomaly": "B-heavy-2"
+      },
+      {
+        "seed": 219008,
+        "split": "formal",
+        "business_sha256": "ed6ee10034602059324e2453e1df3711cd63d17b67f592237b5f5c0eafbc853f",
+        "feasible": true,
+        "profile": 3,
+        "effect": "B_faster_light_only",
+        "cost_direction": "equal_cost",
+        "anomaly": "B-heavy-2"
+      },
+      {
+        "seed": 219009,
+        "split": "formal",
+        "business_sha256": "257f1f9612832eb474c8e7be2985f95a6a78d300ea98948c6318660c9eb6cce9",
+        "feasible": true,
+        "profile": 4,
+        "effect": "B_faster_all",
+        "cost_direction": "A_more_expensive",
+        "anomaly": "A-heavy-2"
+      },
+      {
+        "seed": 219010,
+        "split": "formal",
+        "business_sha256": "6bcb06a33b9823f6ea312ba641bc647f28e7c920126e1bf9fe2b5f13f634a623",
+        "feasible": true,
+        "profile": 0,
+        "effect": "B_faster_light_only",
+        "cost_direction": "B_more_expensive",
+        "anomaly": "B-heavy-2"
+      },
+      {
+        "seed": 219011,
+        "split": "formal",
+        "business_sha256": "b832584a3947d13429161be6a9c4d144a4e950f00b73bf3a484a5b24abebd14f",
+        "feasible": true,
+        "profile": 1,
+        "effect": "B_faster_all",
+        "cost_direction": "B_more_expensive",
+        "anomaly": "A-heavy-2"
+      },
+      {
+        "seed": 219012,
+        "split": "formal",
+        "business_sha256": "18dff8c42517c2a70cadb56943527f741c9ab1be471f873ee7a5157290707836",
+        "feasible": true,
+        "profile": 2,
+        "effect": "A_faster_all",
+        "cost_direction": "A_more_expensive",
+        "anomaly": "B-heavy-2"
+      },
+      {
+        "seed": 219013,
+        "split": "formal",
+        "business_sha256": "1c3bc83cc3d5ac3234ce0db40740c51f7933418888a1cccc55fde0f6519dbecd",
+        "feasible": true,
+        "profile": 3,
+        "effect": "B_faster_light_only",
+        "cost_direction": "equal_cost",
+        "anomaly": "B-heavy-2"
+      },
+      {
+        "seed": 219014,
+        "split": "formal",
+        "business_sha256": "5210b4f7e5c47da59094c5a8b65e660fda022a0095237041de0a455ebf3b6840",
+        "feasible": true,
+        "profile": 4,
+        "effect": "B_faster_all",
+        "cost_direction": "A_more_expensive",
+        "anomaly": "A-heavy-2"
+      },
+      {
+        "seed": 219015,
+        "split": "formal",
+        "business_sha256": "6984a4bc6bcdaa644ef4a132dec6170116b9e47261b2d2d17351673a253390e1",
+        "feasible": true,
+        "profile": 0,
+        "effect": "B_faster_light_only",
+        "cost_direction": "B_more_expensive",
+        "anomaly": "B-heavy-2"
+      },
+      {
+        "seed": 219016,
+        "split": "formal",
+        "business_sha256": "1b84d19a07644cec418f16875267e2b6a5109c94ffbfb57d2cedb349f40a8fc8",
+        "feasible": true,
+        "profile": 1,
+        "effect": "B_faster_all",
+        "cost_direction": "B_more_expensive",
+        "anomaly": "A-heavy-2"
+      },
+      {
+        "seed": 219017,
+        "split": "formal",
+        "business_sha256": "fb69b74b629b5d44370eb1908fc16b8d3238a523f8bc21738b98f9ac265d269f",
+        "feasible": true,
+        "profile": 2,
+        "effect": "A_faster_all",
+        "cost_direction": "A_more_expensive",
+        "anomaly": "B-heavy-2"
+      },
+      {
+        "seed": 219018,
+        "split": "formal",
+        "business_sha256": "4165a46381f337d13622bb0a99bb925f6a580330866d433969941dacaaecf8ec",
+        "feasible": true,
+        "profile": 3,
+        "effect": "B_faster_light_only",
+        "cost_direction": "equal_cost",
+        "anomaly": "B-heavy-2"
+      },
+      {
+        "seed": 219019,
+        "split": "formal",
+        "business_sha256": "51e44f8425bcd0789d49dcaf4d7e9eefa4aef73d34bd87aeb3b476473dafb44f",
+        "feasible": true,
+        "profile": 4,
+        "effect": "B_faster_all",
+        "cost_direction": "A_more_expensive",
+        "anomaly": "A-heavy-2"
+      },
+      {
+        "seed": 219020,
+        "split": "formal",
+        "business_sha256": "cc98577602468d70114242bf777fb54dbc336d40dfde4542fce8ea37a9b3d1cb",
+        "feasible": true,
+        "profile": 0,
+        "effect": "B_faster_light_only",
+        "cost_direction": "B_more_expensive",
+        "anomaly": "B-heavy-2"
+      },
+      {
+        "seed": 219021,
+        "split": "formal",
+        "business_sha256": "dcd89fcca25db807c532080ce261d43562c24aa83f36ab58bc37d19f3ef6ffae",
+        "feasible": true,
+        "profile": 1,
+        "effect": "B_faster_all",
+        "cost_direction": "B_more_expensive",
+        "anomaly": "A-heavy-2"
+      },
+      {
+        "seed": 219022,
+        "split": "formal",
+        "business_sha256": "38765f61141d4d76ff19c0d875c569d53a3f74d9134cb6962a3236c4cbf5406a",
+        "feasible": true,
+        "profile": 2,
+        "effect": "A_faster_all",
+        "cost_direction": "A_more_expensive",
+        "anomaly": "B-heavy-2"
+      },
+      {
+        "seed": 219023,
+        "split": "formal",
+        "business_sha256": "c9b654f7f8c0dde9fe3fc6e4b9c44b46328d1307a89d664d3128a64bc3f87b0c",
+        "feasible": true,
+        "profile": 3,
+        "effect": "B_faster_light_only",
+        "cost_direction": "equal_cost",
+        "anomaly": "B-heavy-2"
+      },
+      {
+        "seed": 219024,
+        "split": "formal",
+        "business_sha256": "4ef8eba43f296d811f317c53dc824d65ca618e67ff53e2a3631eb5b111170b18",
+        "feasible": true,
+        "profile": 4,
+        "effect": "B_faster_all",
+        "cost_direction": "A_more_expensive",
+        "anomaly": "A-heavy-2"
+      }
+    ],
+    "calendar": [
+      {
+        "seed": 228000,
+        "split": "development",
+        "business_sha256": "cd57e99caf8473c5c0853b3e8a7798139a2df25d82b544c37fad4a426a67b020",
+        "feasible": true,
+        "candidate_attempts": 1,
+        "initial_witness": [
+          {
+            "meeting": "A-kickoff",
+            "slot": 0,
+            "room": "R1"
+          },
+          {
+            "meeting": "A-design",
+            "slot": 2,
+            "room": "R1"
+          },
+          {
+            "meeting": "A-review",
+            "slot": 3,
+            "room": "R1"
+          },
+          {
+            "meeting": "B-kickoff",
+            "slot": 1,
+            "room": "R1"
+          },
+          {
+            "meeting": "B-design",
+            "slot": 4,
+            "room": "R1"
+          },
+          {
+            "meeting": "B-review",
+            "slot": 5,
+            "room": "R1"
+          }
+        ],
+        "changed_witness": [
+          {
+            "meeting": "A-kickoff",
+            "slot": 0,
+            "room": "R1"
+          },
+          {
+            "meeting": "A-design",
+            "slot": 5,
+            "room": "R1"
+          },
+          {
+            "meeting": "A-review",
+            "slot": 7,
+            "room": "R1"
+          },
+          {
+            "meeting": "B-kickoff",
+            "slot": 1,
+            "room": "R1"
+          },
+          {
+            "meeting": "B-design",
+            "slot": 4,
+            "room": "R1"
+          },
+          {
+            "meeting": "B-review",
+            "slot": 9,
+            "room": "R1"
+          }
+        ],
+        "any_initial_schedule_forced_to_move": true,
+        "reason": "four Expert meetings, only two initial slots in new Expert window"
+      },
+      {
+        "seed": 228001,
+        "split": "development",
+        "business_sha256": "b8f66df0f010ac89e2af6ee6bcd288248be6c36e11bdaa6aae750b4a3c875c13",
+        "feasible": true,
+        "candidate_attempts": 1,
+        "initial_witness": [
+          {
+            "meeting": "A-kickoff",
+            "slot": 1,
+            "room": "R1"
+          },
+          {
+            "meeting": "A-design",
+            "slot": 2,
+            "room": "R1"
+          },
+          {
+            "meeting": "A-review",
+            "slot": 3,
+            "room": "R1"
+          },
+          {
+            "meeting": "B-kickoff",
+            "slot": 2,
+            "room": "R2"
+          },
+          {
+            "meeting": "B-design",
+            "slot": 4,
+            "room": "R2"
+          },
+          {
+            "meeting": "B-review",
+            "slot": 5,
+            "room": "R1"
+          }
+        ],
+        "changed_witness": [
+          {
+            "meeting": "A-kickoff",
+            "slot": 1,
+            "room": "R1"
+          },
+          {
+            "meeting": "A-design",
+            "slot": 5,
+            "room": "R1"
+          },
+          {
+            "meeting": "A-review",
+            "slot": 8,
+            "room": "R1"
+          },
+          {
+            "meeting": "B-kickoff",
+            "slot": 2,
+            "room": "R1"
+          },
+          {
+            "meeting": "B-design",
+            "slot": 6,
+            "room": "R1"
+          },
+          {
+            "meeting": "B-review",
+            "slot": 11,
+            "room": "R1"
+          }
+        ],
+        "any_initial_schedule_forced_to_move": true,
+        "reason": "four Expert meetings, only two initial slots in new Expert window"
+      },
+      {
+        "seed": 228002,
+        "split": "development",
+        "business_sha256": "f8622669a9cc3d708c6629489e198f60857065ff2fc8fcf4dd2645ee73451752",
+        "feasible": true,
+        "candidate_attempts": 1,
+        "initial_witness": [
+          {
+            "meeting": "A-kickoff",
+            "slot": 0,
+            "room": "R1"
+          },
+          {
+            "meeting": "A-design",
+            "slot": 3,
+            "room": "R1"
+          },
+          {
+            "meeting": "A-review",
+            "slot": 4,
+            "room": "R1"
+          },
+          {
+            "meeting": "B-kickoff",
+            "slot": 1,
+            "room": "R1"
+          },
+          {
+            "meeting": "B-design",
+            "slot": 2,
+            "room": "R1"
+          },
+          {
+            "meeting": "B-review",
+            "slot": 5,
+            "room": "R1"
+          }
+        ],
+        "changed_witness": [
+          {
+            "meeting": "A-kickoff",
+            "slot": 0,
+            "room": "R1"
+          },
+          {
+            "meeting": "A-design",
+            "slot": 6,
+            "room": "R1"
+          },
+          {
+            "meeting": "A-review",
+            "slot": 7,
+            "room": "R1"
+          },
+          {
+            "meeting": "B-kickoff",
+            "slot": 1,
+            "room": "R1"
+          },
+          {
+            "meeting": "B-design",
+            "slot": 8,
+            "room": "R2"
+          },
+          {
+            "meeting": "B-review",
+            "slot": 9,
+            "room": "R1"
+          }
+        ],
+        "any_initial_schedule_forced_to_move": true,
+        "reason": "four Expert meetings, only two initial slots in new Expert window"
+      },
+      {
+        "seed": 229000,
+        "split": "formal",
+        "business_sha256": "214b413f5157d3284b648bdb9cd4de243264d3174456748ac864c7c2b346c5a0",
+        "feasible": true,
+        "candidate_attempts": 1,
+        "initial_witness": [
+          {
+            "meeting": "A-kickoff",
+            "slot": 1,
+            "room": "R1"
+          },
+          {
+            "meeting": "A-design",
+            "slot": 2,
+            "room": "R1"
+          },
+          {
+            "meeting": "A-review",
+            "slot": 4,
+            "room": "R1"
+          },
+          {
+            "meeting": "B-kickoff",
+            "slot": 2,
+            "room": "R2"
+          },
+          {
+            "meeting": "B-design",
+            "slot": 3,
+            "room": "R1"
+          },
+          {
+            "meeting": "B-review",
+            "slot": 5,
+            "room": "R1"
+          }
+        ],
+        "changed_witness": [
+          {
+            "meeting": "A-kickoff",
+            "slot": 1,
+            "room": "R1"
+          },
+          {
+            "meeting": "A-design",
+            "slot": 4,
+            "room": "R1"
+          },
+          {
+            "meeting": "A-review",
+            "slot": 6,
+            "room": "R1"
+          },
+          {
+            "meeting": "B-kickoff",
+            "slot": 2,
+            "room": "R1"
+          },
+          {
+            "meeting": "B-design",
+            "slot": 5,
+            "room": "R1"
+          },
+          {
+            "meeting": "B-review",
+            "slot": 7,
+            "room": "R1"
+          }
+        ],
+        "any_initial_schedule_forced_to_move": true,
+        "reason": "four Expert meetings, only two initial slots in new Expert window"
+      },
+      {
+        "seed": 229001,
+        "split": "formal",
+        "business_sha256": "0a969954085dc3edb26bac0ac84ce27551b19b5f6972a4149736e1bde5d9e5b1",
+        "feasible": true,
+        "candidate_attempts": 2,
+        "initial_witness": [
+          {
+            "meeting": "A-kickoff",
+            "slot": 1,
+            "room": "R1"
+          },
+          {
+            "meeting": "A-design",
+            "slot": 3,
+            "room": "R2"
+          },
+          {
+            "meeting": "A-review",
+            "slot": 4,
+            "room": "R1"
+          },
+          {
+            "meeting": "B-kickoff",
+            "slot": 0,
+            "room": "R1"
+          },
+          {
+            "meeting": "B-design",
+            "slot": 1,
+            "room": "R2"
+          },
+          {
+            "meeting": "B-review",
+            "slot": 2,
+            "room": "R1"
+          }
+        ],
+        "changed_witness": [
+          {
+            "meeting": "A-kickoff",
+            "slot": 0,
+            "room": "R1"
+          },
+          {
+            "meeting": "A-design",
+            "slot": 5,
+            "room": "R1"
+          },
+          {
+            "meeting": "A-review",
+            "slot": 7,
+            "room": "R1"
+          },
+          {
+            "meeting": "B-kickoff",
+            "slot": 1,
+            "room": "R1"
+          },
+          {
+            "meeting": "B-design",
+            "slot": 6,
+            "room": "R1"
+          },
+          {
+            "meeting": "B-review",
+            "slot": 9,
+            "room": "R1"
+          }
+        ],
+        "any_initial_schedule_forced_to_move": true,
+        "reason": "four Expert meetings, only two initial slots in new Expert window"
+      },
+      {
+        "seed": 229002,
+        "split": "formal",
+        "business_sha256": "f8bd87421f365a746e817e84b1e56e4310de610889f7d371a80cf20f201b9e2b",
+        "feasible": true,
+        "candidate_attempts": 1,
+        "initial_witness": [
+          {
+            "meeting": "A-kickoff",
+            "slot": 0,
+            "room": "R1"
+          },
+          {
+            "meeting": "A-design",
+            "slot": 1,
+            "room": "R1"
+          },
+          {
+            "meeting": "A-review",
+            "slot": 2,
+            "room": "R1"
+          },
+          {
+            "meeting": "B-kickoff",
+            "slot": 1,
+            "room": "R2"
+          },
+          {
+            "meeting": "B-design",
+            "slot": 3,
+            "room": "R1"
+          },
+          {
+            "meeting": "B-review",
+            "slot": 4,
+            "room": "R1"
+          }
+        ],
+        "changed_witness": [
+          {
+            "meeting": "A-kickoff",
+            "slot": 0,
+            "room": "R1"
+          },
+          {
+            "meeting": "A-design",
+            "slot": 6,
+            "room": "R1"
+          },
+          {
+            "meeting": "A-review",
+            "slot": 8,
+            "room": "R1"
+          },
+          {
+            "meeting": "B-kickoff",
+            "slot": 1,
+            "room": "R1"
+          },
+          {
+            "meeting": "B-design",
+            "slot": 9,
+            "room": "R1"
+          },
+          {
+            "meeting": "B-review",
+            "slot": 11,
+            "room": "R1"
+          }
+        ],
+        "any_initial_schedule_forced_to_move": true,
+        "reason": "four Expert meetings, only two initial slots in new Expert window"
+      },
+      {
+        "seed": 229003,
+        "split": "formal",
+        "business_sha256": "c14c12ae7203f0f052c4bd046c0cca631b3ebbeaa2cbce0edc145e9e8cb79f92",
+        "feasible": true,
+        "candidate_attempts": 1,
+        "initial_witness": [
+          {
+            "meeting": "A-kickoff",
+            "slot": 0,
+            "room": "R1"
+          },
+          {
+            "meeting": "A-design",
+            "slot": 3,
+            "room": "R1"
+          },
+          {
+            "meeting": "A-review",
+            "slot": 4,
+            "room": "R1"
+          },
+          {
+            "meeting": "B-kickoff",
+            "slot": 1,
+            "room": "R2"
+          },
+          {
+            "meeting": "B-design",
+            "slot": 2,
+            "room": "R1"
+          },
+          {
+            "meeting": "B-review",
+            "slot": 5,
+            "room": "R1"
+          }
+        ],
+        "changed_witness": [
+          {
+            "meeting": "A-kickoff",
+            "slot": 0,
+            "room": "R1"
+          },
+          {
+            "meeting": "A-design",
+            "slot": 4,
+            "room": "R1"
+          },
+          {
+            "meeting": "A-review",
+            "slot": 5,
+            "room": "R1"
+          },
+          {
+            "meeting": "B-kickoff",
+            "slot": 1,
+            "room": "R2"
+          },
+          {
+            "meeting": "B-design",
+            "slot": 6,
+            "room": "R1"
+          },
+          {
+            "meeting": "B-review",
+            "slot": 8,
+            "room": "R1"
+          }
+        ],
+        "any_initial_schedule_forced_to_move": true,
+        "reason": "four Expert meetings, only two initial slots in new Expert window"
+      },
+      {
+        "seed": 229004,
+        "split": "formal",
+        "business_sha256": "cf6979f9da237a5e52423d21e3da90711a36b28b3c06858b16cb6a4c77695c10",
+        "feasible": true,
+        "candidate_attempts": 1,
+        "initial_witness": [
+          {
+            "meeting": "A-kickoff",
+            "slot": 1,
+            "room": "R1"
+          },
+          {
+            "meeting": "A-design",
+            "slot": 2,
+            "room": "R1"
+          },
+          {
+            "meeting": "A-review",
+            "slot": 4,
+            "room": "R1"
+          },
+          {
+            "meeting": "B-kickoff",
+            "slot": 3,
+            "room": "R1"
+          },
+          {
+            "meeting": "B-design",
+            "slot": 5,
+            "room": "R1"
+          },
+          {
+            "meeting": "B-review",
+            "slot": 6,
+            "room": "R1"
+          }
+        ],
+        "changed_witness": [
+          {
+            "meeting": "A-kickoff",
+            "slot": 1,
+            "room": "R1"
+          },
+          {
+            "meeting": "A-design",
+            "slot": 6,
+            "room": "R1"
+          },
+          {
+            "meeting": "A-review",
+            "slot": 8,
+            "room": "R1"
+          },
+          {
+            "meeting": "B-kickoff",
+            "slot": 3,
+            "room": "R1"
+          },
+          {
+            "meeting": "B-design",
+            "slot": 5,
+            "room": "R1"
+          },
+          {
+            "meeting": "B-review",
+            "slot": 9,
+            "room": "R1"
+          }
+        ],
+        "any_initial_schedule_forced_to_move": true,
+        "reason": "four Expert meetings, only two initial slots in new Expert window"
+      },
+      {
+        "seed": 229005,
+        "split": "formal",
+        "business_sha256": "99894f2599187247680d29cf6713de6a15cc8b9b18f9d97518015b9456a982ce",
+        "feasible": true,
+        "candidate_attempts": 1,
+        "initial_witness": [
+          {
+            "meeting": "A-kickoff",
+            "slot": 2,
+            "room": "R1"
+          },
+          {
+            "meeting": "A-design",
+            "slot": 3,
+            "room": "R1"
+          },
+          {
+            "meeting": "A-review",
+            "slot": 5,
+            "room": "R1"
+          },
+          {
+            "meeting": "B-kickoff",
+            "slot": 1,
+            "room": "R1"
+          },
+          {
+            "meeting": "B-design",
+            "slot": 4,
+            "room": "R2"
+          },
+          {
+            "meeting": "B-review",
+            "slot": 7,
+            "room": "R1"
+          }
+        ],
+        "changed_witness": [
+          {
+            "meeting": "A-kickoff",
+            "slot": 2,
+            "room": "R1"
+          },
+          {
+            "meeting": "A-design",
+            "slot": 6,
+            "room": "R1"
+          },
+          {
+            "meeting": "A-review",
+            "slot": 7,
+            "room": "R1"
+          },
+          {
+            "meeting": "B-kickoff",
+            "slot": 1,
+            "room": "R1"
+          },
+          {
+            "meeting": "B-design",
+            "slot": 8,
+            "room": "R1"
+          },
+          {
+            "meeting": "B-review",
+            "slot": 10,
+            "room": "R1"
+          }
+        ],
+        "any_initial_schedule_forced_to_move": true,
+        "reason": "four Expert meetings, only two initial slots in new Expert window"
+      },
+      {
+        "seed": 229006,
+        "split": "formal",
+        "business_sha256": "537f6989cdd97b967fcdcc7df6f6ddfe8427d9dbad8f5926c3b0c0a2f8ce38c8",
+        "feasible": true,
+        "candidate_attempts": 2,
+        "initial_witness": [
+          {
+            "meeting": "A-kickoff",
+            "slot": 1,
+            "room": "R1"
+          },
+          {
+            "meeting": "A-design",
+            "slot": 2,
+            "room": "R1"
+          },
+          {
+            "meeting": "A-review",
+            "slot": 3,
+            "room": "R1"
+          },
+          {
+            "meeting": "B-kickoff",
+            "slot": 0,
+            "room": "R1"
+          },
+          {
+            "meeting": "B-design",
+            "slot": 1,
+            "room": "R2"
+          },
+          {
+            "meeting": "B-review",
+            "slot": 4,
+            "room": "R1"
+          }
+        ],
+        "changed_witness": [
+          {
+            "meeting": "A-kickoff",
+            "slot": 1,
+            "room": "R1"
+          },
+          {
+            "meeting": "A-design",
+            "slot": 4,
+            "room": "R1"
+          },
+          {
+            "meeting": "A-review",
+            "slot": 5,
+            "room": "R1"
+          },
+          {
+            "meeting": "B-kickoff",
+            "slot": 0,
+            "room": "R1"
+          },
+          {
+            "meeting": "B-design",
+            "slot": 6,
+            "room": "R1"
+          },
+          {
+            "meeting": "B-review",
+            "slot": 7,
+            "room": "R1"
+          }
+        ],
+        "any_initial_schedule_forced_to_move": true,
+        "reason": "four Expert meetings, only two initial slots in new Expert window"
+      },
+      {
+        "seed": 229007,
+        "split": "formal",
+        "business_sha256": "c0604be1440abc46bfdd195e2ca0d85457fa19d3cba59761b480012c5fa7016d",
+        "feasible": true,
+        "candidate_attempts": 1,
+        "initial_witness": [
+          {
+            "meeting": "A-kickoff",
+            "slot": 2,
+            "room": "R1"
+          },
+          {
+            "meeting": "A-design",
+            "slot": 3,
+            "room": "R1"
+          },
+          {
+            "meeting": "A-review",
+            "slot": 4,
+            "room": "R1"
+          },
+          {
+            "meeting": "B-kickoff",
+            "slot": 3,
+            "room": "R2"
+          },
+          {
+            "meeting": "B-design",
+            "slot": 5,
+            "room": "R1"
+          },
+          {
+            "meeting": "B-review",
+            "slot": 6,
+            "room": "R1"
+          }
+        ],
+        "changed_witness": [
+          {
+            "meeting": "A-kickoff",
+            "slot": 2,
+            "room": "R1"
+          },
+          {
+            "meeting": "A-design",
+            "slot": 5,
+            "room": "R1"
+          },
+          {
+            "meeting": "A-review",
+            "slot": 6,
+            "room": "R1"
+          },
+          {
+            "meeting": "B-kickoff",
+            "slot": 3,
+            "room": "R1"
+          },
+          {
+            "meeting": "B-design",
+            "slot": 7,
+            "room": "R1"
+          },
+          {
+            "meeting": "B-review",
+            "slot": 8,
+            "room": "R1"
+          }
+        ],
+        "any_initial_schedule_forced_to_move": true,
+        "reason": "four Expert meetings, only two initial slots in new Expert window"
+      },
+      {
+        "seed": 229008,
+        "split": "formal",
+        "business_sha256": "f22ff61e29e8452782d0745c63749ff0a11c2eaad6da68f95e903b9b30ab733e",
+        "feasible": true,
+        "candidate_attempts": 1,
+        "initial_witness": [
+          {
+            "meeting": "A-kickoff",
+            "slot": 0,
+            "room": "R1"
+          },
+          {
+            "meeting": "A-design",
+            "slot": 2,
+            "room": "R1"
+          },
+          {
+            "meeting": "A-review",
+            "slot": 6,
+            "room": "R1"
+          },
+          {
+            "meeting": "B-kickoff",
+            "slot": 1,
+            "room": "R1"
+          },
+          {
+            "meeting": "B-design",
+            "slot": 3,
+            "room": "R1"
+          },
+          {
+            "meeting": "B-review",
+            "slot": 7,
+            "room": "R1"
+          }
+        ],
+        "changed_witness": [
+          {
+            "meeting": "A-kickoff",
+            "slot": 0,
+            "room": "R1"
+          },
+          {
+            "meeting": "A-design",
+            "slot": 6,
+            "room": "R1"
+          },
+          {
+            "meeting": "A-review",
+            "slot": 7,
+            "room": "R1"
+          },
+          {
+            "meeting": "B-kickoff",
+            "slot": 1,
+            "room": "R1"
+          },
+          {
+            "meeting": "B-design",
+            "slot": 8,
+            "room": "R1"
+          },
+          {
+            "meeting": "B-review",
+            "slot": 9,
+            "room": "R1"
+          }
+        ],
+        "any_initial_schedule_forced_to_move": true,
+        "reason": "four Expert meetings, only two initial slots in new Expert window"
+      },
+      {
+        "seed": 229009,
+        "split": "formal",
+        "business_sha256": "7cd9fe6113469f7e6569665adcc304f2c241b16718b97b05c59012d2fd384473",
+        "feasible": true,
+        "candidate_attempts": 2,
+        "initial_witness": [
+          {
+            "meeting": "A-kickoff",
+            "slot": 0,
+            "room": "R2"
+          },
+          {
+            "meeting": "A-design",
+            "slot": 1,
+            "room": "R1"
+          },
+          {
+            "meeting": "A-review",
+            "slot": 3,
+            "room": "R1"
+          },
+          {
+            "meeting": "B-kickoff",
+            "slot": 2,
+            "room": "R1"
+          },
+          {
+            "meeting": "B-design",
+            "slot": 4,
+            "room": "R1"
+          },
+          {
+            "meeting": "B-review",
+            "slot": 5,
+            "room": "R1"
+          }
+        ],
+        "changed_witness": [
+          {
+            "meeting": "A-kickoff",
+            "slot": 0,
+            "room": "R2"
+          },
+          {
+            "meeting": "A-design",
+            "slot": 4,
+            "room": "R1"
+          },
+          {
+            "meeting": "A-review",
+            "slot": 5,
+            "room": "R1"
+          },
+          {
+            "meeting": "B-kickoff",
+            "slot": 1,
+            "room": "R1"
+          },
+          {
+            "meeting": "B-design",
+            "slot": 6,
+            "room": "R2"
+          },
+          {
+            "meeting": "B-review",
+            "slot": 7,
+            "room": "R1"
+          }
+        ],
+        "any_initial_schedule_forced_to_move": true,
+        "reason": "four Expert meetings, only two initial slots in new Expert window"
+      },
+      {
+        "seed": 229010,
+        "split": "formal",
+        "business_sha256": "a29948e86d245cefa4dec84c441e08718d45ad440c015a198ce78513a5c2ccb3",
+        "feasible": true,
+        "candidate_attempts": 1,
+        "initial_witness": [
+          {
+            "meeting": "A-kickoff",
+            "slot": 1,
+            "room": "R1"
+          },
+          {
+            "meeting": "A-design",
+            "slot": 2,
+            "room": "R1"
+          },
+          {
+            "meeting": "A-review",
+            "slot": 3,
+            "room": "R1"
+          },
+          {
+            "meeting": "B-kickoff",
+            "slot": 2,
+            "room": "R2"
+          },
+          {
+            "meeting": "B-design",
+            "slot": 4,
+            "room": "R1"
+          },
+          {
+            "meeting": "B-review",
+            "slot": 5,
+            "room": "R1"
+          }
+        ],
+        "changed_witness": [
+          {
+            "meeting": "A-kickoff",
+            "slot": 1,
+            "room": "R1"
+          },
+          {
+            "meeting": "A-design",
+            "slot": 6,
+            "room": "R1"
+          },
+          {
+            "meeting": "A-review",
+            "slot": 8,
+            "room": "R1"
+          },
+          {
+            "meeting": "B-kickoff",
+            "slot": 2,
+            "room": "R1"
+          },
+          {
+            "meeting": "B-design",
+            "slot": 5,
+            "room": "R1"
+          },
+          {
+            "meeting": "B-review",
+            "slot": 9,
+            "room": "R1"
+          }
+        ],
+        "any_initial_schedule_forced_to_move": true,
+        "reason": "four Expert meetings, only two initial slots in new Expert window"
+      },
+      {
+        "seed": 229011,
+        "split": "formal",
+        "business_sha256": "077130d3f2a6ee23460ad26f697280a3d8cbd14a99e1b95ec18ac937b7016134",
+        "feasible": true,
+        "candidate_attempts": 1,
+        "initial_witness": [
+          {
+            "meeting": "A-kickoff",
+            "slot": 0,
+            "room": "R1"
+          },
+          {
+            "meeting": "A-design",
+            "slot": 1,
+            "room": "R1"
+          },
+          {
+            "meeting": "A-review",
+            "slot": 2,
+            "room": "R1"
+          },
+          {
+            "meeting": "B-kickoff",
+            "slot": 1,
+            "room": "R2"
+          },
+          {
+            "meeting": "B-design",
+            "slot": 3,
+            "room": "R1"
+          },
+          {
+            "meeting": "B-review",
+            "slot": 4,
+            "room": "R1"
+          }
+        ],
+        "changed_witness": [
+          {
+            "meeting": "A-kickoff",
+            "slot": 0,
+            "room": "R1"
+          },
+          {
+            "meeting": "A-design",
+            "slot": 6,
+            "room": "R2"
+          },
+          {
+            "meeting": "A-review",
+            "slot": 7,
+            "room": "R1"
+          },
+          {
+            "meeting": "B-kickoff",
+            "slot": 1,
+            "room": "R1"
+          },
+          {
+            "meeting": "B-design",
+            "slot": 8,
+            "room": "R1"
+          },
+          {
+            "meeting": "B-review",
+            "slot": 11,
+            "room": "R1"
+          }
+        ],
+        "any_initial_schedule_forced_to_move": true,
+        "reason": "four Expert meetings, only two initial slots in new Expert window"
+      },
+      {
+        "seed": 229012,
+        "split": "formal",
+        "business_sha256": "a74f39ecdac0936e4cc917a5b1067c83be0eeedf938ea8723e0ab64ec0b7bc19",
+        "feasible": true,
+        "candidate_attempts": 1,
+        "initial_witness": [
+          {
+            "meeting": "A-kickoff",
+            "slot": 0,
+            "room": "R1"
+          },
+          {
+            "meeting": "A-design",
+            "slot": 1,
+            "room": "R1"
+          },
+          {
+            "meeting": "A-review",
+            "slot": 2,
+            "room": "R1"
+          },
+          {
+            "meeting": "B-kickoff",
+            "slot": 1,
+            "room": "R2"
+          },
+          {
+            "meeting": "B-design",
+            "slot": 3,
+            "room": "R1"
+          },
+          {
+            "meeting": "B-review",
+            "slot": 4,
+            "room": "R1"
+          }
+        ],
+        "changed_witness": [
+          {
+            "meeting": "A-kickoff",
+            "slot": 0,
+            "room": "R1"
+          },
+          {
+            "meeting": "A-design",
+            "slot": 4,
+            "room": "R1"
+          },
+          {
+            "meeting": "A-review",
+            "slot": 6,
+            "room": "R1"
+          },
+          {
+            "meeting": "B-kickoff",
+            "slot": 1,
+            "room": "R1"
+          },
+          {
+            "meeting": "B-design",
+            "slot": 5,
+            "room": "R2"
+          },
+          {
+            "meeting": "B-review",
+            "slot": 7,
+            "room": "R1"
+          }
+        ],
+        "any_initial_schedule_forced_to_move": true,
+        "reason": "four Expert meetings, only two initial slots in new Expert window"
+      },
+      {
+        "seed": 229013,
+        "split": "formal",
+        "business_sha256": "59ef7c4b7bf3515c8b0c4c6331d0f2260b9bbe0aed1f5b9b3a13ea911d9c7b6c",
+        "feasible": true,
+        "candidate_attempts": 1,
+        "initial_witness": [
+          {
+            "meeting": "A-kickoff",
+            "slot": 1,
+            "room": "R1"
+          },
+          {
+            "meeting": "A-design",
+            "slot": 3,
+            "room": "R1"
+          },
+          {
+            "meeting": "A-review",
+            "slot": 4,
+            "room": "R1"
+          },
+          {
+            "meeting": "B-kickoff",
+            "slot": 0,
+            "room": "R1"
+          },
+          {
+            "meeting": "B-design",
+            "slot": 1,
+            "room": "R2"
+          },
+          {
+            "meeting": "B-review",
+            "slot": 6,
+            "room": "R1"
+          }
+        ],
+        "changed_witness": [
+          {
+            "meeting": "A-kickoff",
+            "slot": 1,
+            "room": "R1"
+          },
+          {
+            "meeting": "A-design",
+            "slot": 5,
+            "room": "R1"
+          },
+          {
+            "meeting": "A-review",
+            "slot": 6,
+            "room": "R1"
+          },
+          {
+            "meeting": "B-kickoff",
+            "slot": 0,
+            "room": "R1"
+          },
+          {
+            "meeting": "B-design",
+            "slot": 7,
+            "room": "R1"
+          },
+          {
+            "meeting": "B-review",
+            "slot": 9,
+            "room": "R1"
+          }
+        ],
+        "any_initial_schedule_forced_to_move": true,
+        "reason": "four Expert meetings, only two initial slots in new Expert window"
+      },
+      {
+        "seed": 229014,
+        "split": "formal",
+        "business_sha256": "5bbffc269df9887eefd472825cae4298250b943afb49a3c9b6d6ef84d666aa05",
+        "feasible": true,
+        "candidate_attempts": 1,
+        "initial_witness": [
+          {
+            "meeting": "A-kickoff",
+            "slot": 0,
+            "room": "R2"
+          },
+          {
+            "meeting": "A-design",
+            "slot": 1,
+            "room": "R1"
+          },
+          {
+            "meeting": "A-review",
+            "slot": 2,
+            "room": "R1"
+          },
+          {
+            "meeting": "B-kickoff",
+            "slot": 3,
+            "room": "R1"
+          },
+          {
+            "meeting": "B-design",
+            "slot": 4,
+            "room": "R1"
+          },
+          {
+            "meeting": "B-review",
+            "slot": 7,
+            "room": "R1"
+          }
+        ],
+        "changed_witness": [
+          {
+            "meeting": "A-kickoff",
+            "slot": 0,
+            "room": "R2"
+          },
+          {
+            "meeting": "A-design",
+            "slot": 6,
+            "room": "R1"
+          },
+          {
+            "meeting": "A-review",
+            "slot": 7,
+            "room": "R1"
+          },
+          {
+            "meeting": "B-kickoff",
+            "slot": 1,
+            "room": "R1"
+          },
+          {
+            "meeting": "B-design",
+            "slot": 8,
+            "room": "R1"
+          },
+          {
+            "meeting": "B-review",
+            "slot": 9,
+            "room": "R1"
+          }
+        ],
+        "any_initial_schedule_forced_to_move": true,
+        "reason": "four Expert meetings, only two initial slots in new Expert window"
+      },
+      {
+        "seed": 229015,
+        "split": "formal",
+        "business_sha256": "32e149ebaee4492aa0d47e306f34a7c999fcc75bd0ea8f7823b3e54436729c36",
+        "feasible": true,
+        "candidate_attempts": 1,
+        "initial_witness": [
+          {
+            "meeting": "A-kickoff",
+            "slot": 0,
+            "room": "R2"
+          },
+          {
+            "meeting": "A-design",
+            "slot": 1,
+            "room": "R1"
+          },
+          {
+            "meeting": "A-review",
+            "slot": 2,
+            "room": "R1"
+          },
+          {
+            "meeting": "B-kickoff",
+            "slot": 1,
+            "room": "R2"
+          },
+          {
+            "meeting": "B-design",
+            "slot": 3,
+            "room": "R1"
+          },
+          {
+            "meeting": "B-review",
+            "slot": 4,
+            "room": "R1"
+          }
+        ],
+        "changed_witness": [
+          {
+            "meeting": "A-kickoff",
+            "slot": 0,
+            "room": "R2"
+          },
+          {
+            "meeting": "A-design",
+            "slot": 4,
+            "room": "R1"
+          },
+          {
+            "meeting": "A-review",
+            "slot": 6,
+            "room": "R1"
+          },
+          {
+            "meeting": "B-kickoff",
+            "slot": 1,
+            "room": "R1"
+          },
+          {
+            "meeting": "B-design",
+            "slot": 7,
+            "room": "R1"
+          },
+          {
+            "meeting": "B-review",
+            "slot": 8,
+            "room": "R1"
+          }
+        ],
+        "any_initial_schedule_forced_to_move": true,
+        "reason": "four Expert meetings, only two initial slots in new Expert window"
+      },
+      {
+        "seed": 229016,
+        "split": "formal",
+        "business_sha256": "1f1fdb11bbeba60a809fd27b85fa3da01cd7680ee80c96328b143cb2295faf48",
+        "feasible": true,
+        "candidate_attempts": 1,
+        "initial_witness": [
+          {
+            "meeting": "A-kickoff",
+            "slot": 0,
+            "room": "R1"
+          },
+          {
+            "meeting": "A-design",
+            "slot": 2,
+            "room": "R1"
+          },
+          {
+            "meeting": "A-review",
+            "slot": 4,
+            "room": "R1"
+          },
+          {
+            "meeting": "B-kickoff",
+            "slot": 3,
+            "room": "R1"
+          },
+          {
+            "meeting": "B-design",
+            "slot": 5,
+            "room": "R1"
+          },
+          {
+            "meeting": "B-review",
+            "slot": 6,
+            "room": "R1"
+          }
+        ],
+        "changed_witness": [
+          {
+            "meeting": "A-kickoff",
+            "slot": 0,
+            "room": "R1"
+          },
+          {
+            "meeting": "A-design",
+            "slot": 5,
+            "room": "R1"
+          },
+          {
+            "meeting": "A-review",
+            "slot": 6,
+            "room": "R1"
+          },
+          {
+            "meeting": "B-kickoff",
+            "slot": 3,
+            "room": "R1"
+          },
+          {
+            "meeting": "B-design",
+            "slot": 8,
+            "room": "R1"
+          },
+          {
+            "meeting": "B-review",
+            "slot": 9,
+            "room": "R1"
+          }
+        ],
+        "any_initial_schedule_forced_to_move": true,
+        "reason": "four Expert meetings, only two initial slots in new Expert window"
+      },
+      {
+        "seed": 229017,
+        "split": "formal",
+        "business_sha256": "060cea23fcf27d0f8b9513e83118bd294d4040750ad81b844c01c5bffee4ee7d",
+        "feasible": true,
+        "candidate_attempts": 2,
+        "initial_witness": [
+          {
+            "meeting": "A-kickoff",
+            "slot": 0,
+            "room": "R1"
+          },
+          {
+            "meeting": "A-design",
+            "slot": 1,
+            "room": "R1"
+          },
+          {
+            "meeting": "A-review",
+            "slot": 2,
+            "room": "R1"
+          },
+          {
+            "meeting": "B-kickoff",
+            "slot": 1,
+            "room": "R2"
+          },
+          {
+            "meeting": "B-design",
+            "slot": 3,
+            "room": "R1"
+          },
+          {
+            "meeting": "B-review",
+            "slot": 5,
+            "room": "R1"
+          }
+        ],
+        "changed_witness": [
+          {
+            "meeting": "A-kickoff",
+            "slot": 0,
+            "room": "R1"
+          },
+          {
+            "meeting": "A-design",
+            "slot": 6,
+            "room": "R1"
+          },
+          {
+            "meeting": "A-review",
+            "slot": 8,
+            "room": "R1"
+          },
+          {
+            "meeting": "B-kickoff",
+            "slot": 1,
+            "room": "R1"
+          },
+          {
+            "meeting": "B-design",
+            "slot": 7,
+            "room": "R1"
+          },
+          {
+            "meeting": "B-review",
+            "slot": 9,
+            "room": "R1"
+          }
+        ],
+        "any_initial_schedule_forced_to_move": true,
+        "reason": "four Expert meetings, only two initial slots in new Expert window"
+      },
+      {
+        "seed": 229018,
+        "split": "formal",
+        "business_sha256": "f34fe1a391fb8169f7026f7707b65a36f24a610e5ec40d5c9003fb48194afdb4",
+        "feasible": true,
+        "candidate_attempts": 1,
+        "initial_witness": [
+          {
+            "meeting": "A-kickoff",
+            "slot": 0,
+            "room": "R1"
+          },
+          {
+            "meeting": "A-design",
+            "slot": 1,
+            "room": "R1"
+          },
+          {
+            "meeting": "A-review",
+            "slot": 3,
+            "room": "R1"
+          },
+          {
+            "meeting": "B-kickoff",
+            "slot": 1,
+            "room": "R2"
+          },
+          {
+            "meeting": "B-design",
+            "slot": 2,
+            "room": "R2"
+          },
+          {
+            "meeting": "B-review",
+            "slot": 4,
+            "room": "R1"
+          }
+        ],
+        "changed_witness": [
+          {
+            "meeting": "A-kickoff",
+            "slot": 0,
+            "room": "R1"
+          },
+          {
+            "meeting": "A-design",
+            "slot": 4,
+            "room": "R1"
+          },
+          {
+            "meeting": "A-review",
+            "slot": 6,
+            "room": "R1"
+          },
+          {
+            "meeting": "B-kickoff",
+            "slot": 1,
+            "room": "R1"
+          },
+          {
+            "meeting": "B-design",
+            "slot": 5,
+            "room": "R1"
+          },
+          {
+            "meeting": "B-review",
+            "slot": 8,
+            "room": "R1"
+          }
+        ],
+        "any_initial_schedule_forced_to_move": true,
+        "reason": "four Expert meetings, only two initial slots in new Expert window"
+      },
+      {
+        "seed": 229019,
+        "split": "formal",
+        "business_sha256": "acdbb4652956c5578a5ca2b4f3a174add68b06a1edff01e26ad11f004cb98a07",
+        "feasible": true,
+        "candidate_attempts": 1,
+        "initial_witness": [
+          {
+            "meeting": "A-kickoff",
+            "slot": 1,
+            "room": "R2"
+          },
+          {
+            "meeting": "A-design",
+            "slot": 2,
+            "room": "R1"
+          },
+          {
+            "meeting": "A-review",
+            "slot": 4,
+            "room": "R1"
+          },
+          {
+            "meeting": "B-kickoff",
+            "slot": 2,
+            "room": "R2"
+          },
+          {
+            "meeting": "B-design",
+            "slot": 3,
+            "room": "R1"
+          },
+          {
+            "meeting": "B-review",
+            "slot": 5,
+            "room": "R1"
+          }
+        ],
+        "changed_witness": [
+          {
+            "meeting": "A-kickoff",
+            "slot": 1,
+            "room": "R2"
+          },
+          {
+            "meeting": "A-design",
+            "slot": 5,
+            "room": "R1"
+          },
+          {
+            "meeting": "A-review",
+            "slot": 6,
+            "room": "R1"
+          },
+          {
+            "meeting": "B-kickoff",
+            "slot": 2,
+            "room": "R1"
+          },
+          {
+            "meeting": "B-design",
+            "slot": 7,
+            "room": "R1"
+          },
+          {
+            "meeting": "B-review",
+            "slot": 8,
+            "room": "R1"
+          }
+        ],
+        "any_initial_schedule_forced_to_move": true,
+        "reason": "four Expert meetings, only two initial slots in new Expert window"
+      },
+      {
+        "seed": 229020,
+        "split": "formal",
+        "business_sha256": "f11952a38cc1707bad86ac1d653d6d4394b333adeeb02b3ce922212015d1e6f8",
+        "feasible": true,
+        "candidate_attempts": 1,
+        "initial_witness": [
+          {
+            "meeting": "A-kickoff",
+            "slot": 0,
+            "room": "R1"
+          },
+          {
+            "meeting": "A-design",
+            "slot": 4,
+            "room": "R1"
+          },
+          {
+            "meeting": "A-review",
+            "slot": 5,
+            "room": "R1"
+          },
+          {
+            "meeting": "B-kickoff",
+            "slot": 1,
+            "room": "R1"
+          },
+          {
+            "meeting": "B-design",
+            "slot": 2,
+            "room": "R1"
+          },
+          {
+            "meeting": "B-review",
+            "slot": 3,
+            "room": "R1"
+          }
+        ],
+        "changed_witness": [
+          {
+            "meeting": "A-kickoff",
+            "slot": 0,
+            "room": "R1"
+          },
+          {
+            "meeting": "A-design",
+            "slot": 6,
+            "room": "R2"
+          },
+          {
+            "meeting": "A-review",
+            "slot": 8,
+            "room": "R1"
+          },
+          {
+            "meeting": "B-kickoff",
+            "slot": 1,
+            "room": "R1"
+          },
+          {
+            "meeting": "B-design",
+            "slot": 7,
+            "room": "R1"
+          },
+          {
+            "meeting": "B-review",
+            "slot": 9,
+            "room": "R1"
+          }
+        ],
+        "any_initial_schedule_forced_to_move": true,
+        "reason": "four Expert meetings, only two initial slots in new Expert window"
+      },
+      {
+        "seed": 229021,
+        "split": "formal",
+        "business_sha256": "02d96603d24171eaf1723eaf68c950b02b625872a354c9c2d55a26f6ee098f0b",
+        "feasible": true,
+        "candidate_attempts": 1,
+        "initial_witness": [
+          {
+            "meeting": "A-kickoff",
+            "slot": 1,
+            "room": "R1"
+          },
+          {
+            "meeting": "A-design",
+            "slot": 2,
+            "room": "R1"
+          },
+          {
+            "meeting": "A-review",
+            "slot": 4,
+            "room": "R1"
+          },
+          {
+            "meeting": "B-kickoff",
+            "slot": 0,
+            "room": "R1"
+          },
+          {
+            "meeting": "B-design",
+            "slot": 1,
+            "room": "R2"
+          },
+          {
+            "meeting": "B-review",
+            "slot": 5,
+            "room": "R1"
+          }
+        ],
+        "changed_witness": [
+          {
+            "meeting": "A-kickoff",
+            "slot": 1,
+            "room": "R1"
+          },
+          {
+            "meeting": "A-design",
+            "slot": 4,
+            "room": "R1"
+          },
+          {
+            "meeting": "A-review",
+            "slot": 5,
+            "room": "R1"
+          },
+          {
+            "meeting": "B-kickoff",
+            "slot": 0,
+            "room": "R1"
+          },
+          {
+            "meeting": "B-design",
+            "slot": 6,
+            "room": "R1"
+          },
+          {
+            "meeting": "B-review",
+            "slot": 8,
+            "room": "R1"
+          }
+        ],
+        "any_initial_schedule_forced_to_move": true,
+        "reason": "four Expert meetings, only two initial slots in new Expert window"
+      },
+      {
+        "seed": 229022,
+        "split": "formal",
+        "business_sha256": "b2db665e5b0fbb213247bf1ff7e6a04e9b02345fee6d48e09728557456742a56",
+        "feasible": true,
+        "candidate_attempts": 1,
+        "initial_witness": [
+          {
+            "meeting": "A-kickoff",
+            "slot": 0,
+            "room": "R1"
+          },
+          {
+            "meeting": "A-design",
+            "slot": 1,
+            "room": "R1"
+          },
+          {
+            "meeting": "A-review",
+            "slot": 4,
+            "room": "R1"
+          },
+          {
+            "meeting": "B-kickoff",
+            "slot": 1,
+            "room": "R2"
+          },
+          {
+            "meeting": "B-design",
+            "slot": 2,
+            "room": "R1"
+          },
+          {
+            "meeting": "B-review",
+            "slot": 6,
+            "room": "R1"
+          }
+        ],
+        "changed_witness": [
+          {
+            "meeting": "A-kickoff",
+            "slot": 0,
+            "room": "R1"
+          },
+          {
+            "meeting": "A-design",
+            "slot": 5,
+            "room": "R1"
+          },
+          {
+            "meeting": "A-review",
+            "slot": 6,
+            "room": "R1"
+          },
+          {
+            "meeting": "B-kickoff",
+            "slot": 1,
+            "room": "R1"
+          },
+          {
+            "meeting": "B-design",
+            "slot": 7,
+            "room": "R1"
+          },
+          {
+            "meeting": "B-review",
+            "slot": 8,
+            "room": "R1"
+          }
+        ],
+        "any_initial_schedule_forced_to_move": true,
+        "reason": "four Expert meetings, only two initial slots in new Expert window"
+      },
+      {
+        "seed": 229023,
+        "split": "formal",
+        "business_sha256": "357d6e3e2210c4d854f92eeeb4d7b1236be666e97a649dab28026a1546349595",
+        "feasible": true,
+        "candidate_attempts": 1,
+        "initial_witness": [
+          {
+            "meeting": "A-kickoff",
+            "slot": 0,
+            "room": "R1"
+          },
+          {
+            "meeting": "A-design",
+            "slot": 1,
+            "room": "R1"
+          },
+          {
+            "meeting": "A-review",
+            "slot": 2,
+            "room": "R1"
+          },
+          {
+            "meeting": "B-kickoff",
+            "slot": 3,
+            "room": "R2"
+          },
+          {
+            "meeting": "B-design",
+            "slot": 4,
+            "room": "R1"
+          },
+          {
+            "meeting": "B-review",
+            "slot": 5,
+            "room": "R1"
+          }
+        ],
+        "changed_witness": [
+          {
+            "meeting": "A-kickoff",
+            "slot": 0,
+            "room": "R1"
+          },
+          {
+            "meeting": "A-design",
+            "slot": 7,
+            "room": "R1"
+          },
+          {
+            "meeting": "A-review",
+            "slot": 8,
+            "room": "R1"
+          },
+          {
+            "meeting": "B-kickoff",
+            "slot": 2,
+            "room": "R1"
+          },
+          {
+            "meeting": "B-design",
+            "slot": 9,
+            "room": "R1"
+          },
+          {
+            "meeting": "B-review",
+            "slot": 10,
+            "room": "R1"
+          }
+        ],
+        "any_initial_schedule_forced_to_move": true,
+        "reason": "four Expert meetings, only two initial slots in new Expert window"
+      },
+      {
+        "seed": 229024,
+        "split": "formal",
+        "business_sha256": "c0b22805fee37647c01b9f0b58d3938f065cf4060fc794d0a2b81729b41e526c",
+        "feasible": true,
+        "candidate_attempts": 3,
+        "initial_witness": [
+          {
+            "meeting": "A-kickoff",
+            "slot": 0,
+            "room": "R1"
+          },
+          {
+            "meeting": "A-design",
+            "slot": 1,
+            "room": "R1"
+          },
+          {
+            "meeting": "A-review",
+            "slot": 2,
+            "room": "R1"
+          },
+          {
+            "meeting": "B-kickoff",
+            "slot": 1,
+            "room": "R2"
+          },
+          {
+            "meeting": "B-design",
+            "slot": 3,
+            "room": "R1"
+          },
+          {
+            "meeting": "B-review",
+            "slot": 5,
+            "room": "R1"
+          }
+        ],
+        "changed_witness": [
+          {
+            "meeting": "A-kickoff",
+            "slot": 0,
+            "room": "R1"
+          },
+          {
+            "meeting": "A-design",
+            "slot": 5,
+            "room": "R1"
+          },
+          {
+            "meeting": "A-review",
+            "slot": 7,
+            "room": "R1"
+          },
+          {
+            "meeting": "B-kickoff",
+            "slot": 1,
+            "room": "R1"
+          },
+          {
+            "meeting": "B-design",
+            "slot": 4,
+            "room": "R1"
+          },
+          {
+            "meeting": "B-review",
+            "slot": 10,
+            "room": "R1"
+          }
+        ],
+        "any_initial_schedule_forced_to_move": true,
+        "reason": "four Expert meetings, only two initial slots in new Expert window"
+      }
+    ]
+  },
+  "witness_access": "OFFLINE ONLY; online driver reads facts JSON, never this file"
+}

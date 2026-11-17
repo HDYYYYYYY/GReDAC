@@ -1,0 +1,32 @@
+--- a/gredac/endpoint.py
++++ b/gredac/endpoint.py
+@@ -548,6 +548,8 @@
+                     require(old['fingerprint']==fp,'REQUEST_ID_CONFLICT')
+                     decision={**old['decision'],'replay':True}
+                 else:
++                    hook=getattr(self,'admission_hook',None)
++                    if hook is not None:hook(delivered,session,key,actual_operation)
+                     caller=self.right(session['binding']['caller_right']);service=self.right(session['binding']['service_right'])
+                     ctx=self.context(caller['context'])
+                     require(actual_operation in ctx['req'] and actual_operation in caller['actions'] and actual_operation in service['actions'],'ACTION_SCOPE')
+--- a/experiments/network_actor.py
++++ b/experiments/network_actor.py
+@@ -59,6 +59,9 @@
+                 space=Node(self.name,self.directory,self.path/'cooperations'/scope,self.signer)
+                 space.scope=scope;space.server=self.server;self.spaces[scope]=space
+             return self.spaces[scope].dispatch(method,args,peer)
++        if method.startswith('a2a_'):
++            from .a2a_bridge.wiring import dispatch
++            return dispatch(self,method,args,peer)
+         # Driver can schedule operations, never obtain keys/histories directly.
+         if method in ('configure','setup','model_config','ask','feedback','facts','artifact','handler','audit','freeze','stats','stop','arm_fault'):
+             require(peer['name']=='Driver','CONTROLLER_ONLY')
+@@ -323,6 +326,8 @@
+                 key=expected,service=service['owner'],service_right=service['id'],context=pending['caller']['context'],payload_digest=digest(packet['payload']))
+         w.resolve(pending,True);self.record('request_receipt',dict(request_id=rid,packet=packet,response=result));return result
+     def business(self,body):
++        if self.handler['kind']=='a2a_bridge':
++            return self.a2a_bridge.receive_admitted(body)
+         started=time.monotonic()
+         self.business_calls+=1;self.record('business_handler_started',dict(request_key=body.get('key'),count=self.business_calls))
+         try:

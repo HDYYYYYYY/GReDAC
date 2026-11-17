@@ -1,0 +1,333 @@
+{
+  "version": 1,
+  "seed": 16112026,
+  "draws_per_measured_run": 200,
+  "quality": [
+    {
+      "key": "6307>6407",
+      "source_city": "Amsterdam",
+      "target_city": "Seattle",
+      "batches": 2494,
+      "expected_batches": 2520.0,
+      "coverage": 0.9896825396825397,
+      "samples": 7434,
+      "lost_packet_entries": 44
+    },
+    {
+      "key": "6313>6407",
+      "source_city": "Frankfurt am Main",
+      "target_city": "Seattle",
+      "batches": 2503,
+      "expected_batches": 2520.0,
+      "coverage": 0.9932539682539683,
+      "samples": 7509,
+      "lost_packet_entries": 0
+    },
+    {
+      "key": "6506>6407",
+      "source_city": "Singapore",
+      "target_city": "Seattle",
+      "batches": 2501,
+      "expected_batches": 2520.0,
+      "coverage": 0.9924603174603175,
+      "samples": 7503,
+      "lost_packet_entries": 0
+    },
+    {
+      "key": "6568>6407",
+      "source_city": "Singapore",
+      "target_city": "Seattle",
+      "batches": 2513,
+      "expected_batches": 2520.0,
+      "coverage": 0.9972222222222222,
+      "samples": 7503,
+      "lost_packet_entries": 33
+    },
+    {
+      "key": "6307>6434",
+      "source_city": "Amsterdam",
+      "target_city": "Seattle",
+      "batches": 2487,
+      "expected_batches": 2520.0,
+      "coverage": 0.986904761904762,
+      "samples": 7429,
+      "lost_packet_entries": 25
+    },
+    {
+      "key": "6313>6434",
+      "source_city": "Frankfurt am Main",
+      "target_city": "Seattle",
+      "batches": 2492,
+      "expected_batches": 2520.0,
+      "coverage": 0.9888888888888889,
+      "samples": 7467,
+      "lost_packet_entries": 6
+    },
+    {
+      "key": "6506>6434",
+      "source_city": "Singapore",
+      "target_city": "Seattle",
+      "batches": 2491,
+      "expected_batches": 2520.0,
+      "coverage": 0.9884920634920635,
+      "samples": 7471,
+      "lost_packet_entries": 1
+    },
+    {
+      "key": "6568>6434",
+      "source_city": "Singapore",
+      "target_city": "Seattle",
+      "batches": 2487,
+      "expected_batches": 2520.0,
+      "coverage": 0.986904761904762,
+      "samples": 7426,
+      "lost_packet_entries": 33
+    },
+    {
+      "key": "6407>6379",
+      "source_city": "Seattle",
+      "target_city": "Durham",
+      "batches": 2490,
+      "expected_batches": 2520.0,
+      "coverage": 0.9880952380952381,
+      "samples": 7468,
+      "lost_packet_entries": 0
+    },
+    {
+      "key": "6434>6379",
+      "source_city": "Seattle",
+      "target_city": "Durham",
+      "batches": 2499,
+      "expected_batches": 2520.0,
+      "coverage": 0.9916666666666667,
+      "samples": 7497,
+      "lost_packet_entries": 0
+    },
+    {
+      "key": "6407>6428",
+      "source_city": "Seattle",
+      "target_city": "Ashland",
+      "batches": 2493,
+      "expected_batches": 2520.0,
+      "coverage": 0.9892857142857143,
+      "samples": 7479,
+      "lost_packet_entries": 0
+    },
+    {
+      "key": "6434>6428",
+      "source_city": "Seattle",
+      "target_city": "Ashland",
+      "batches": 2503,
+      "expected_batches": 2520.0,
+      "coverage": 0.9932539682539683,
+      "samples": 7509,
+      "lost_packet_entries": 0
+    },
+    {
+      "key": "6407>6307",
+      "source_city": "Seattle",
+      "target_city": "Amsterdam",
+      "batches": 2496,
+      "expected_batches": 2520.0,
+      "coverage": 0.9904761904761905,
+      "samples": 7414,
+      "lost_packet_entries": 70
+    },
+    {
+      "key": "6434>6307",
+      "source_city": "Seattle",
+      "target_city": "Amsterdam",
+      "batches": 2507,
+      "expected_batches": 2520.0,
+      "coverage": 0.9948412698412699,
+      "samples": 7441,
+      "lost_packet_entries": 73
+    },
+    {
+      "key": "6379>6307",
+      "source_city": "Durham",
+      "target_city": "Amsterdam",
+      "batches": 2501,
+      "expected_batches": 2520.0,
+      "coverage": 0.9924603174603175,
+      "samples": 7427,
+      "lost_packet_entries": 73
+    },
+    {
+      "key": "6428>6307",
+      "source_city": "Ashland",
+      "target_city": "Amsterdam",
+      "batches": 2440,
+      "expected_batches": 2520.0,
+      "coverage": 0.9682539682539683,
+      "samples": 7266,
+      "lost_packet_entries": 46
+    },
+    {
+      "key": "6506>6307",
+      "source_city": "Singapore",
+      "target_city": "Amsterdam",
+      "batches": 2499,
+      "expected_batches": 2520.0,
+      "coverage": 0.9916666666666667,
+      "samples": 7434,
+      "lost_packet_entries": 31
+    },
+    {
+      "key": "6568>6307",
+      "source_city": "Singapore",
+      "target_city": "Amsterdam",
+      "batches": 2507,
+      "expected_batches": 2520.0,
+      "coverage": 0.9948412698412699,
+      "samples": 7403,
+      "lost_packet_entries": 106
+    },
+    {
+      "key": "6407>6313",
+      "source_city": "Seattle",
+      "target_city": "Frankfurt am Main",
+      "batches": 2492,
+      "expected_batches": 2520.0,
+      "coverage": 0.9888888888888889,
+      "samples": 7476,
+      "lost_packet_entries": 0
+    },
+    {
+      "key": "6434>6313",
+      "source_city": "Seattle",
+      "target_city": "Frankfurt am Main",
+      "batches": 2499,
+      "expected_batches": 2520.0,
+      "coverage": 0.9916666666666667,
+      "samples": 7486,
+      "lost_packet_entries": 4
+    },
+    {
+      "key": "6379>6313",
+      "source_city": "Durham",
+      "target_city": "Frankfurt am Main",
+      "batches": 2491,
+      "expected_batches": 2520.0,
+      "coverage": 0.9884920634920635,
+      "samples": 7473,
+      "lost_packet_entries": 0
+    },
+    {
+      "key": "6428>6313",
+      "source_city": "Ashland",
+      "target_city": "Frankfurt am Main",
+      "batches": 2436,
+      "expected_batches": 2520.0,
+      "coverage": 0.9666666666666667,
+      "samples": 7307,
+      "lost_packet_entries": 0
+    },
+    {
+      "key": "6506>6313",
+      "source_city": "Singapore",
+      "target_city": "Frankfurt am Main",
+      "batches": 2494,
+      "expected_batches": 2520.0,
+      "coverage": 0.9896825396825397,
+      "samples": 7356,
+      "lost_packet_entries": 47
+    },
+    {
+      "key": "6568>6313",
+      "source_city": "Singapore",
+      "target_city": "Frankfurt am Main",
+      "batches": 2486,
+      "expected_batches": 2520.0,
+      "coverage": 0.9865079365079366,
+      "samples": 7424,
+      "lost_packet_entries": 31
+    },
+    {
+      "key": "6407>6506",
+      "source_city": "Seattle",
+      "target_city": "Singapore",
+      "batches": 2485,
+      "expected_batches": 2520.0,
+      "coverage": 0.9861111111111112,
+      "samples": 7455,
+      "lost_packet_entries": 0
+    },
+    {
+      "key": "6434>6506",
+      "source_city": "Seattle",
+      "target_city": "Singapore",
+      "batches": 2498,
+      "expected_batches": 2520.0,
+      "coverage": 0.9912698412698413,
+      "samples": 7493,
+      "lost_packet_entries": 0
+    },
+    {
+      "key": "6307>6506",
+      "source_city": "Amsterdam",
+      "target_city": "Singapore",
+      "batches": 2485,
+      "expected_batches": 2520.0,
+      "coverage": 0.9861111111111112,
+      "samples": 7379,
+      "lost_packet_entries": 44
+    },
+    {
+      "key": "6313>6506",
+      "source_city": "Frankfurt am Main",
+      "target_city": "Singapore",
+      "batches": 2490,
+      "expected_batches": 2520.0,
+      "coverage": 0.9880952380952381,
+      "samples": 7342,
+      "lost_packet_entries": 50
+    },
+    {
+      "key": "6407>6568",
+      "source_city": "Seattle",
+      "target_city": "Singapore",
+      "batches": 2480,
+      "expected_batches": 2520.0,
+      "coverage": 0.9841269841269841,
+      "samples": 7406,
+      "lost_packet_entries": 34
+    },
+    {
+      "key": "6434>6568",
+      "source_city": "Seattle",
+      "target_city": "Singapore",
+      "batches": 2484,
+      "expected_batches": 2520.0,
+      "coverage": 0.9857142857142858,
+      "samples": 7418,
+      "lost_packet_entries": 34
+    },
+    {
+      "key": "6307>6568",
+      "source_city": "Amsterdam",
+      "target_city": "Singapore",
+      "batches": 2481,
+      "expected_batches": 2520.0,
+      "coverage": 0.9845238095238096,
+      "samples": 7365,
+      "lost_packet_entries": 65
+    },
+    {
+      "key": "6313>6568",
+      "source_city": "Frankfurt am Main",
+      "target_city": "Singapore",
+      "batches": 2477,
+      "expected_batches": 2520.0,
+      "coverage": 0.9829365079365079,
+      "samples": 7387,
+      "lost_packet_entries": 37
+    }
+  ],
+  "files_sha256": {
+    "QUALITY.json": "52ef2c1be4919b33f91bd4b09503ec8ee7b4c6abb0ea445f38eb6ba0104fb5c1",
+    "samples.json": "0c1b0708ca3c77ce1c8cc06faf5c55289b71f5efc36e4e3f4bb63fdd940482b5"
+  },
+  "original_freeze_sha256": "b9f8ef74f6881946ae68728e3690d26a79089c33afc639df2d8edf4886f4c171",
+  "packaging": "Exact original frozen sample pool; unused raw measurement downloads omitted."
+}

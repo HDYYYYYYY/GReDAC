@@ -1,0 +1,23 @@
+{
+  "status": "PASS",
+  "checks": [
+    "original copied-source hashes unchanged",
+    "core default-path ASTs checked after namespace/environment/docstring normalization; optional unshipped PQ backend fails explicitly",
+    "abandoned self-written comparator removed; functional check scope recorded separately",
+    "frozen RTT sample pool byte-identical",
+    "RQ4 wait values unchanged; only private source path prefixes removed",
+    "39-case RQ4 schedule retained",
+    "publication-only source baselines generated",
+    "11 existing RTT fake-transport/offline tests passed",
+    "both 36-task RTT profiles passed check-only without starting agents",
+    "39-task RQ4 batch passed check-only without starting agents",
+    "A2A separate-copy materialization and resulting file integrity passed",
+    "static local-import closure checked; package attributes resolved",
+    "selected text and author archive scanned: no key token/private-key block found"
+  ],
+  "core_files": 20,
+  "core_byte_identical_files": 10,
+  "experiments_started": 0,
+  "llm_calls": 0,
+  "limitation": "This record covers packaging checks only; see docs/FINAL_CHECK_ZH.md for separate functional execution. Neither is a new full experimental campaign."
+}

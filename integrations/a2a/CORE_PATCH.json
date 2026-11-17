@@ -1,0 +1,26 @@
+[
+  {
+    "path": "gredac/endpoint.py",
+    "baseline_sha256": "50ec4218ccb1d6422601078ff4c169c039debb8c7e1467e61f4e523f5d9c6762",
+    "changes": [
+      {
+        "old": "                    decision={**old['decision'],'replay':True}\n                else:\n                    caller=self.right(session['binding']['caller_right']);service=self.right(session['binding']['service_right'])\n                    ctx=self.context(caller['context'])\n",
+        "new": "                    decision={**old['decision'],'replay':True}\n                else:\n                    hook=getattr(self,'admission_hook',None)\n                    if hook is not None:hook(delivered,session,key,actual_operation)\n                    caller=self.right(session['binding']['caller_right']);service=self.right(session['binding']['service_right'])\n                    ctx=self.context(caller['context'])\n"
+      }
+    ]
+  },
+  {
+    "path": "experiments/network_actor.py",
+    "baseline_sha256": "0c7a57da6e9c895b0daeec184a826b254ed23ad9e645bb8b31d645c93cb4bad1",
+    "changes": [
+      {
+        "old": "                space.scope=scope;space.server=self.server;self.spaces[scope]=space\n            return self.spaces[scope].dispatch(method,args,peer)\n        # Driver can schedule operations, never obtain keys/histories directly.\n        if method in ('configure','setup','model_config','ask','feedback','facts','artifact','handler','audit','freeze','stats','stop','arm_fault'):\n",
+        "new": "                space.scope=scope;space.server=self.server;self.spaces[scope]=space\n            return self.spaces[scope].dispatch(method,args,peer)\n        if method.startswith('a2a_'):\n            from .a2a_bridge.wiring import dispatch\n            return dispatch(self,method,args,peer)\n        # Driver can schedule operations, never obtain keys/histories directly.\n        if method in ('configure','setup','model_config','ask','feedback','facts','artifact','handler','audit','freeze','stats','stop','arm_fault'):\n"
+      },
+      {
+        "old": "        w.resolve(pending,True);self.record('request_receipt',dict(request_id=rid,packet=packet,response=result));return result\n    def business(self,body):\n        started=time.monotonic()\n        self.business_calls+=1;self.record('business_handler_started',dict(request_key=body.get('key'),count=self.business_calls))\n",
+        "new": "        w.resolve(pending,True);self.record('request_receipt',dict(request_id=rid,packet=packet,response=result));return result\n    def business(self,body):\n        if self.handler['kind']=='a2a_bridge':\n            return self.a2a_bridge.receive_admitted(body)\n        started=time.monotonic()\n        self.business_calls+=1;self.record('business_handler_started',dict(request_key=body.get('key'),count=self.business_calls))\n"
+      }
+    ]
+  }
+]

@@ -1,0 +1,134 @@
+theory SACReDFullMessageBinding
+
+begin
+
+// Function signature and definition of the equational theory E
+
+functions: fst/1, mac/2, pair/2, snd/1
+equations: fst(<x.1, x.2>) = x.1, snd(<x.1, x.2>) = x.2
+
+rule (modulo E) Issue:
+   [
+   Fr( ~key ), Fr( ~ctx ), Fr( ~rho ), Fr( ~caller ), Fr( ~service ),
+   Fr( ~dc ), Fr( ~ds ), Fr( ~sid ), Fr( ~action ), Fr( ~vector ),
+   In( payload )
+   ]
+  --[
+  Issued( ~key,
+          <~ctx, ~rho, ~caller, ~service, ~dc, ~ds, ~sid, ~action, payload, ~vector
+          >
+  )
+  ]->
+   [
+   !Key( ~key ),
+   Out( <
+         <~ctx, ~rho, ~caller, ~service, ~dc, ~ds, ~sid, ~action, payload, ~vector
+         >, 
+         mac(~key,
+             <~ctx, ~rho, ~caller, ~service, ~dc, ~ds, ~sid, ~action, payload, ~vector
+             >)
+        >
+   )
+   ]
+
+  /* has exactly the trivial AC variant */
+
+rule (modulo E) Accept:
+   [
+   !Key( key ),
+   In( <<ctx, rho, caller, service, dc, ds, sid, action, payload, vector>, 
+        mac(key,
+            <ctx, rho, caller, service, dc, ds, sid, action, payload, vector>)
+       >
+   )
+   ]
+  --[
+  Accepted( key,
+            <ctx, rho, caller, service, dc, ds, sid, action, payload, vector>
+  )
+  ]->
+   [ ]
+
+  /* has exactly the trivial AC variant */
+
+lemma complete_message_origin:
+  all-traces
+  "∀ key message #a.
+    (Accepted( key, message ) @ #a) ⇒
+    (∃ #i. (Issued( key, message ) @ #i) ∧ (#i < #a))"
+/*
+guarded formula characterizing all counter-examples:
+"∃ key message #a.
+  (Accepted( key, message ) @ #a)
+ ∧
+  ∀ #i. (Issued( key, message ) @ #i) ⇒ ¬(#i < #a)"
+*/
+simplify
+solve( !Key( key ) ▶₀ #a )
+  case Issue
+  solve( !KU( mac(~key,
+                  <ctx, rho, caller, service, dc, ds, sid, action, payload, vector>)
+         ) @ #vk.20 )
+    case Issue
+    by contradiction /* from formulas */
+  next
+    case c_mac
+    by solve( !KU( ~key ) @ #vk.22 )
+  qed
+qed
+
+lemma accepted_request_exists:
+  exists-trace "∃ key message #a. Accepted( key, message ) @ #a"
+/*
+guarded formula characterizing all satisfying traces:
+"∃ key message #a. (Accepted( key, message ) @ #a)"
+*/
+simplify
+solve( !Key( key ) ▶₀ #a )
+  case Issue
+  solve( !KU( mac(~key,
+                  <ctx, rho, caller, service, dc, ds, sid, action, payload, vector>)
+         ) @ #vk.20 )
+    case Issue
+    solve( !KU( ~ctx ) @ #vk.3 )
+      case Issue
+      solve( !KU( ~rho ) @ #vk.5 )
+        case Issue
+        solve( !KU( ~caller ) @ #vk.7 )
+          case Issue
+          solve( !KU( ~service ) @ #vk.9 )
+            case Issue
+            solve( !KU( ~dc ) @ #vk.11 )
+              case Issue
+              solve( !KU( ~ds ) @ #vk.13 )
+                case Issue
+                solve( !KU( ~sid ) @ #vk.15 )
+                  case Issue
+                  solve( !KU( ~action ) @ #vk.17 )
+                    case Issue
+                    solve( !KU( ~vector ) @ #vk.20 )
+                      case Issue
+                      SOLVED // trace found
+                    qed
+                  qed
+                qed
+              qed
+            qed
+          qed
+        qed
+      qed
+    qed
+  qed
+qed
+
+/* All wellformedness checks were successful. */
+
+/*
+Generated from:
+Tamarin version 1.12.0
+Maude version 3.5.1
+Git revision: 82780bbaf3328a45f624ddb41e51bf75425f851c (with uncommited changes), branch: master
+Compiled at: 2026-03-07 14:22:39.174278293 UTC
+*/
+
+end

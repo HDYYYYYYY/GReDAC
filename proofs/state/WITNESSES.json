@@ -1,0 +1,68 @@
+[
+  {
+    "name": "reachable_bilateral_admission",
+    "expected": "sat",
+    "result": "sat",
+    "sha256": "48a3fde9ed38954113507e396e0b3b25ad2d72874f986525c92c8f10dcbae95c"
+  },
+  {
+    "name": "original_duplicate_unit_rejected",
+    "expected": "unsat",
+    "result": "unsat",
+    "sha256": "b7e8402feae773a4afead6cfbd93c6c19d89beb30c8fb3eb5bdeb952d231033d"
+  },
+  {
+    "name": "negative_without_spent_check_double_charge",
+    "expected": "sat",
+    "result": "sat",
+    "sha256": "ec8ed058e301102c78b1c58cab57d82508b68406b50609f42f65afb789917202"
+  },
+  {
+    "name": "original_revoked_branch_rejected",
+    "expected": "unsat",
+    "result": "unsat",
+    "sha256": "fa4dddd32616e86ce9dd968a47683e91380810a1c3791c500f6ff5d332ef950f"
+  },
+  {
+    "name": "negative_without_revocation_check_old_branch",
+    "expected": "sat",
+    "result": "sat",
+    "sha256": "bd752d5e67f6590aa793180efd6961ef56af14706eb23670c24c44647a84b26e"
+  },
+  {
+    "name": "reachable_same_anchor_return",
+    "expected": "sat",
+    "result": "sat",
+    "sha256": "4bb39153367692abf944a3cf5bf62eb28105139c4ee9d6cc0f66942e3f59fda3"
+  },
+  {
+    "name": "original_pre_return_record_rejected",
+    "expected": "unsat",
+    "result": "unsat",
+    "sha256": "ee26a39ffd9e30f46237e4b19abffb505d5d96408fc076e30b6b7ffd3501ad75"
+  },
+  {
+    "name": "negative_without_record_CAS_stale_description",
+    "expected": "sat",
+    "result": "sat",
+    "sha256": "036a93ab5bf0262e92c15cfbc2bacd56ba88f3ce98da4884ff716fa082081dd6"
+  },
+  {
+    "name": "reachable_regrant_and_new_consumption",
+    "expected": "sat",
+    "result": "sat",
+    "sha256": "e74e61684b67c3a0ba5cb8d936303a510072a676a0ce65b402a684806c16b085"
+  },
+  {
+    "name": "original_changed_payload_retry_rejected",
+    "expected": "unsat",
+    "result": "unsat",
+    "sha256": "ce094f7580b80fd28b760d9c0c7dd485be504d62b40e8f065a7d42aee759abd7"
+  },
+  {
+    "name": "negative_without_full_message_retry_binding",
+    "expected": "sat",
+    "result": "sat",
+    "sha256": "49dc2cd470da838368deb187954bc000331d23564ffaf0f98e0ab8f4f089cf06"
+  }
+]

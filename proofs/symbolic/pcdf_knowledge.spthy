@@ -1,0 +1,140 @@
+theory SACReDPCDFKnowledge
+begin
+functions: split_label/1, grant_label/1, anchor_label/2, spend_label/0,
+           auth/2 [private], step/2
+
+// Ideal-table abstraction, not a SHA-256 or computational proof.
+// Fresh outputs model collision-free lazy sampling, justified separately by P1.
+// UniqueEdge is dictionary determinism: repeated evaluation reuses an entry.
+// Anchor is INITIAL issuance only; returning units never invokes Anchor here.
+// State ownership and authorization are intentionally outside this theory.
+restriction UniqueEdge:
+ "All parent label n1 k1 n2 k2 #i #j.
+ EdgeCreated(parent,label,n1,k1)@i & EdgeCreated(parent,label,n2,k2)@j
+ ==> n1 = n2 & k1 = k2"
+
+rule Source:
+ [ Fr(~s), Fr(~k) ]
+ --[ MasterCreated(~s,~k), SeedBorn(~s,~k) ]->
+ [ !Master(~s,~k), !Bit('0'), !Bit('1'), Out(~s) ]
+
+rule Anchor:
+ [ !Master(s,master), Fr(~a), Fr(~key), In(binding) ]
+ --[ EdgeCreated(s,anchor_label(~a,binding),~a,~key),
+     AnchorCreated(s,~a), SeedBorn(~a,~key) ]->
+ [ !Node(s,~a,~a,'root',~key),
+   !Edge(s,anchor_label(~a,binding),~a,master,~key), Out(~a) ]
+
+rule Split:
+ [ !Node(s,a,n,p,key)[-], Fr(~child), Fr(~ck), !Bit(bit) ]
+ --[ EdgeCreated(n,split_label(bit),~child,~ck),
+     SplitCreated(a,n,~child,p,step(p,bit)), SeedBorn(~child,~ck) ]->
+ [ !Node(s,a,~child,step(p,bit),~ck),
+   !Edge(n,split_label(bit),~child,key,~ck), Out(~child) ]
+
+rule Grant:
+ [ !Node(s,a,n,p,key)[-], Fr(~child), Fr(~ck), In(gid) ]
+ --[ EdgeCreated(n,grant_label(gid),~child,~ck),
+     GrantCreated(a,n,~child,gid,p,p), GrantSeed(n,key,gid,~child,~ck), SeedBorn(~child,~ck) ]->
+ [ !Node(s,a,~child,p,~ck),
+   !Edge(n,grant_label(gid),~child,key,~ck), Out(~child) ]
+
+rule Spend:
+ [ !Node(s,a,n,p,key)[-], Fr(~child), Fr(~ck) ]
+ --[ EdgeCreated(n,spend_label,~child,~ck),
+     SpendCreated(a,n,~child,p), SeedBorn(~child,~ck) ]->
+ [ !Business(s,a,~child,~ck),
+   !Edge(n,spend_label,~child,key,~ck), Out(~child) ]
+
+// Public oracle call: knows seed is cryptographic knowledge, NOT authority.
+// Separate In facts merely expose the same component-knowledge that a tuple
+// query entails; they do not require an approved identity or a current Cap.
+rule EdgeQuery:
+ [ !Edge(parent,label,child,key,ck)[-], In(key)[+], In(label) ]
+ --[ EdgeQueried(parent,label,child), EdgeDisclosed(parent,key,label,child,ck) ]->
+ [ Out(ck) ]
+
+// Whole anchor roots can also leak: this overapproximates old Agent leakage.
+rule RevealNode:
+ [ !Node(s,a,n,p,key) ]
+ --[ SeedRevealed(s,a,n,key) ]-> [ Out(key) ]
+
+rule RevealSpend:
+ [ !Business(s,a,n,key) ]
+ --[ SeedRevealed(s,a,n,key) ]-> [ Out(key) ]
+
+rule HonestTag:
+ [ !Business(s,a,n,key), In(m) ]
+ --[ TagIssued(s,a,n,m) ]-> [ Out(auth(key,m)) ]
+
+// auth is private only to force an explicit unrestricted oracle query event.
+// Arbitrary known values are accepted; this is not an authorization check.
+rule AuthQuery:
+ [ In(key)[+], In(m) ]
+ --[ AuthQueried(key,m) ]-> [ Out(auth(key,m)) ]
+
+rule VerifyTag:
+ [ !Business(s,a,n,key), In(<m,auth(key,m)>) ]
+ --[ TagAccepted(s,a,n,m), AcceptedSeed(s,a,n,key) ]-> []
+
+rule ProbeNode:
+ [ !Node(s,a,n,p,key), In(key) ]
+ --[ NodeKnown(s,a,n) ]-> []
+
+lemma master_secret [reuse]:
+ "All s key #c #i. MasterCreated(s,key)@c & K(key)@i ==> F"
+
+lemma seed_knowledge_causal_origin [reuse]:
+ "All n key #b #i. SeedBorn(n,key)@b & K(key)@i
+ ==> (Ex s a #r. SeedRevealed(s,a,n,key)@r & r < i)
+   | (Ex parent pk label #q #p.
+       EdgeDisclosed(parent,pk,label,n,key)@q & K(pk)@p & p < q & q < i)"
+
+lemma edge_query_requires_prior_parent_knowledge:
+ "All parent pk label child ck #q. EdgeDisclosed(parent,pk,label,child,ck)@q
+ ==> (Ex #p. K(pk)@p & p < q)"
+
+lemma authentication_has_issue_or_seed_query [reuse]:
+ "All s a n m key #i. TagAccepted(s,a,n,m)@i & AcceptedSeed(s,a,n,key)@i
+ ==> (Ex #j. TagIssued(s,a,n,m)@j & j < i)
+   | (Ex #q #p. AuthQueried(key,m)@q & K(key)@p & p < q & q < i)"
+
+lemma seed_birth_is_unique:
+ "All n1 n2 key #i #j. SeedBorn(n1,key)@i & SeedBorn(n2,key)@j
+ ==> n1 = n2 & #i = #j"
+
+lemma grant_preserves_geometric_prefix:
+ "All a n child gid p q #i. GrantCreated(a,n,child,gid,p,q)@i ==> p = q"
+
+lemma two_grants_reachable:
+ exists-trace
+ "Ex a n1 n2 n3 g1 g2 p #i #j.
+ GrantCreated(a,n1,n2,g1,p,p)@i & GrantCreated(a,n2,n3,g2,p,p)@j & i < j"
+
+lemma leaked_parent_can_derive_child:
+ exists-trace
+ "Ex s a n child key label #r #q #k.
+ SeedRevealed(s,a,n,key)@r & EdgeQueried(n,label,child)@q & r < q
+ & NodeKnown(s,a,child)@k & q < k"
+
+lemma grant_output_requires_parent_or_direct_exposure:
+ "All parent pk gid child ck #g #k.
+  GrantSeed(parent,pk,gid,child,ck)@g & K(ck)@k
+  ==> (Ex s a #r. SeedRevealed(s,a,child,ck)@r & r < k)
+    | (Ex #p. K(pk)@p & p < k)"
+
+lemma sibling_grants_have_distinct_ideal_seeds:
+ "All parent pk gid1 gid2 c1 c2 k1 k2 #i #j.
+  GrantSeed(parent,pk,gid1,c1,k1)@i
+  & GrantSeed(parent,pk,gid2,c2,k2)@j & not(gid1 = gid2)
+  ==> not(k1 = k2)"
+
+lemma old_child_disclosure_then_new_sibling_reachable:
+ exists-trace
+ "Ex s a parent pk oldid newid oldchild newchild oldkey newkey #g #r #n.
+  GrantSeed(parent,pk,oldid,oldchild,oldkey)@g
+  & SeedRevealed(s,a,oldchild,oldkey)@r
+  & GrantSeed(parent,pk,newid,newchild,newkey)@n
+  & g < r & r < n & not(oldid = newid)"
+
+end
